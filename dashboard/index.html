@@ -58,32 +58,126 @@
   [data-dash-source-state=empty] { color: transparent; }
   [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
   @media (max-width: 30rem) { .cd-meta-row { grid-template-columns: minmax(0, 1fr) 4rem 3rem; } }
+
+  /* The card look: holo foil frames, game colours and the binder. */
+  .cd {
+    --pk: #f2b705; --op: #d7263d; --sea: #1f6fb2;
+    --holo: linear-gradient(115deg, #ff7eb3, #ffd36e 18%, #7ef0c1 36%, #6ec8ff 54%, #b78bff 72%, #ff7eb3 90%);
+    --frame-r: 18px;
+  }
+  @keyframes cd-foil { to { background-position: 200% 50%; } }
+  .cd-holo-frame {
+    border: 3px solid transparent;
+    background: linear-gradient(var(--color-panel), var(--color-panel)) padding-box, var(--holo) border-box;
+    background-size: auto, 200% 100%;
+    animation: cd-foil 9s linear infinite;
+  }
+  .cd-hero {
+    position: relative; overflow: hidden; border-radius: var(--frame-r); padding: var(--cds-pad-lg) calc(var(--cds-pad-lg) * 1.5);
+    display: grid; gap: var(--cds-gap-xs);
+  }
+  .cd-hero::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+    background:
+      radial-gradient(circle at 92% 18%, color-mix(in srgb, var(--pk) 30%, transparent), transparent 38%),
+      radial-gradient(circle at 78% 95%, color-mix(in srgb, var(--op) 22%, transparent), transparent 40%),
+      repeating-linear-gradient(135deg, color-mix(in srgb, var(--color-fg) 4%, transparent) 0 2px, transparent 2px 14px);
+  }
+  .cd-hero > * { position: relative; }
+  .cd-hello { margin: 0; font-size: var(--cds-font-size-caption); text-transform: uppercase; letter-spacing: .14em; color: var(--color-fg-muted); }
+  .cd-title { font-size: clamp(1.9rem, 4.5vw, 2.8rem); line-height: 1.05; }
+  .cd-title em { font-style: normal; background: var(--holo); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: cd-foil 9s linear infinite; }
+  .cd-stamp { position: absolute; right: var(--cds-pad-lg); top: 50%; translate: 0 -50%; width: 5.5rem; opacity: .9; }
+  @media (max-width: 40rem) { .cd-stamp { display: none; } }
+
+  .cd-tile { position: relative; border-radius: var(--frame-r); border-width: 2px; overflow: hidden; padding-top: calc(var(--cds-pad-md) + 4px); }
+  .cd-tile::before { content: ""; position: absolute; inset: 0 0 auto; height: 5px; background: var(--tile-c, var(--holo)); }
+  .cd-tile-label { display: flex; align-items: center; gap: 6px; }
+  .cd-energy { width: 1.35rem; height: 1.35rem; border-radius: 50%; display: inline-grid; place-items: center; background: var(--tile-c); color: #fff; flex: none; box-shadow: inset 0 -2px 0 rgb(0 0 0 / .18); }
+  .cd-energy svg { width: .8rem; height: .8rem; }
+  #tile-reunion { --tile-c: var(--sea); }
+  #tile-hits { --tile-c: var(--op); }
+  #tile-release { --tile-c: var(--pk); }
+  #tile-event { --tile-c: #7b52d6; }
+
+  .cd-tab, .cd-chip { border-width: 2px; font-weight: var(--cds-font-weight-medium); transition: transform var(--cds-dur-fast, .15s), background var(--cds-dur-fast, .15s); }
+  .cd-tab:hover, .cd-chip:hover { transform: translateY(-1px); }
+  .cd-tab[aria-selected="true"] { color: var(--color-fg); border-color: transparent; background: linear-gradient(var(--color-panel), var(--color-panel)) padding-box, var(--holo) border-box; background-size: auto, 200% 100%; animation: cd-foil 9s linear infinite; }
+  .cd-chip[data-game="Pokémon"][aria-pressed="true"] { background: var(--pk); border-color: var(--pk); color: #1b1300; }
+  .cd-chip[data-game="One Piece"][aria-pressed="true"] { background: var(--op); border-color: var(--op); color: #fff; }
+
+  .cd-card { border-radius: var(--frame-r); border-width: 2px; position: relative; overflow: hidden; box-shadow: 0 1px 0 color-mix(in srgb, var(--color-fg) 6%, transparent), 0 8px 24px -16px color-mix(in srgb, var(--color-fg) 35%, transparent); }
+  .cd-card > .cd-h2 { display: flex; align-items: center; gap: 8px; }
+  .cd-card > .cd-h2::before { content: ""; width: .7rem; height: .7rem; border-radius: 50%; background: var(--holo); background-size: 200% 100%; animation: cd-foil 9s linear infinite; box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-fg) 12%, transparent); }
+  .cd-pill.is-pk { background: color-mix(in srgb, var(--pk) 22%, transparent); border-color: color-mix(in srgb, var(--pk) 70%, transparent); color: var(--color-fg); }
+  .cd-pill.is-op { background: color-mix(in srgb, var(--op) 16%, transparent); border-color: color-mix(in srgb, var(--op) 60%, transparent); color: var(--color-fg); }
+  .cd-item { border-left: 3px solid transparent; padding-left: var(--cds-pad-sm); margin-left: calc(-1 * var(--cds-pad-sm) - 3px); }
+  .cd-item.is-pk { border-left-color: var(--pk); }
+  .cd-item.is-op { border-left-color: var(--op); }
+  .cd-table tbody tr { transition: background var(--cds-dur-fast, .15s); }
+  .cd-table tbody tr:hover { background: color-mix(in srgb, var(--color-fg) 4%, transparent); }
+  .cd-meta-fill { background-image: var(--holo) !important; background-size: 300% 100% !important; }
+  .cd-meta-row:not(:first-child) .cd-meta-fill { filter: saturate(.35); opacity: .75; }
+
+  /* Binder: your best cards, with a foil glare that follows the pointer. */
+  .cd-binder-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--cds-gap-xs); }
+  .cd-binder { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(9.5rem, 1fr); gap: var(--cds-gap-md); overflow-x: auto; padding: 6px 4px 14px; scroll-snap-type: x mandatory; perspective: 900px; }
+  .cd-slot { display: grid; gap: 6px; scroll-snap-align: start; min-width: 0; margin: 0; }
+  .cd-tcg { --rx: 0deg; --ry: 0deg; --mx: 50%; --my: 50%; --o: 0; position: relative; aspect-ratio: 600 / 838; border-radius: 4.5% / 3.3%; overflow: hidden; transform: rotateX(var(--rx)) rotateY(var(--ry)); transition: transform .25s ease, box-shadow .25s ease; box-shadow: 0 10px 22px -12px rgb(0 0 0 / .55); background: color-mix(in srgb, var(--color-fg) 8%, transparent); }
+  .cd-tcg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .cd-tcg::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: var(--o); transition: opacity .25s; mix-blend-mode: color-dodge;
+    background: radial-gradient(circle at var(--mx) var(--my), rgb(255 255 255 / .55), transparent 45%), var(--holo); background-size: auto, 250% 250%; background-position: center, var(--mx) var(--my); }
+  .cd-tcg:hover, .cd-tcg.is-live { --o: .55; box-shadow: 0 18px 30px -14px rgb(0 0 0 / .6); transition: transform .06s linear, box-shadow .25s; }
+  .cd-slot figcaption { display: grid; gap: 2px; font-size: var(--cds-font-size-caption); }
+  .cd-slot-name { font-weight: var(--cds-font-weight-medium); font-size: var(--cds-font-size-body); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .cd-slot-meta { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; color: var(--color-fg-muted); }
+  .cd-slot-price { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); font-variant-numeric: tabular-nums; color: var(--color-fg); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cd-holo-frame, .cd-title em, .cd-tab[aria-selected="true"], .cd-card > .cd-h2::before { animation: none; }
+    .cd-tcg { transform: none !important; }
+  }
 </style>
 
 <div class="cd">
-  <header class="cd-head">
-    <h1 class="cd-title">TCG Collector's Desk</h1>
-    <p class="cd-sub">Pokémon and One Piece for a collector on Réunion and Mauritius. Prices in euros, with Mauritian rupees alongside. Updated <span data-draw="updated" data-source="daily_hits" data-field="date" data-row="0">—</span>.</p>
+  <header class="cd-head cd-hero cd-holo-frame">
+    <p class="cd-hello" data-draw="hello">Hello, Warren</p>
+    <h1 class="cd-title">Warren's <em>Collector's Desk</em></h1>
+    <p class="cd-sub">Your Pokémon and One Piece corner, from Réunion to Mauritius. Prices in euros, with rupees alongside. Updated <span data-draw="updated" data-source="daily_hits" data-field="date" data-row="0">—</span>.</p>
+    <svg class="cd-stamp" viewBox="0 0 100 100" aria-hidden="true">
+      <defs><linearGradient id="cd-stamp-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff7eb3"/><stop offset=".35" stop-color="#ffd36e"/><stop offset=".65" stop-color="#6ec8ff"/><stop offset="1" stop-color="#b78bff"/></linearGradient></defs>
+      <circle cx="50" cy="50" r="46" fill="none" stroke="url(#cd-stamp-g)" stroke-width="4" stroke-dasharray="3 5"/>
+      <circle cx="50" cy="50" r="36" fill="url(#cd-stamp-g)" opacity=".9"/>
+      <path d="M50 22l7.6 17.4L76 41.5 62 54l4 18.5L50 63l-16 9.5 4-18.5-14-12.5 18.4-2.1z" fill="#fff"/>
+    </svg>
   </header>
+
+  <div class="cd-card" id="binder">
+    <div class="cd-binder-head">
+      <h2 class="cd-h2">Your binder</h2>
+      <span class="cd-note">Your most valuable cards, at this week's price. Hover or touch to see the foil.</span>
+    </div>
+    <div class="cd-binder" data-draw="binder" data-source="collection"></div>
+  </div>
 
   <div class="cd-tiles">
     <div class="cd-tile" id="tile-reunion">
-      <span class="cd-tile-label">Réunion window</span>
+      <span class="cd-tile-label"><span class="cd-energy"><svg viewBox="0 0 16 16"><path d="M2 12c2-1 4-1 6 0s4 1 6 0M8 3l3 6H5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>Réunion window</span>
       <span class="cd-tile-value"><span data-draw="daysleft">—</span> days</span>
-      <span class="cd-tile-note">left to buy on the island, until 27 Dec</span>
+      <span class="cd-tile-note">left to hunt on the island, until 27 Dec</span>
     </div>
     <div class="cd-tile" id="tile-hits">
-      <span class="cd-tile-label">Today's hits</span>
+      <span class="cd-tile-label"><span class="cd-energy"><svg viewBox="0 0 16 16"><path d="M9.5 1L3 9h4.5L6 15l7-8.5H8.5z" fill="currentColor"/></svg></span>Today's hits</span>
       <span class="cd-tile-value" data-draw="hitcount" data-source="hit_count" data-field="n">—</span>
       <span class="cd-tile-note">deals, movers, news and events</span>
     </div>
     <div class="cd-tile" id="tile-release">
-      <span class="cd-tile-label">Next release</span>
+      <span class="cd-tile-label"><span class="cd-energy"><svg viewBox="0 0 16 16"><path d="M2 5l6-3 6 3v6l-6 3-6-3zM2 5l6 3 6-3M8 8v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>Next release</span>
       <span class="cd-tile-value" data-draw="nextrel" data-source="next_release" data-field="name">—</span>
       <span class="cd-tile-note" data-draw="nextrelwhen" data-source="next_release" data-field="detail">—</span>
     </div>
     <div class="cd-tile" id="tile-event">
-      <span class="cd-tile-label">Next big event</span>
+      <span class="cd-tile-label"><span class="cd-energy"><svg viewBox="0 0 16 16"><path d="M4 2h8v3a4 4 0 01-8 0zM4 3H1.5a2.5 2.5 0 003 3M12 3h2.5a2.5 2.5 0 01-3 3M8 9v3M5 14h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Next big event</span>
       <span class="cd-tile-value" data-draw="nextevent" data-source="next_event" data-field="name">—</span>
       <span class="cd-tile-note" data-draw="nexteventwhen" data-source="next_event" data-field="detail">—</span>
     </div>
@@ -281,8 +375,9 @@
     if (text != null && text !== '') e.textContent = String(text);
     return e;
   };
+  window.cdGameTone = (g) => (g === 'Pokémon' ? 'pk' : g === 'One Piece' ? 'op' : null);
   window.cdPill = (text, tone) => {
-    const p = cdEl('span', 'cd-pill' + (tone ? ' is-' + tone : ''), text);
+    const p = cdEl('span', 'cd-pill' + (tone || cdGameTone(text) ? ' is-' + (tone || cdGameTone(text)) : ''), text);
     return p;
   };
   window.cdCell = (text, cls) => cdEl('td', cls, text == null ? '' : text);
@@ -388,7 +483,7 @@
     if (!r) { el.replaceChildren(); return; }
     const items = r.filter((h) => h.kind === el.dataset.kind && cdGameOk(h.game));
     el.replaceChildren(...items.map((h) => {
-      const li = cdEl('li', 'cd-item');
+      const li = cdEl('li', 'cd-item' + (cdGameTone(h.game) ? ' is-' + cdGameTone(h.game) : ''));
       const top = cdEl('div', 'cd-item-top');
       top.append(cdPill(h.game), cdEl('span', 'cd-item-title', h.title));
       if (TONE[h.importance]) top.append(cdPill(h.importance, TONE[h.importance]));
@@ -546,6 +641,67 @@
       const a = cdLink(x.url, x.url_label || 'Website');
       if (a) li.append(a);
       return li;
+    }));
+  });
+</script>
+
+<script>
+  // Greeting and the binder of your best cards.
+  dash.draw('hello', (el) => {
+    const h = new Date().getHours();
+    el.textContent = (h < 12 ? 'Good morning' : h < 18 ? 'Good afternoon' : 'Good evening') + ', Warren';
+  });
+
+  // Card scans stored with the page, by catalogue record id.
+  const ART = {
+    'RC-0013': '/_blob/48e37e8824cf2475feed8d784531f10d', // Monkey D. Luffy OP15-119 (JP)
+    'RC-0045': '/_blob/de234dc459467c1390d3291036f7f53a', // Flagadoss 090/084
+    'RC-0047': '/_blob/50cb179f096a41fb3883a5a165504798', // Albia 109/084
+    'RC-0097': '/_blob/d34a0b72283131a2a9de51780b94e295', // Pikachu 025/165 (JP)
+    'RC-0095': '/_blob/f485e2ed8546de92c2e9bfc18a90fc05', // Charizard ex 006/165 (JP)
+    'RC-0108': '/_blob/97f19d24f121219c94f00be080d3b970', // Gengar 094/165 (JP)
+    'RC-0105': '/_blob/11addb19cd11a9c13a3383511e28e672', // Arcanine 059/165 (JP)
+    'RC-0010': '/_blob/7b8ab000c5e0b9282f9246c03f5778b4', // Nami OP15-086 (JP)
+  };
+  const tilt = (card) => {
+    const move = (e) => {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+      card.style.setProperty('--ry', ((x - .5) * 18) + 'deg');
+      card.style.setProperty('--rx', ((.5 - y) * 18) + 'deg');
+      card.style.setProperty('--mx', (x * 100) + '%');
+      card.style.setProperty('--my', (y * 100) + '%');
+      card.classList.add('is-live');
+    };
+    const reset = () => { ['--rx', '--ry'].forEach((k) => card.style.setProperty(k, '0deg')); card.classList.remove('is-live'); };
+    card.addEventListener('pointermove', move);
+    card.addEventListener('pointerleave', reset);
+    card.addEventListener('pointerup', reset);
+  };
+  dash.draw('binder', (el) => {
+    const r = cdRows('collection');
+    if (!r) { el.replaceChildren(); return; }
+    const list = r.filter((x) => ART[x.id] && cdGameOk(x.game));
+    document.querySelectorAll('#binder').forEach((b) => { b.hidden = list.length === 0; });
+    el.replaceChildren(...list.map((x) => {
+      const slot = cdEl('figure', 'cd-slot');
+      const card = cdEl('div', 'cd-tcg');
+      const img = document.createElement('img');
+      img.src = ART[x.id];
+      img.alt = x.card;
+      img.loading = 'lazy';
+      card.append(img);
+      tilt(card);
+      const cap = document.createElement('figcaption');
+      cap.append(cdEl('span', 'cd-slot-name', x.card.replace(/\s+\S*\d+\S*$/, '')));
+      const price = x.price_eur != null ? '€' + d3.format(',.2f')(x.price_eur) : String(x.price || '').replace(' (estimate)', '');
+      cap.append(cdEl('span', 'cd-slot-price', price));
+      const meta = cdEl('span', 'cd-slot-meta');
+      meta.append(cdPill(x.game), cdPill(x.language));
+      if (x.demand) meta.append(cdPill(x.demand, { Rising: 'good', Falling: 'warn' }[x.demand]));
+      cap.append(meta);
+      slot.append(card, cap);
+      return slot;
     }));
   });
 </script>
