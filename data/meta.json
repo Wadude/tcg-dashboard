@@ -1,0 +1,15 @@
+[
+  {"id": "pk-dragapult", "game": "Pokémon", "deck": "Dragapult ex", "share": 0.366, "key_cards": "Dragapult ex, Drakloak, Dreepy, Munkidori, Lillie's Determination"},
+  {"id": "pk-basicbox", "game": "Pokémon", "deck": "Ogerpon / Clefairy (Basic Box)", "share": 0.089, "key_cards": "Teal Mask Ogerpon ex, Mega Kangaskhan ex, Lillie's Clefairy ex, Snorlax ex"},
+  {"id": "pk-slowking", "game": "Pokémon", "deck": "Slowking", "share": 0.076, "key_cards": "Slowking, Kyurem, Academy at Night, Metagross"},
+  {"id": "pk-zoroark", "game": "Pokémon", "deck": "N's Zoroark ex", "share": 0.075, "key_cards": "N's Zoroark ex"},
+  {"id": "pk-alakazam", "game": "Pokémon", "deck": "Alakazam", "share": 0.063, "key_cards": "Alakazam"},
+  {"id": "pk-festival", "game": "Pokémon", "deck": "Festival Lead", "share": 0.057, "key_cards": ""},
+  {"id": "pk-dhelmise", "game": "Pokémon", "deck": "Dhelmise", "share": 0.041, "key_cards": "Dhelmise, Banette"},
+  {"id": "pk-hydrapple", "game": "Pokémon", "deck": "Hydrapple ex", "share": 0.037, "key_cards": "Hydrapple ex"},
+  {"id": "op-nami", "game": "One Piece", "deck": "Blue/Yellow Nami", "share": 0.235, "key_cards": ""},
+  {"id": "op-luffy", "game": "One Piece", "deck": "Green/Blue Luffy", "share": 0.229, "key_cards": ""},
+  {"id": "op-enel", "game": "One Piece", "deck": "Purple Enel", "share": 0.227, "key_cards": ""},
+  {"id": "op-rosinante", "game": "One Piece", "deck": "Purple/Yellow Rosinante", "share": 0.099, "key_cards": ""},
+  {"id": "op-blackbeard", "game": "One Piece", "deck": "Black/Yellow Blackbeard", "share": 0.089, "key_cards": ""}
+]

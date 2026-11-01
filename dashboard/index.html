@@ -1,0 +1,527 @@
+<meta name="dash-one-writer">
+<style>
+  .cd { display: grid; gap: var(--cds-gap-lg); font-family: var(--font-anthropic-sans); max-width: 72rem; margin-inline: auto; }
+  .cd-head { display: grid; gap: var(--cds-gap-xs); }
+  .cd-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+  .cd-sub { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); }
+  .cd-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: var(--cds-gap-md); }
+  .cd-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: grid; gap: var(--cds-gap-xs); align-content: start; min-width: 0; }
+  .cd-tile-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-transform: uppercase; letter-spacing: .06em; }
+  .cd-tile-value { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.15; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+  .cd-tile-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .cd-bar { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; justify-content: space-between; }
+  .cd-tabs, .cd-chips { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+  .cd-tab, .cd-chip { font: inherit; font-size: var(--cds-font-size-body); background: transparent; color: var(--color-fg-muted); border: 1px solid var(--color-border-line); border-radius: 999px; padding: var(--cds-pad-xs) var(--cds-pad-md); cursor: pointer; }
+  .cd-tab[aria-selected="true"], .cd-chip[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+  .cd-tab:focus-visible, .cd-chip:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+  .cd-page { display: grid; gap: var(--cds-gap-lg); }
+  .cd-h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+  .cd-note { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .cd-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); min-width: 0; }
+  .cd-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); align-items: start; }
+  .cd-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--cds-gap-sm); }
+  .cd-item { display: grid; gap: 2px; padding-block: var(--cds-pad-sm); border-top: 1px solid var(--color-border-line); }
+  .cd-item:first-child { border-top: 0; padding-top: 0; }
+  .cd-item-top { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); align-items: baseline; }
+  .cd-item-title { font-weight: var(--cds-font-weight-medium); }
+  .cd-item-detail { color: var(--color-fg-muted); font-size: var(--cds-font-size-body); }
+  .cd-pill { font-size: var(--cds-font-size-caption); border: 1px solid var(--color-border-line); border-radius: 999px; padding: 0 var(--cds-pad-sm); color: var(--color-fg-muted); white-space: nowrap; }
+  .cd-pill.is-hot { color: var(--color-bad); border-color: currentColor; }
+  .cd-pill.is-good { color: var(--color-ok); border-color: currentColor; }
+  .cd-pill.is-warn { color: var(--color-warn); border-color: currentColor; }
+  .cd-link { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .cd-quiet { margin: 0; font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); color: var(--color-fg-muted); }
+  .cd-letter { display: grid; gap: var(--cds-gap-lg); max-width: 42rem; }
+  .cd-sec { display: grid; gap: var(--cds-gap-xs); }
+  .cd-sec h3 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); text-wrap: balance; }
+  .cd-sec p { margin: 0; line-height: 1.6; }
+  .cd-sec .cd-pill { justify-self: start; }
+  .cd-table-wrap { overflow-x: auto; }
+  .cd-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-body); font-variant-numeric: tabular-nums; }
+  .cd-table th { text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+  .cd-table td { padding: var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+  .cd-table td.cd-wide { min-width: 14rem; }
+  .cd-up { color: var(--color-ok); }
+  .cd-down { color: var(--color-bad); }
+  .cd-meta { display: grid; gap: var(--cds-gap-sm); }
+  .cd-meta-row { display: grid; grid-template-columns: minmax(0, 11rem) 1fr 3.5rem; gap: var(--cds-gap-sm); align-items: center; font-size: var(--cds-font-size-body); }
+  .cd-meta-name { overflow-wrap: anywhere; }
+  .cd-meta-track { height: 10px; background: var(--cds-chart-grid); border-radius: var(--cds-radius); overflow: hidden; }
+  .cd-meta-fill { height: 100%; border-radius: var(--cds-radius); }
+  .cd-meta-val { text-align: right; font-variant-numeric: tabular-nums; color: var(--color-fg-muted); }
+  .cd-meta-keys { grid-column: 1 / -1; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: -4px; }
+  .cd-empty { margin: 0; color: var(--color-fg-muted); }
+  [data-dash-source-state=empty] { color: transparent; }
+  [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+  @media (max-width: 30rem) { .cd-meta-row { grid-template-columns: minmax(0, 1fr) 4rem 3rem; } }
+</style>
+
+<div class="cd">
+  <header class="cd-head">
+    <h1 class="cd-title">TCG Collector's Desk</h1>
+    <p class="cd-sub">Pokémon and One Piece for a collector on Réunion and Mauritius. Prices in euros, with Mauritian rupees alongside. Updated <span data-draw="updated" data-source="daily_hits" data-field="date" data-row="0">—</span>.</p>
+  </header>
+
+  <div class="cd-tiles">
+    <div class="cd-tile" id="tile-reunion">
+      <span class="cd-tile-label">Réunion window</span>
+      <span class="cd-tile-value"><span data-draw="daysleft">—</span> days</span>
+      <span class="cd-tile-note">left to buy on the island, until 27 Dec</span>
+    </div>
+    <div class="cd-tile" id="tile-hits">
+      <span class="cd-tile-label">Today's hits</span>
+      <span class="cd-tile-value" data-draw="hitcount" data-source="hit_count" data-field="n">—</span>
+      <span class="cd-tile-note">deals, movers, news and events</span>
+    </div>
+    <div class="cd-tile" id="tile-release">
+      <span class="cd-tile-label">Next release</span>
+      <span class="cd-tile-value" data-draw="nextrel" data-source="next_release" data-field="name">—</span>
+      <span class="cd-tile-note" data-draw="nextrelwhen" data-source="next_release" data-field="detail">—</span>
+    </div>
+    <div class="cd-tile" id="tile-event">
+      <span class="cd-tile-label">Next big event</span>
+      <span class="cd-tile-value" data-draw="nextevent" data-source="next_event" data-field="name">—</span>
+      <span class="cd-tile-note" data-draw="nexteventwhen" data-source="next_event" data-field="detail">—</span>
+    </div>
+  </div>
+
+  <div class="cd-bar">
+    <nav class="cd-tabs" role="tablist" aria-label="Sections">
+      <button class="cd-tab" role="tab" data-tab="today" aria-selected="true">Daily Hits</button>
+      <button class="cd-tab" role="tab" data-tab="weekly" aria-selected="false">Weekly</button>
+      <button class="cd-tab" role="tab" data-tab="calendar" aria-selected="false">Calendar</button>
+      <button class="cd-tab" role="tab" data-tab="market" aria-selected="false">Market</button>
+      <button class="cd-tab" role="tab" data-tab="collection" aria-selected="false">My collection</button>
+      <button class="cd-tab" role="tab" data-tab="shops" aria-selected="false">Shops</button>
+    </nav>
+    <div class="cd-chips" role="group" aria-label="Game">
+      <button class="cd-chip" data-game="all" aria-pressed="true">Both games</button>
+      <button class="cd-chip" data-game="Pokémon" aria-pressed="false">Pokémon</button>
+      <button class="cd-chip" data-game="One Piece" aria-pressed="false">One Piece</button>
+    </div>
+  </div>
+
+  <section class="cd-page" id="today" role="tabpanel">
+    <p class="cd-quiet" hidden>Quiet day. Nothing new since yesterday.</p>
+    <div class="cd-grid">
+      <div class="cd-card cd-group" data-kind="deal" id="hits-deals">
+        <h2 class="cd-h2">Deals</h2>
+        <p class="cd-note">Below the usual price, or a cheaper language version.</p>
+        <ul class="cd-list" data-draw="hits" data-kind="deal" data-source="daily_hits"></ul>
+      </div>
+      <div class="cd-card cd-group" data-kind="mover" id="hits-movers">
+        <h2 class="cd-h2">Big movers</h2>
+        <p class="cd-note">Cards and sealed products that moved sharply.</p>
+        <ul class="cd-list" data-draw="hits" data-kind="mover" data-source="daily_hits"></ul>
+      </div>
+      <div class="cd-card cd-group" data-kind="collection" id="hits-collection">
+        <h2 class="cd-h2">Your collection</h2>
+        <p class="cd-note">Cards you own with news or a price change.</p>
+        <ul class="cd-list" data-draw="hits" data-kind="collection" data-source="daily_hits"></ul>
+      </div>
+      <div class="cd-card cd-group" data-kind="news" id="hits-news">
+        <h2 class="cd-h2">News</h2>
+        <p class="cd-note">Reveals, reprints, pre-orders, restocks and rule changes.</p>
+        <ul class="cd-list" data-draw="hits" data-kind="news" data-source="daily_hits"></ul>
+      </div>
+      <div class="cd-card cd-group" data-kind="event" id="hits-events">
+        <h2 class="cd-h2">Events</h2>
+        <p class="cd-note">Tournaments today or this weekend, and fresh results.</p>
+        <ul class="cd-list" data-draw="hits" data-kind="event" data-source="daily_hits"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cd-page" id="weekly" role="tabpanel" hidden>
+    <div class="cd-card">
+      <p class="cd-note">This week's edition · <span data-draw="edition" data-source="weekly" data-field="edition" data-row="0">—</span></p>
+      <article class="cd-letter" data-read data-draw="weekly" data-source="weekly">—</article>
+    </div>
+  </section>
+
+  <section class="cd-page" id="calendar" role="tabpanel" hidden>
+    <div class="cd-card">
+      <h2 class="cd-h2">Set releases</h2>
+      <p class="cd-note">Japan usually gets a set months before English and French, so the Japanese list previews what's coming here.</p>
+      <div class="cd-table-wrap">
+        <table class="cd-table" data-source="releases" data-row-key="id">
+          <thead><tr>
+            <th data-field="when">When</th>
+            <th data-field="game">Game</th>
+            <th data-field="region">Region</th>
+            <th data-field="name">Set</th>
+            <th data-field="details">What's in it</th>
+            <th data-field="status">Status</th>
+          </tr></thead>
+          <tbody data-draw="releases"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="cd-card">
+      <h2 class="cd-h2">Championships</h2>
+      <p class="cd-note">Big events move prices: cards in the winning decks often rise the week after.</p>
+      <div class="cd-table-wrap">
+        <table class="cd-table" data-source="events" data-row-key="id">
+          <thead><tr>
+            <th data-field="when">When</th>
+            <th data-field="game">Game</th>
+            <th data-field="name">Event</th>
+            <th data-field="location">Where</th>
+            <th data-field="result">Result</th>
+          </tr></thead>
+          <tbody data-draw="events"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="cd-page" id="market" role="tabpanel" hidden>
+    <div class="cd-card">
+      <h2 class="cd-h2">Price movers</h2>
+      <p class="cd-note">Notable moves in the last few weeks. Euro prices are Cardmarket where available; a dollar or yen price is marked as such.</p>
+      <div class="cd-table-wrap">
+        <table class="cd-table" data-source="movers" data-row-key="id">
+          <thead><tr>
+            <th data-field="item">Card or product</th>
+            <th data-field="game">Game</th>
+            <th data-field="language">Language</th>
+            <th data-field="change">Change</th>
+            <th data-field="price">Price</th>
+            <th data-field="why">Why</th>
+          </tr></thead>
+          <tbody data-draw="movers"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="cd-grid">
+      <div class="cd-card" id="meta-pokemon">
+        <h2 class="cd-h2">Pokémon meta</h2>
+        <p class="cd-note">Share of top finishes at recent major events. Cards in these decks hold their value best.</p>
+        <div class="cd-meta" data-draw="meta" data-game="Pokémon" data-source="meta"></div>
+      </div>
+      <div class="cd-card" id="meta-onepiece">
+        <h2 class="cd-h2">One Piece meta</h2>
+        <p class="cd-note">Share by leader in the last format with tournament data (OP-16). OP-17 has no results yet, and the Mihawk ban will shift this.</p>
+        <div class="cd-meta" data-draw="meta" data-game="One Piece" data-source="meta"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cd-page" id="collection" role="tabpanel" hidden>
+    <div class="cd-card">
+      <h2 class="cd-h2">My collection</h2>
+      <p class="cd-note">Each card's price and demand, refreshed weekly. Demand is a signal from price trend, how often it sells, how many are listed and whether it's played in tournaments. It isn't a guarantee.</p>
+      <p class="cd-empty cd-coll-empty" hidden>No cards yet. Send your list in the chat (card, set, language, condition, how many) and it will appear here.</p>
+      <div class="cd-table-wrap cd-coll-table">
+        <table class="cd-table" data-source="collection" data-row-key="id">
+          <thead><tr>
+            <th data-field="card">Card</th>
+            <th data-field="game">Game</th>
+            <th data-field="set">Set</th>
+            <th data-field="language">Language</th>
+            <th data-field="condition">Condition</th>
+            <th data-field="qty">Qty</th>
+            <th data-field="price">Price</th>
+            <th data-field="demand">Demand</th>
+            <th data-field="note">Note</th>
+          </tr></thead>
+          <tbody data-draw="collection"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="cd-page" id="shops" role="tabpanel" hidden>
+    <div class="cd-grid">
+      <div class="cd-card" id="shops-reunion">
+        <h2 class="cd-h2">Réunion</h2>
+        <p class="cd-note">Where to look before 27 December.</p>
+        <ul class="cd-list" data-draw="shops" data-island="Réunion" data-source="shops"></ul>
+      </div>
+      <div class="cd-card" id="shops-mauritius">
+        <h2 class="cd-h2">Mauritius</h2>
+        <p class="cd-note">For when you're home.</p>
+        <ul class="cd-list" data-draw="shops" data-island="Mauritius" data-source="shops"></ul>
+      </div>
+      <div class="cd-card" id="shops-buying">
+        <h2 class="cd-h2">Buying online</h2>
+        <p class="cd-note">Which marketplaces deliver to you.</p>
+        <ul class="cd-list" data-draw="shops" data-island="Online" data-source="shops"></ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+  // Shared helpers for the drawings below.
+  window.cdRows = (id) => {
+    const r = dash.data(id);
+    return r.status === 'ok' && Array.isArray(r.data) ? r.data : null;
+  };
+  window.cdGame = () => dash.params().game || 'all';
+  window.cdGameOk = (g) => cdGame() === 'all' || g === cdGame() || g === 'Both';
+  window.cdLink = (url, label) => {
+    if (typeof url !== 'string' || !/^https:\/\//.test(url)) return null;
+    const a = document.createElement('a');
+    a.className = 'cd-link';
+    a.href = url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.textContent = label || 'Source';
+    return a;
+  };
+  window.cdEl = (tag, cls, text) => {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null && text !== '') e.textContent = String(text);
+    return e;
+  };
+  window.cdPill = (text, tone) => {
+    const p = cdEl('span', 'cd-pill' + (tone ? ' is-' + tone : ''), text);
+    return p;
+  };
+  window.cdCell = (text, cls) => cdEl('td', cls, text == null ? '' : text);
+</script>
+
+<script>
+  // Tabs and the game filter.
+  const tabs = () => document.querySelectorAll('.cd-tab');
+  const pages = () => document.querySelectorAll('.cd-page');
+  const show = (name) => {
+    let found = false;
+    pages().forEach((p) => { if (p.id === name) found = true; });
+    if (!found) return;
+    pages().forEach((p) => { p.hidden = p.id !== name; });
+    tabs().forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === name)));
+    dash.setLink(name);
+  };
+  tabs().forEach((t) => t.addEventListener('click', () => show(t.dataset.tab)));
+  document.querySelectorAll('.cd-chip').forEach((c) => c.addEventListener('click', () => {
+    dash.setParams({ game: c.dataset.game === 'all' ? null : c.dataset.game });
+  }));
+  const named = location.hash.slice(1);
+  if (named) show(named);
+
+  dash.onData(() => {
+    const game = cdGame();
+    document.querySelectorAll('.cd-chip').forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.game === game)));
+
+    // Hide empty groups on Daily Hits; show the quiet-day line when all are empty.
+    const hits = cdRows('daily_hits');
+    let any = false;
+    document.querySelectorAll('.cd-group').forEach((g) => {
+      const n = hits ? hits.filter((h) => h.kind === g.dataset.kind && cdGameOk(h.game)).length : 1;
+      g.hidden = n === 0;
+      if (n) any = true;
+    });
+    document.querySelectorAll('.cd-quiet').forEach((q) => { q.hidden = !hits || any; });
+
+    // Collection: empty state until the list arrives.
+    const coll = cdRows('collection');
+    const empty = !!coll && coll.length === 0;
+    document.querySelectorAll('.cd-coll-empty').forEach((e) => { e.hidden = !empty; });
+    document.querySelectorAll('.cd-coll-table').forEach((e) => { e.hidden = empty; });
+  });
+</script>
+
+<script>
+  // Headline figures.
+  dash.calc('hit_count', {
+    inputs: ['daily_hits'],
+    title: "Today's hit count",
+    description: 'How many items are in today’s Daily Hits.',
+    fn: (daily_hits) => [{ n: daily_hits.length }],
+  });
+  dash.calc('next_release', {
+    inputs: ['releases'],
+    title: 'Next set release',
+    description: 'The earliest release still marked upcoming or pre-order.',
+    fn: (releases) => releases
+      .filter((r) => r.status !== 'Released' && r.date)
+      .sort((a, b) => a.date.localeCompare(b.date))
+      .slice(0, 1)
+      .map((r) => ({ name: r.name, detail: r.when + ' · ' + r.game + ' ' + r.region })),
+  });
+  dash.calc('next_event', {
+    inputs: ['events'],
+    title: 'Next big event',
+    description: 'The earliest championship still marked upcoming.',
+    fn: (events) => events
+      .filter((e) => e.status === 'Upcoming' && e.date)
+      .sort((a, b) => a.date.localeCompare(b.date))
+      .slice(0, 1)
+      .map((e) => ({ name: e.name, detail: e.when + ' · ' + e.game })),
+  });
+
+  const one = (id, field) => (el) => {
+    const r = cdRows(id);
+    el.textContent = r && r.length ? String(r[0][field]) : '—';
+  };
+  dash.draw('hitcount', one('hit_count', 'n'));
+  dash.draw('nextrel', one('next_release', 'name'));
+  dash.draw('nextrelwhen', one('next_release', 'detail'));
+  dash.draw('nextevent', one('next_event', 'name'));
+  dash.draw('nexteventwhen', one('next_event', 'detail'));
+  dash.draw('updated', one('daily_hits', 'date'));
+  dash.draw('edition', one('weekly', 'edition'));
+
+  // The Réunion window: a fixed date the collector gave.
+  const LEAVE_REUNION = '2026-12-27';
+  dash.draw('daysleft', (el) => {
+    const now = new Date();
+    const today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+    const leave = Date.parse(LEAVE_REUNION + 'T00:00:00Z');
+    el.textContent = String(Math.max(0, Math.round((leave - today) / 86400000)));
+  });
+</script>
+
+<script>
+  // Daily Hits lists.
+  const TONE = { High: 'hot', Medium: 'warn' };
+  dash.draw('hits', (el) => {
+    const r = cdRows('daily_hits');
+    if (!r) { el.replaceChildren(); return; }
+    const items = r.filter((h) => h.kind === el.dataset.kind && cdGameOk(h.game));
+    el.replaceChildren(...items.map((h) => {
+      const li = cdEl('li', 'cd-item');
+      const top = cdEl('div', 'cd-item-top');
+      top.append(cdPill(h.game), cdEl('span', 'cd-item-title', h.title));
+      if (TONE[h.importance]) top.append(cdPill(h.importance, TONE[h.importance]));
+      li.append(top);
+      if (h.detail) li.append(cdEl('span', 'cd-item-detail', h.detail));
+      const a = cdLink(h.url, h.source);
+      if (a) li.append(a);
+      return li;
+    }));
+  });
+
+  // Weekly edition: one section per row, paragraphs split on blank lines.
+  dash.draw('weekly', (el) => {
+    const r = cdRows('weekly');
+    if (!r) { el.textContent = '—'; return; }
+    const secs = r.filter((s) => cdGameOk(s.game)).sort((a, b) => a.order - b.order);
+    el.replaceChildren(...secs.map((s) => {
+      const sec = cdEl('section', 'cd-sec');
+      sec.setAttribute('data-read-step', '');
+      if (s.game && s.game !== 'Both') sec.append(cdPill(s.game));
+      sec.append(cdEl('h3', null, s.heading));
+      String(s.body || '').split(/\n\s*\n/).forEach((para) => { if (para.trim()) sec.append(cdEl('p', null, para.trim())); });
+      const a = cdLink(s.url, s.source);
+      if (a) sec.append(a);
+      return sec;
+    }));
+  });
+</script>
+
+<script>
+  // Calendar tables.
+  const STATUS_TONE = { 'Pre-order': 'warn', Upcoming: 'warn', Released: 'good', Done: 'good' };
+  const keyed = (row) => { const tr = document.createElement('tr'); tr.dataset.key = row.id; return tr; };
+
+  dash.draw('releases', (el) => {
+    const r = cdRows('releases');
+    if (!r) { el.replaceChildren(); return; }
+    const list = r.filter((x) => cdGameOk(x.game)).sort((a, b) => String(a.date).localeCompare(String(b.date)));
+    el.replaceChildren(...list.map((x) => {
+      const tr = keyed(x);
+      const name = cdCell(null);
+      name.append(cdEl('span', 'cd-item-title', x.name));
+      const a = cdLink(x.url, 'Source');
+      if (a) { name.append(document.createElement('br'), a); }
+      const st = cdCell(null);
+      st.append(cdPill(x.status, STATUS_TONE[x.status]));
+      tr.append(cdCell(x.when), cdCell(x.game), cdCell(x.region), name, cdCell(x.details, 'cd-wide'), st);
+      return tr;
+    }));
+  });
+
+  dash.draw('events', (el) => {
+    const r = cdRows('events');
+    if (!r) { el.replaceChildren(); return; }
+    const list = r.filter((x) => cdGameOk(x.game)).sort((a, b) => String(a.date).localeCompare(String(b.date)));
+    el.replaceChildren(...list.map((x) => {
+      const tr = keyed(x);
+      const name = cdCell(null);
+      name.append(cdEl('span', 'cd-item-title', x.name));
+      const a = cdLink(x.url, 'Source');
+      if (a) { name.append(document.createElement('br'), a); }
+      tr.append(cdCell(x.when), cdCell(x.game), name, cdCell(x.location), cdCell(x.result, 'cd-wide'));
+      return tr;
+    }));
+  });
+</script>
+
+<script>
+  // Market: movers table and meta bars.
+  dash.draw('movers', (el) => {
+    const r = cdRows('movers');
+    if (!r) { el.replaceChildren(); return; }
+    const list = r.filter((x) => cdGameOk(x.game));
+    el.replaceChildren(...list.map((x) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = x.id;
+      const item = cdCell(null);
+      item.append(cdEl('span', 'cd-item-title', x.item));
+      const a = cdLink(x.url, 'Source');
+      if (a) { item.append(document.createElement('br'), a); }
+      const dir = String(x.change || '').trim().startsWith('-') || String(x.change || '').trim().startsWith('−') ? 'cd-down' : 'cd-up';
+      tr.append(item, cdCell(x.game), cdCell(x.language), cdCell(x.change, dir), cdCell(x.price), cdCell(x.why, 'cd-wide'));
+      return tr;
+    }));
+  });
+
+  dash.draw('meta', (el) => {
+    const r = cdRows('meta');
+    if (!r) { el.replaceChildren(); return; }
+    const list = r.filter((x) => x.game === el.dataset.game).sort((a, b) => b.share - a.share);
+    const max = Math.max(0.0001, ...list.map((x) => +x.share || 0));
+    const pct = d3.format('.0%');
+    el.replaceChildren(...list.map((x, i) => {
+      const row = cdEl('div', 'cd-meta-row');
+      const track = cdEl('div', 'cd-meta-track');
+      const fill = cdEl('div', 'cd-meta-fill');
+      fill.style.width = ((+x.share || 0) / max * 100) + '%';
+      fill.style.background = i === 0 ? dash.colors[0] : 'var(--cds-chart-muted)';
+      track.append(fill);
+      row.append(cdEl('span', 'cd-meta-name', x.deck), track, cdEl('span', 'cd-meta-val', pct(+x.share || 0)));
+      if (x.key_cards) row.append(cdEl('span', 'cd-meta-keys', 'Key cards: ' + x.key_cards));
+      return row;
+    }));
+  });
+</script>
+
+<script>
+  // Collection and shops.
+  const DEMAND_TONE = { High: 'hot', Rising: 'good', Steady: null, Falling: 'warn' };
+  dash.draw('collection', (el) => {
+    const r = cdRows('collection');
+    if (!r) { el.replaceChildren(); return; }
+    const list = r.filter((x) => cdGameOk(x.game));
+    el.replaceChildren(...list.map((x) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = x.id;
+      const dem = cdCell(null);
+      if (x.demand) dem.append(cdPill(x.demand, DEMAND_TONE[x.demand]));
+      tr.append(cdCell(x.card), cdCell(x.game), cdCell(x.set), cdCell(x.language), cdCell(x.condition), cdCell(x.qty), cdCell(x.price), dem, cdCell(x.note, 'cd-wide'));
+      return tr;
+    }));
+  });
+
+  dash.draw('shops', (el) => {
+    const r = cdRows('shops');
+    if (!r) { el.replaceChildren(); return; }
+    const list = r.filter((x) => x.island === el.dataset.island && (cdGame() === 'all' || !x.games || x.games.includes(cdGame())));
+    el.replaceChildren(...list.map((x) => {
+      const li = cdEl('li', 'cd-item');
+      const top = cdEl('div', 'cd-item-top');
+      top.append(cdEl('span', 'cd-item-title', x.name));
+      if (x.town) top.append(cdPill(x.town));
+      li.append(top);
+      if (x.games) li.append(cdEl('span', 'cd-item-detail', x.games));
+      if (x.notes) li.append(cdEl('span', 'cd-item-detail', x.notes));
+      const a = cdLink(x.url, x.url_label || 'Website');
+      if (a) li.append(a);
+      return li;
+    }));
+  });
+</script>
