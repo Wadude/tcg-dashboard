@@ -1,7 +1,14 @@
+# Builds data/collection.json from the card list in data/catalogue.json,
+# with live prices from TCGdex (Pokémon) and Limitless (One Piece).
+# Usage: python scripts/build_collection.py [data/catalogue.json] [data/collection.json]
 import sys, json, re, time, urllib.request
-import openpyxl
 
-SRC, OUT = sys.argv[1], sys.argv[2]
+SRC = sys.argv[1] if len(sys.argv) > 1 else "data/catalogue.json"
+OUT = sys.argv[2] if len(sys.argv) > 2 else "data/collection.json"
+FIELDS = ["Record ID", "Brand", "Language", "Set code", "Card name", "Card number", "Printed rarity",
+          "Finish / variant", "Quantity (minimum)", "Quantity basis", "Condition", "Low estimate EUR",
+          "High estimate EUR", "Value status", "Estimate date", "ID status", "Period", "Chat reference",
+          "Photo reference", "Notes"]
 RATE = 52.95
 UA = {"User-Agent": "Mozilla/5.0 (collector dashboard)"}
 
@@ -31,10 +38,11 @@ LANG = {"French": "FR", "Japanese": "JP", "English": "EN"}
 def eur(x): return f"€{x:,.2f}"
 def mur(x): return f"Rs {round(x*RATE):,}"
 
-wb = openpyxl.load_workbook(SRC, data_only=True)
+with open(SRC, encoding="utf-8") as f:
+    catalogue = json.load(f)
 rows = []
-for r in wb["Catalogue"].iter_rows(min_row=2, values_only=True):
-    rid, brand, lang, setc, name, num, rar, fin, qty, qb, cond, lo, hi, vs, ed, ids, per, chat, photo, notes = r
+for c in catalogue:
+    rid, brand, lang, setc, name, num, rar, fin, qty, qb, cond, lo, hi, vs, ed, ids, per, chat, photo, notes = (c.get(k) for k in FIELDS)
     if not rid: continue
     game = "Pokémon" if brand.startswith("Pok") else "One Piece"
     lang_code, set_id, set_name = SETS.get(setc, (None, None, "Set not identified"))
