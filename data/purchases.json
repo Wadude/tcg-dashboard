@@ -1,0 +1,98 @@
+[
+ {
+  "id": "P01",
+  "date": "2026-10-24",
+  "when": "Sat 24 Oct",
+  "product": "Pokémon 151 booster",
+  "game": "Pokémon",
+  "language": "JP",
+  "units": 1,
+  "unit_eur": 17.5,
+  "total_eur": 17.5,
+  "note": ""
+ },
+ {
+  "id": "P02",
+  "date": "2026-10-24",
+  "when": "Sat 24 Oct",
+  "product": "Super Electric Breaker (SV8) boosters",
+  "game": "Pokémon",
+  "language": "JP",
+  "units": 2,
+  "unit_eur": 11.9,
+  "total_eur": 23.8,
+  "note": ""
+ },
+ {
+  "id": "P03",
+  "date": "2026-10-24",
+  "when": "Sat 24 Oct",
+  "product": "OP-15 boosters",
+  "game": "One Piece",
+  "language": "JP",
+  "units": 4,
+  "unit_eur": 7.5,
+  "total_eur": 30.0,
+  "note": "May overlap with the OP-15 box below."
+ },
+ {
+  "id": "P08",
+  "date": "2026-10-27",
+  "when": "Tue 27 Oct",
+  "product": "OP-15 full box",
+  "game": "One Piece",
+  "language": "JP",
+  "units": 1,
+  "unit_eur": null,
+  "total_eur": null,
+  "note": "Price not recorded yet: tell me and I'll add it."
+ },
+ {
+  "id": "P04",
+  "date": "2026-10-28",
+  "when": "Wed 28 Oct",
+  "product": "OP-17 boosters",
+  "game": "One Piece",
+  "language": "FR",
+  "units": 5,
+  "unit_eur": 8,
+  "total_eur": 40,
+  "note": ""
+ },
+ {
+  "id": "P05",
+  "date": "2026-10-29",
+  "when": "Thu 29 Oct",
+  "product": "2-booster blister + 3 promos (Flammes Fantasmagoriques)",
+  "game": "Pokémon",
+  "language": "FR",
+  "units": 1,
+  "unit_eur": 14.95,
+  "total_eur": 14.95,
+  "note": ""
+ },
+ {
+  "id": "P06",
+  "date": "2026-10-31",
+  "when": "Sat 31 Oct",
+  "product": "Pokémon 151 boosters",
+  "game": "Pokémon",
+  "language": "JP",
+  "units": 4,
+  "unit_eur": 17,
+  "total_eur": 68,
+  "note": "May include the 24 Oct booster; check it isn't counted twice."
+ },
+ {
+  "id": "P07",
+  "date": "2026-10-31",
+  "when": "Sat 31 Oct",
+  "product": "Nuit Noire 6-booster bundle",
+  "game": "Pokémon",
+  "language": "FR",
+  "units": 1,
+  "unit_eur": 48,
+  "total_eur": 48,
+  "note": ""
+ }
+]

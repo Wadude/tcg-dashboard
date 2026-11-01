@@ -34,6 +34,7 @@ Each dataset is a JSON file in `data/`, uploaded to the dashboard. A scheduled t
 | `data/shops.json` | Local shops |
 | `data/catalogue.json` | My card list (exported from my catalogue spreadsheet, without chat links) |
 | `data/collection.json` | My cards with live prices, built by `scripts/build_collection.py` |
+| `data/purchases.json` | What I've spent on packs, boxes and bundles (kept by hand) |
 
 ## Phases
 

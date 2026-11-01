@@ -19,6 +19,7 @@ How the scheduled runs refresh the TCG Collector's Desk. Each run starts fresh: 
 | `meta` | `data/meta.json` | id, game, deck, share (0–1), key_cards |
 | `shops` | `data/shops.json` | id, name, island (Réunion / Mauritius / Online), town, games, notes, url, url_label |
 | `collection` | `data/collection.json` | built by `scripts/build_collection.py`; don't hand-edit prices |
+| `purchases` | `data/purchases.json` | id, date (ISO), when, product, game, language, units, unit_eur, total_eur (null when unknown), note. Kept by hand in a normal session; scheduled runs don't change it |
 
 A file must never be an empty list (the dashboard can't read it). For a quiet day, `daily_hits` keeps one row: kind "news", title "Quiet day", detail saying nothing new since yesterday.
 

@@ -133,7 +133,17 @@
   .cd-slot-meta { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; color: var(--color-fg-muted); }
   .cd-slot-price { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); font-variant-numeric: tabular-nums; color: var(--color-fg); }
 
+  /* Spent vs worth. */
+  #tile-spent { --tile-c: #2a9d6f; }
+  .cd-spend { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: var(--cds-gap-md); }
+  .cd-spend-fig { display: grid; gap: 2px; }
+  .cd-spend-fig b { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .cd-spend-fig span { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .cd-spend-track { position: relative; height: 14px; border-radius: 999px; background: color-mix(in srgb, var(--color-fg) 8%, transparent); overflow: hidden; }
+  .cd-spend-fill { height: 100%; border-radius: 999px; background: var(--holo); background-size: 200% 100%; animation: cd-foil 9s linear infinite; }
+
   @media (prefers-reduced-motion: reduce) {
+    .cd-spend-fill { animation: none; }
     .cd-holo-frame, .cd-title em, .cd-tab[aria-selected="true"], .cd-card > .cd-h2::before { animation: none; }
     .cd-tcg { transform: none !important; }
   }
@@ -165,6 +175,11 @@
       <span class="cd-tile-label"><span class="cd-energy"><svg viewBox="0 0 16 16"><path d="M2 12c2-1 4-1 6 0s4 1 6 0M8 3l3 6H5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>Réunion window</span>
       <span class="cd-tile-value"><span data-draw="daysleft">—</span> days</span>
       <span class="cd-tile-note">left to hunt on the island, until 27 Dec</span>
+    </div>
+    <div class="cd-tile" id="tile-spent">
+      <span class="cd-tile-label"><span class="cd-energy"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.2 5.6a2.6 2.6 0 100 4.8M4.8 7.2h3.6M4.8 8.8h3.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span>Spent so far</span>
+      <span class="cd-tile-value" data-draw="spent" data-source="spending" data-field="spent">—</span>
+      <span class="cd-tile-note" data-draw="spentnote" data-source="spending" data-field="worth">—</span>
     </div>
     <div class="cd-tile" id="tile-hits">
       <span class="cd-tile-label"><span class="cd-energy"><svg viewBox="0 0 16 16"><path d="M9.5 1L3 9h4.5L6 15l7-8.5H8.5z" fill="currentColor"/></svg></span>Today's hits</span>
@@ -306,6 +321,32 @@
   </section>
 
   <section class="cd-page" id="collection" role="tabpanel" hidden>
+    <div class="cd-card" id="spending">
+      <h2 class="cd-h2">Spent vs worth</h2>
+      <p class="cd-note">What you paid for packs, boxes and bundles, next to what the cards you own are worth today. Opening packs nearly always costs more than the cards are worth; the fun is in the chase.</p>
+      <div class="cd-spend">
+        <div class="cd-spend-fig"><b data-draw="spent" data-source="spending" data-field="spent">—</b><span data-draw="spentmur" data-source="spending" data-field="spent_mur">—</span></div>
+        <div class="cd-spend-fig"><b data-draw="worth" data-source="spending" data-field="worth">—</b><span>your cards are worth today</span></div>
+        <div class="cd-spend-fig"><b data-draw="back" data-source="spending" data-field="back">—</b><span>of what you spent, back in card value</span></div>
+      </div>
+      <div class="cd-spend-track" role="img" data-draw="spendbar" data-source="spending" aria-label="Card value as a share of money spent"><div class="cd-spend-fill"></div></div>
+      <div class="cd-table-wrap">
+        <table class="cd-table" data-source="purchases" data-row-key="id">
+          <thead><tr>
+            <th data-field="when">When</th>
+            <th data-field="product">What</th>
+            <th data-field="game">Game</th>
+            <th data-field="language">Language</th>
+            <th data-field="units">Units</th>
+            <th data-field="unit_eur">Each</th>
+            <th data-field="total_eur">Total</th>
+            <th data-field="note">Note</th>
+          </tr></thead>
+          <tbody data-draw="purchases"></tbody>
+        </table>
+      </div>
+      <p class="cd-note" data-draw="spentmissing" data-source="spending" data-field="unpriced">—</p>
+    </div>
     <div class="cd-card">
       <h2 class="cd-h2">My collection</h2>
       <p class="cd-note">Each card's Cardmarket price, most valuable first, refreshed weekly. Demand compares the last 7 days' average price with the last 30 days': Rising or Falling means a move of more than 10%. Bulk means under €0.50. It's a signal, not a guarantee. One Piece prices are for the English card, as a guide.</p>
@@ -702,6 +743,52 @@
       cap.append(meta);
       slot.append(card, cap);
       return slot;
+    }));
+  });
+</script>
+
+<script>
+  // What you've spent, against what the collection is worth.
+  const RATE_MUR = 52.95; // mid-market rate on 1 Nov 2026
+  dash.calc('spending', {
+    inputs: ['purchases', 'collection'],
+    title: 'Spent vs worth',
+    description: 'Total paid for purchases with a recorded price, the collection’s value today, and the share of spending back in card value.',
+    fn: (purchases, collection) => {
+      const shown = purchases;
+      const spent = shown.reduce((s, p) => s + (+p.total_eur || 0), 0);
+      const worth = collection.reduce((s, c) => s + (+c.value_eur || 0), 0);
+      return [{ spent, spent_mur: spent * RATE_MUR, worth, back: spent ? worth / spent : null, unpriced: shown.filter((p) => p.total_eur == null).map((p) => p.product).join(', ') }];
+    },
+  });
+  const eur = (v) => '€' + d3.format(',.2f')(v);
+  const sp = (field, fmt) => (el) => {
+    const r = cdRows('spending');
+    el.textContent = r && r.length && r[0][field] != null ? fmt(r[0][field]) : '—';
+  };
+  dash.draw('spent', sp('spent', eur));
+  dash.draw('spentmur', sp('spent_mur', (v) => '≈ Rs ' + d3.format(',.0f')(v) + ' spent'));
+  dash.draw('spentnote', sp('worth', (v) => 'your cards are worth ' + eur(v) + ' today'));
+  dash.draw('worth', sp('worth', eur));
+  dash.draw('back', sp('back', d3.format('.0%')));
+  dash.draw('spentmissing', sp('unpriced', (v) => v ? 'Not counted yet, because the price wasn’t recorded: ' + v + '. Tell me what you paid and I’ll add it.' : 'Every purchase has a price.'));
+  dash.draw('spendbar', (el) => {
+    const r = cdRows('spending');
+    const v = r && r.length ? Math.min(1, +r[0].back || 0) : 0;
+    el.firstElementChild.style.width = (v * 100) + '%';
+  });
+  dash.draw('purchases', (el) => {
+    const r = cdRows('purchases');
+    if (!r) { el.replaceChildren(); return; }
+    const list = r.filter((x) => cdGameOk(x.game)).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+    el.replaceChildren(...list.map((x) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = x.id;
+      const g = cdCell(null);
+      g.append(cdPill(x.game));
+      tr.append(cdCell(x.when), cdCell(x.product, 'cd-item-title'), g, cdCell(x.language), cdCell(x.units),
+        cdCell(x.unit_eur != null ? eur(x.unit_eur) : '?'), cdCell(x.total_eur != null ? eur(x.total_eur) : 'Not recorded'), cdCell(x.note, 'cd-wide'));
+      return tr;
     }));
   });
 </script>
