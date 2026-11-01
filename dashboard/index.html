@@ -51,6 +51,10 @@
   .cd-meta-val { text-align: right; font-variant-numeric: tabular-nums; color: var(--color-fg-muted); }
   .cd-meta-keys { grid-column: 1 / -1; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: -4px; }
   .cd-empty { margin: 0; color: var(--color-fg-muted); }
+  .cd-coll-sum { margin: 0; line-height: 1.6; }
+  .cd-coll-sum .cd-coll-big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; }
+  .cd-coll-table { max-height: 36rem; overflow: auto; }
+  .cd-coll-table th { position: sticky; top: 0; background: var(--color-panel); }
   [data-dash-source-state=empty] { color: transparent; }
   [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
   @media (max-width: 30rem) { .cd-meta-row { grid-template-columns: minmax(0, 1fr) 4rem 3rem; } }
@@ -210,7 +214,8 @@
   <section class="cd-page" id="collection" role="tabpanel" hidden>
     <div class="cd-card">
       <h2 class="cd-h2">My collection</h2>
-      <p class="cd-note">Each card's price and demand, refreshed weekly. Demand is a signal from price trend, how often it sells, how many are listed and whether it's played in tournaments. It isn't a guarantee.</p>
+      <p class="cd-note">Each card's Cardmarket price, most valuable first, refreshed weekly. Demand compares the last 7 days' average price with the last 30 days': Rising or Falling means a move of more than 10%. Bulk means under €0.50. It's a signal, not a guarantee. One Piece prices are for the English card, as a guide.</p>
+      <p class="cd-coll-sum">Estimated value <b class="cd-coll-big" data-draw="collvalue" data-source="collection_summary" data-field="value">—</b> (≈ <span data-draw="collmur" data-source="collection_summary" data-field="value_mur">—</span>) across <b data-draw="collcards" data-source="collection_summary" data-field="cards">—</b> cards. <span data-draw="collpriced" data-source="collection_summary" data-field="priced">—</span> have a live price; the rest use older estimates from your notes.</p>
       <p class="cd-empty cd-coll-empty" hidden>No cards yet. Send your list in the chat (card, set, language, condition, how many) and it will appear here.</p>
       <div class="cd-table-wrap cd-coll-table">
         <table class="cd-table" data-source="collection" data-row-key="id">
@@ -219,7 +224,7 @@
             <th data-field="game">Game</th>
             <th data-field="set">Set</th>
             <th data-field="language">Language</th>
-            <th data-field="condition">Condition</th>
+            <th data-field="rarity">Rarity</th>
             <th data-field="qty">Qty</th>
             <th data-field="price">Price</th>
             <th data-field="demand">Demand</th>
@@ -492,7 +497,26 @@
 
 <script>
   // Collection and shops.
-  const DEMAND_TONE = { High: 'hot', Rising: 'good', Steady: null, Falling: 'warn' };
+  const EUR_TO_MUR = 52.95; // mid-market rate on 1 Nov 2026
+  dash.calc('collection_summary', {
+    inputs: ['collection'],
+    title: 'Collection value',
+    description: 'Sum of each card’s price times quantity (at least one), and how many cards have a live price.',
+    fn: (collection) => {
+      const value = collection.reduce((s, c) => s + (+c.value_eur || 0), 0);
+      return [{ value, value_mur: value * EUR_TO_MUR, cards: collection.length, priced: collection.filter((c) => c.price_eur != null).length }];
+    },
+  });
+  const sumField = (field, fmt) => (el) => {
+    const r = cdRows('collection_summary');
+    el.textContent = r && r.length ? fmt(r[0][field]) : '—';
+  };
+  dash.draw('collvalue', sumField('value', (v) => '€' + d3.format(',.2f')(v)));
+  dash.draw('collmur', sumField('value_mur', (v) => 'Rs ' + d3.format(',.0f')(v)));
+  dash.draw('collcards', sumField('cards', d3.format(',')));
+  dash.draw('collpriced', sumField('priced', d3.format(',')));
+
+  const DEMAND_TONE = { High: 'hot', Rising: 'good', Steady: null, Falling: 'warn', Bulk: null };
   dash.draw('collection', (el) => {
     const r = cdRows('collection');
     if (!r) { el.replaceChildren(); return; }
@@ -502,7 +526,7 @@
       tr.dataset.key = x.id;
       const dem = cdCell(null);
       if (x.demand) dem.append(cdPill(x.demand, DEMAND_TONE[x.demand]));
-      tr.append(cdCell(x.card), cdCell(x.game), cdCell(x.set), cdCell(x.language), cdCell(x.condition), cdCell(x.qty), cdCell(x.price), dem, cdCell(x.note, 'cd-wide'));
+      tr.append(cdCell(x.card), cdCell(x.game), cdCell(x.set), cdCell(x.language), cdCell(x.rarity), cdCell(x.qty), cdCell(x.price), dem, cdCell(x.note, 'cd-wide'));
       return tr;
     }));
   });
