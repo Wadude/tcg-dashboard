@@ -44,4 +44,4 @@ Each dataset is a JSON file in `data/`, uploaded to the dashboard. A scheduled t
 
 ## Free sources
 
-TCGdex (Pokémon cards EN/FR/JP), pokemontcg.io (EN prices incl. TCGplayer/Cardmarket), Limitless TCG (Pokémon and One Piece tournaments), official Pokémon and Bandai sites, web news. Japanese and One Piece prices are patchier.
+TCGdex (Pokémon cards EN/FR/JP), pokemontcg.io (EN prices incl. TCGplayer/Cardmarket), Limitless TCG (Pokémon and One Piece tournaments, English One Piece prices), Yuyu-tei (Japanese One Piece prices), official Pokémon and Bandai sites, web news. Japanese and One Piece prices are patchier.

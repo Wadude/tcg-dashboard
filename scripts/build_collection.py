@@ -1,5 +1,5 @@
 # Builds data/collection.json from the card list in data/catalogue.json,
-# with live prices from TCGdex (Pokémon) and Limitless (One Piece).
+# with live prices from TCGdex (Pokémon), Yuyu-tei (Japanese One Piece) and Limitless (other One Piece).
 # Usage: python scripts/build_collection.py [data/catalogue.json] [data/collection.json]
 import sys, json, re, time, urllib.request
 
@@ -35,6 +35,28 @@ SETS = {
 }
 LANG = {"French": "FR", "Japanese": "JP", "English": "EN"}
 
+_fx = get("https://api.frankfurter.dev/v1/latest?from=JPY&to=EUR")
+JPY_EUR = ((_fx or {}).get("rates") or {}).get("EUR") or 0.0056465  # fallback: rate on 2 Nov 2026
+
+def yuyutei(code, parallel):
+    """Japanese shop price for a One Piece card: (yen, buyback yen, sold out) or None."""
+    h = get(f"https://yuyu-tei.jp/sell/opc/s/search?search_word={code}", as_json=False) or ""
+    b = get(f"https://yuyu-tei.jp/buy/opc/s/search?search_word={code}", as_json=False) or ""
+    def items(page):
+        out = {}
+        for m in re.finditer(r'card-product position-relative mt-4([^"]*)">(.*?)(?=card-product position-relative|$)', page, re.S):
+            alt = re.search(r'alt="([^"]+)" class="card', m.group(2))
+            pr = re.search(r'<strong\s+class="[^"]*">\s*([\d,]+)\s*円', m.group(2))
+            if alt and pr and alt.group(1).startswith(code + " "):
+                out.setdefault(alt.group(1), (int(pr.group(1).replace(",", "")), "sold-out" in m.group(1)))
+        return out
+    sell, buy = items(h), items(b)
+    for alt, (yen, sold) in sell.items():
+        is_par = "パラレル" in alt or alt.split(" ")[1].startswith("P-")
+        if is_par == parallel:
+            return yen, (buy.get(alt) or (None,))[0], sold
+    return None
+
 def eur(x): return f"€{x:,.2f}"
 def mur(x): return f"Rs {round(x*RATE):,}"
 
@@ -65,6 +87,10 @@ for c in catalogue:
                 if a7 and a30:
                     ch = (a7 - a30) / a30
                     demand = "Rising" if ch > 0.10 else "Falling" if ch < -0.10 else "Steady"
+    elif game == "One Piece" and num and lang == "Japanese" and (y := yuyutei(num, any(w in fin_l for w in ("parallel", "alt", "manga")))):
+        yen, buyback, sold = y
+        price = yen * JPY_EUR; basis = "Japanese shop price (Yuyu-tei)"
+        if buyback and buyback / yen >= 0.6: demand = "High"
     elif game == "One Piece" and num:
         h = get(f"https://onepiece.limitlesstcg.com/cards/{num}", as_json=False)
         m = re.search(r'card-price eur">€([0-9.,]+)<', h or "")
@@ -81,7 +107,11 @@ for c in catalogue:
     else:
         ptxt = "Not priced yet"
     bits = []
-    if game == "One Piece" and price is not None and not est and lang in ("French", "Japanese"):
+    if basis.startswith("Japanese shop"):
+        bits.append(f"Japanese shop price ¥{yen:,} (Yuyu-tei).")
+        if num in ("OP15-086", "OP15-119") and "parallel" not in fin_l:
+            bits.append("If yours is the alternate-art (parallel) version, it's worth far more: check the card.")
+    elif game == "One Piece" and price is not None and not est and lang in ("French", "Japanese"):
         bits.append(f"Price is for the English card as a guide; {LANG.get(lang, lang)} copies can differ.")
     if "cosmos" in fin_l:
         bits.append("Cosmos holo promo version; price shown is the regular card.")

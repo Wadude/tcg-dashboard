@@ -26,6 +26,7 @@ A file must never be an empty list (the dashboard can't read it). For a quiet da
 ## Good sources
 
 - Pokémon: pokemon.com and press.pokemon.com, pokebip.com (French), serebii.net, limitlesstcg.com (results, upcoming events, decks), TCGdex API `https://api.tcgdex.net/v2/{fr|en|ja}/cards/{setId}-{number}` (Cardmarket prices: `pricing.cardmarket.trend`, `avg7`, `avg30`).
+- Japanese One Piece prices: yuyu-tei.jp (`/sell/opc/s/search?search_word=<card number>` and `/buy/...` for what the shop pays); `scripts/build_collection.py` uses it and falls back to Limitless if it can't be reached.
 - One Piece: en.onepiece-cardgame.com and onepiece-cardgame.com (products, ban list), onepiece.limitlesstcg.com (results, upcoming, card prices), opboxindex.com (box prices), play-in.com (French products).
 - Réunion shops: sortileges.re, miyatakardmarket.re (shows stock), planetgeek.re, punkrecords-tcg.com, mirageisland974.re.
 - Cardmarket, PokeBeach and PriceCharting block automated reading; use the sources above.
