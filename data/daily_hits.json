@@ -1,9 +1,57 @@
 [
-  {"id": "h1", "date": "Sun 1 Nov 2026", "kind": "news", "game": "Pokémon", "importance": "High", "title": "Règne Delta (ME06) is out Friday 6 November", "detail": "Mega Rayquaza ex is the chase card (special illustration and Mega Hyper Rare). Miyata Kard Market lists it for 6 Nov; ask Sortilèges and Planet Geek about displays now, before allocations run out.", "source": "Pokébip", "url": "https://www.pokebip.com/news/7489/jcc-pokemon-nouvelle-extension-mega-evolution-regne-delta"},
-  {"id": "h2", "date": "Sun 1 Nov 2026", "kind": "deal", "game": "Pokémon", "importance": "Medium", "title": "Règne Delta displays: €166 to €240 on pre-order", "detail": "Pokémon Center Germany has the 36-pack display at €165.99; French shops ask €190–240 (LorenZone €239.90). Shipping and import fees to Réunion can wipe out the gap, so compare with the island shops' price first.", "source": "mydealz", "url": "https://www.mydealz.de/magazin/pokemon-delta-herrschaft-display-vorbestellen-75099"},
-  {"id": "h3", "date": "Sun 1 Nov 2026", "kind": "deal", "game": "Pokémon", "importance": "Medium", "title": "30th Celebration chase cards are 13–20% under their monthly average", "detail": "Mew ex 152 is at €78 against a 30-day average of €105. Prices are still sliding after launch, so there's no rush, but this is the cheapest they've been.", "source": "TCGdex (Cardmarket data)", "url": "https://api.tcgdex.net/v2/en/cards/30th-152"},
-  {"id": "h4", "date": "Sun 1 Nov 2026", "kind": "mover", "game": "Pokémon", "importance": "Medium", "title": "Classic Collection Lugia down to €169", "detail": "Its 30-day average was €204. Charizard from the same collection is at €150.", "source": "TCGdex (Cardmarket data)", "url": "https://api.tcgdex.net/v2/en/sets/30th"},
-  {"id": "h5", "date": "Sun 1 Nov 2026", "kind": "mover", "game": "One Piece", "importance": "Medium", "title": "Japanese OP-05 boxes up 19% in four weeks", "detail": "Median eBay sale $210. OP-11 is up 15% to $120, while the newer OP-17 box slipped 9% to $117.", "source": "OP Box Index", "url": "https://opboxindex.com/"},
-  {"id": "h6", "date": "Sun 1 Nov 2026", "kind": "news", "game": "One Piece", "importance": "Medium", "title": "Heroines Edition vol.2 (EB-05) is out, and French boosters are selling out", "detail": "Released 30 Oct in English and French at about €9.90 a pack. Play-in is already out of stock in French; check the Réunion shops. Nico Robin and Nami SP cards are the chase.", "source": "Play-in", "url": "https://www.play-in.com/en/produit/674769/extra-booster-one-piece-tcg-heroines-edition-vol-2-eb-05-fr"},
-  {"id": "h7", "date": "Sun 1 Nov 2026", "kind": "event", "game": "One Piece", "importance": "", "title": "Regionals in Porto and Sydney this Saturday, 7 November", "detail": "The first big events since the Mihawk ban. Results will show which leaders, and which cards, are worth watching.", "source": "Limitless", "url": "https://onepiece.limitlesstcg.com/tournaments/upcoming"}
+ {
+  "id": "h1",
+  "date": "Mon 2 Nov 2026",
+  "kind": "news",
+  "game": "Pokémon",
+  "importance": "High",
+  "title": "Règne Delta is out in 4 days: Friday 6 November",
+  "detail": "Worldwide release on 6 Nov; the online game (Pokémon TCG Live) gets it a day earlier, on 5 Nov. Mega Rayquaza ex is the headliner, with Mega Malamar ex and six Stadium cards. The English card list was still partly unofficial in the sources I found, so treat extra card details with caution.",
+  "source": "Bulbapedia",
+  "url": "https://bulbapedia.bulbagarden.net/wiki/Delta_Reign_(TCG)"
+ },
+ {
+  "id": "h2",
+  "date": "Mon 2 Nov 2026",
+  "kind": "news",
+  "game": "Pokémon",
+  "importance": "Medium",
+  "title": "Miyata Kard Market shows the 6 Nov date, but no Règne Delta products or prices yet",
+  "detail": "Its home page carries a Règne Delta banner for 06/11/2026. No displays, boosters or stock were listed when I checked this morning. Ask the shop directly about allocations. Sortilèges' site had an expired security certificate, so I couldn't read it.",
+  "source": "Miyata Kard Market",
+  "url": "https://miyatakardmarket.re/"
+ },
+ {
+  "id": "h3",
+  "date": "Mon 2 Nov 2026",
+  "kind": "news",
+  "game": "One Piece",
+  "importance": "Medium",
+  "title": "OP-18 release date is still unclear: 21 or 22 November in Japan",
+  "detail": "One source says 21 Nov, a post on the official X account says 22 Nov. Unconfirmed until Bandai's site lists it. The official card database had no OP-18 cards as of 7 Oct, and pack price (¥240) comes from secondary sources only. The Calendar still shows 21 Nov.",
+  "source": "Samurai Sword Tokyo",
+  "url": "https://samuraiswordtokyo.com/?p=90578"
+ },
+ {
+  "id": "h4",
+  "date": "Mon 2 Nov 2026",
+  "kind": "event",
+  "game": "One Piece",
+  "importance": "",
+  "title": "Regionals in Porto and Sydney this Saturday, 7 November",
+  "detail": "Still the first big events since the Mihawk ban. Nothing has finished since yesterday, so no new results yet.",
+  "source": "Limitless",
+  "url": "https://onepiece.limitlesstcg.com/tournaments/upcoming"
+ },
+ {
+  "id": "h5",
+  "date": "Mon 2 Nov 2026",
+  "kind": "news",
+  "game": "Both",
+  "importance": "",
+  "title": "No price checks today",
+  "detail": "The TCGdex card data returned no Cardmarket prices this morning, so I could not compare 7-day and 30-day averages. Yesterday's movers still stand. I'll retry tomorrow.",
+  "source": "TCGdex",
+  "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
+ }
 ]
