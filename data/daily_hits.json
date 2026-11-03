@@ -1,56 +1,67 @@
 [
  {
   "id": "h1",
-  "date": "Mon 2 Nov 2026",
+  "date": "Tue 3 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
   "importance": "High",
-  "title": "Règne Delta is out in 4 days: Friday 6 November",
-  "detail": "Worldwide release on 6 Nov; the online game (Pokémon TCG Live) gets it a day earlier, on 5 Nov. Mega Rayquaza ex is the headliner, with Mega Malamar ex and six Stadium cards. The English card list was still partly unofficial in the sources I found, so treat extra card details with caution.",
-  "source": "Bulbapedia",
-  "url": "https://bulbapedia.bulbagarden.net/wiki/Delta_Reign_(TCG)"
+  "title": "Règne Delta launches Friday 6 November, 3 days to go",
+  "detail": "Worldwide release 6 Nov, with the online game getting it a day earlier on 5 Nov. Mega Rayquaza ex is the headliner. Sources disagree on when the in-store prerelease window ends (1 Nov or 5 Nov), so check with your shop.",
+  "source": "Pokémon news roundup (TCGplayer seller blog)",
+  "url": "https://seller.tcgplayer.com/blog/delta-reign-quick-facts"
  },
  {
   "id": "h2",
-  "date": "Mon 2 Nov 2026",
+  "date": "Tue 3 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
   "importance": "Medium",
-  "title": "Miyata Kard Market shows the 6 Nov date, but no Règne Delta products or prices yet",
-  "detail": "Its home page carries a Règne Delta banner for 06/11/2026. No displays, boosters or stock were listed when I checked this morning. Ask the shop directly about allocations. Sortilèges' site had an expired security certificate, so I couldn't read it.",
+  "title": "Miyata Kard Market: still only the 6 Nov date, no products or stock listed",
+  "detail": "Home page still shows 'Date de Sortie 06/11/2026' for ME06, with no products, pre-orders or stock visible this morning. Worth asking the shop directly about allocations.",
   "source": "Miyata Kard Market",
   "url": "https://miyatakardmarket.re/"
  },
  {
   "id": "h3",
-  "date": "Mon 2 Nov 2026",
+  "date": "Tue 3 Nov 2026",
   "kind": "news",
   "game": "One Piece",
   "importance": "Medium",
-  "title": "OP-18 release date is still unclear: 21 or 22 November in Japan",
-  "detail": "One source says 21 Nov, a post on the official X account says 22 Nov. Unconfirmed until Bandai's site lists it. The official card database had no OP-18 cards as of 7 Oct, and pack price (¥240) comes from secondary sources only. The Calendar still shows 21 Nov.",
-  "source": "Samurai Sword Tokyo",
-  "url": "https://samuraiswordtokyo.com/?p=90578"
+  "title": "OP-18: Bandai's product pages reportedly give 21 Nov (Japan) and 20 Nov (English)",
+  "detail": "A retailer blog quoting Bandai's official pages (checked 1 Oct) says Japan 21 Nov, English 20 Nov, ¥240 / $4.99 per pack. Earlier X post said 22 Nov. I could not open Bandai's pages myself, so this is still second-hand. The Japanese date on the Calendar stays marked unconfirmed.",
+  "source": "Samurai Sword Tokyo (quotes Bandai)",
+  "url": "https://samuraiswordtokyo.com/?p=82268"
  },
  {
   "id": "h4",
-  "date": "Mon 2 Nov 2026",
+  "date": "Tue 3 Nov 2026",
+  "kind": "mover",
+  "game": "Pokémon",
+  "importance": "",
+  "title": "Mega Darkrai ex SIR (Pitch Black) is steady: no big move",
+  "detail": "Cardmarket 7-day average €180 vs 30-day €184, trend about €168 (updated 2 Nov). Well under the 20% threshold, so no alert.",
+  "source": "TCGdex",
+  "url": "https://api.tcgdex.net/v2/en/cards/me05-116"
+ },
+ {
+  "id": "h5",
+  "date": "Tue 3 Nov 2026",
   "kind": "event",
   "game": "One Piece",
   "importance": "",
   "title": "Regionals in Porto and Sydney this Saturday, 7 November",
-  "detail": "Still the first big events since the Mihawk ban. Nothing has finished since yesterday, so no new results yet.",
-  "source": "Limitless",
+  "detail": "Still upcoming; no results yet. First big events since the Mihawk ban. Pokémon: nothing finished since yesterday.",
+  "source": "Limitless One Piece",
   "url": "https://onepiece.limitlesstcg.com/tournaments/upcoming"
  },
  {
-  "id": "h5",
-  "date": "Mon 2 Nov 2026",
+  "id": "h6",
+  "date": "Tue 3 Nov 2026",
   "kind": "news",
   "game": "Both",
   "importance": "",
-  "title": "No price checks today",
-  "detail": "The TCGdex card data returned no Cardmarket prices this morning, so I could not compare 7-day and 30-day averages. Yesterday's movers still stand. I'll retry tomorrow.",
+  "title": "Price checks only partly possible today",
+  "detail": "TCGdex returned no Cardmarket prices for the 30th Celebration cards (Mew ex 152, Pikachu ex 150), and the collection file has no card IDs, so I could only check Darkrai. Yesterday's anniversary-set drops still stand but are not updated.",
   "source": "TCGdex",
   "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
  }
