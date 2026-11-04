@@ -1,68 +1,57 @@
 [
  {
   "id": "h1",
-  "date": "Tue 3 Nov 2026",
+  "date": "Wed 4 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
   "importance": "High",
-  "title": "Règne Delta launches Friday 6 November, 3 days to go",
-  "detail": "Worldwide release 6 Nov, with the online game getting it a day earlier on 5 Nov. Mega Rayquaza ex is the headliner. Sources disagree on when the in-store prerelease window ends (1 Nov or 5 Nov), so check with your shop.",
-  "source": "Pokémon news roundup (TCGplayer seller blog)",
+  "title": "Règne Delta: 2 days to go (Fri 6 Nov); the online game gets it tomorrow",
+  "detail": "Worldwide release 6 Nov, Pokémon TCG Live from 5 Nov. Mega Rayquaza ex is the headliner. US box price was about $240 on the market in mid-October (not a French or Réunion price).",
+  "source": "TCGplayer seller blog",
   "url": "https://seller.tcgplayer.com/blog/delta-reign-quick-facts"
  },
  {
   "id": "h2",
-  "date": "Tue 3 Nov 2026",
+  "date": "Wed 4 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
-  "importance": "Medium",
-  "title": "Miyata Kard Market: still only the 6 Nov date, no products or stock listed",
-  "detail": "Home page still shows 'Date de Sortie 06/11/2026' for ME06, with no products, pre-orders or stock visible this morning. Worth asking the shop directly about allocations.",
+  "importance": "High",
+  "title": "Miyata Kard Market now lists Règne Delta pre-orders (Réunion)",
+  "detail": "Listed prices: Bundle 6 boosters €44.99 (arrives 17 Nov, in stock), Elite Trainer Box €79.99 and 3-pack blister €19.99 (both shown sold out), Display 36 boosters €239.99 and single booster €7.99 (stock status unclear on the page). Many items are a 'second wave' arriving 17 Nov, not 6 Nov. Check with the shop before relying on it.",
   "source": "Miyata Kard Market",
-  "url": "https://miyatakardmarket.re/"
+  "url": "https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"
  },
  {
   "id": "h3",
-  "date": "Tue 3 Nov 2026",
-  "kind": "news",
-  "game": "One Piece",
-  "importance": "Medium",
-  "title": "OP-18: Bandai's product pages reportedly give 21 Nov (Japan) and 20 Nov (English)",
-  "detail": "A retailer blog quoting Bandai's official pages (checked 1 Oct) says Japan 21 Nov, English 20 Nov, ¥240 / $4.99 per pack. Earlier X post said 22 Nov. I could not open Bandai's pages myself, so this is still second-hand. The Japanese date on the Calendar stays marked unconfirmed.",
-  "source": "Samurai Sword Tokyo (quotes Bandai)",
-  "url": "https://samuraiswordtokyo.com/?p=82268"
- },
- {
-  "id": "h4",
-  "date": "Tue 3 Nov 2026",
+  "date": "Wed 4 Nov 2026",
   "kind": "mover",
   "game": "Pokémon",
   "importance": "",
-  "title": "Mega Darkrai ex SIR (Pitch Black) is steady: no big move",
-  "detail": "Cardmarket 7-day average €180 vs 30-day €184, trend about €168 (updated 2 Nov). Well under the 20% threshold, so no alert.",
+  "title": "Mega Darkrai ex SIR (Pitch Black) still steady",
+  "detail": "Cardmarket 7-day average €180 vs 30-day €184 (updated 3 Nov). No alert. Other cards could not be checked: the collection file has no card IDs.",
   "source": "TCGdex",
   "url": "https://api.tcgdex.net/v2/en/cards/me05-116"
  },
  {
+  "id": "h4",
+  "date": "Wed 4 Nov 2026",
+  "kind": "news",
+  "game": "One Piece",
+  "importance": "",
+  "title": "OP-18: nothing new; Japan date still reported as 22 Nov, English date not announced",
+  "detail": "Card reveals continue on the official X account. Sources disagree on the Japanese day (21 vs 22 Nov), so the Calendar date stays unconfirmed.",
+  "source": "Samurai Sword Tokyo",
+  "url": "https://samuraiswordtokyo.com/?p=82268"
+ },
+ {
   "id": "h5",
-  "date": "Tue 3 Nov 2026",
+  "date": "Wed 4 Nov 2026",
   "kind": "event",
   "game": "One Piece",
   "importance": "",
-  "title": "Regionals in Porto and Sydney this Saturday, 7 November",
-  "detail": "Still upcoming; no results yet. First big events since the Mihawk ban. Pokémon: nothing finished since yesterday.",
+  "title": "Regionals Porto and Sydney are this Saturday, 7 Nov",
+  "detail": "Still upcoming, no results yet. Pokémon: no event finished since yesterday.",
   "source": "Limitless One Piece",
   "url": "https://onepiece.limitlesstcg.com/tournaments/upcoming"
- },
- {
-  "id": "h6",
-  "date": "Tue 3 Nov 2026",
-  "kind": "news",
-  "game": "Both",
-  "importance": "",
-  "title": "Price checks only partly possible today",
-  "detail": "TCGdex returned no Cardmarket prices for the 30th Celebration cards (Mew ex 152, Pikachu ex 150), and the collection file has no card IDs, so I could only check Darkrai. Yesterday's anniversary-set drops still stand but are not updated.",
-  "source": "TCGdex",
-  "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
  }
 ]
