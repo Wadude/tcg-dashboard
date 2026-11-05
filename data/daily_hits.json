@@ -1,57 +1,7 @@
 [
- {
-  "id": "h1",
-  "date": "Wed 4 Nov 2026",
-  "kind": "news",
-  "game": "Pokémon",
-  "importance": "High",
-  "title": "Règne Delta: 2 days to go (Fri 6 Nov); the online game gets it tomorrow",
-  "detail": "Worldwide release 6 Nov, Pokémon TCG Live from 5 Nov. Mega Rayquaza ex is the headliner. US box price was about $240 on the market in mid-October (not a French or Réunion price).",
-  "source": "TCGplayer seller blog",
-  "url": "https://seller.tcgplayer.com/blog/delta-reign-quick-facts"
- },
- {
-  "id": "h2",
-  "date": "Wed 4 Nov 2026",
-  "kind": "news",
-  "game": "Pokémon",
-  "importance": "High",
-  "title": "Miyata Kard Market now lists Règne Delta pre-orders (Réunion)",
-  "detail": "Listed prices: Bundle 6 boosters €44.99 (arrives 17 Nov, in stock), Elite Trainer Box €79.99 and 3-pack blister €19.99 (both shown sold out), Display 36 boosters €239.99 and single booster €7.99 (stock status unclear on the page). Many items are a 'second wave' arriving 17 Nov, not 6 Nov. Check with the shop before relying on it.",
-  "source": "Miyata Kard Market",
-  "url": "https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"
- },
- {
-  "id": "h3",
-  "date": "Wed 4 Nov 2026",
-  "kind": "mover",
-  "game": "Pokémon",
-  "importance": "",
-  "title": "Mega Darkrai ex SIR (Pitch Black) still steady",
-  "detail": "Cardmarket 7-day average €180 vs 30-day €184 (updated 3 Nov). No alert. Other cards could not be checked: the collection file has no card IDs.",
-  "source": "TCGdex",
-  "url": "https://api.tcgdex.net/v2/en/cards/me05-116"
- },
- {
-  "id": "h4",
-  "date": "Wed 4 Nov 2026",
-  "kind": "news",
-  "game": "One Piece",
-  "importance": "",
-  "title": "OP-18: nothing new; Japan date still reported as 22 Nov, English date not announced",
-  "detail": "Card reveals continue on the official X account. Sources disagree on the Japanese day (21 vs 22 Nov), so the Calendar date stays unconfirmed.",
-  "source": "Samurai Sword Tokyo",
-  "url": "https://samuraiswordtokyo.com/?p=82268"
- },
- {
-  "id": "h5",
-  "date": "Wed 4 Nov 2026",
-  "kind": "event",
-  "game": "One Piece",
-  "importance": "",
-  "title": "Regionals Porto and Sydney are this Saturday, 7 Nov",
-  "detail": "Still upcoming, no results yet. Pokémon: no event finished since yesterday.",
-  "source": "Limitless One Piece",
-  "url": "https://onepiece.limitlesstcg.com/tournaments/upcoming"
- }
+ {"id":"h1","date":"Thu 5 Nov 2026","kind":"news","game":"Pokémon","importance":"High","title":"Règne Delta is out tomorrow (Fri 6 Nov); online game gets it today","detail":"Worldwide release 6 Nov, Pokémon TCG Live from 5 Nov (one fan-site report). Headliner is Mega Rayquaza ex, with a new Legendary Stadium card type. A Pocket expansion also lands on 6 Nov. No delay reported. Exact card count differs between sources, so unconfirmed.","source":"TCGplayer seller blog","url":"https://seller.tcgplayer.com/blog/delta-reign-quick-facts"},
+ {"id":"h2","date":"Thu 5 Nov 2026","kind":"news","game":"Pokémon","importance":"Medium","title":"Miyata Kard Market (Réunion): only the 6-booster bundle is still in stock","detail":"Today the shop page shows the Bundle 6 boosters €44.99 (2nd wave, arrives 17 Nov) available. Display 36 (€239.99), Elite Trainer Box (€79.99), 3-pack blister (€19.99) and single booster (€7.99) are all marked sold out. The page's own filter counts disagree with the product labels, so check with the shop.","source":"Miyata Kard Market","url":"https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"},
+ {"id":"h3","date":"Thu 5 Nov 2026","kind":"mover","game":"Pokémon","importance":"","title":"Mega Darkrai ex SIR (Pitch Black) steady","detail":"Cardmarket 7-day average €180.02 vs 30-day €184.05 (updated 4 Nov); the short-term trend price is lower at €168.65. No 20% move, no alert. Other cards not checked: the collection file has no card IDs.","source":"TCGdex","url":"https://api.tcgdex.net/v2/en/cards/me05-116"},
+ {"id":"h4","date":"Thu 5 Nov 2026","kind":"news","game":"One Piece","importance":"","title":"OP-18: nothing new; Japan date still 21 or 22 Nov (unconfirmed)","detail":"Card reveals continue on Bandai's X account, no November news found. English name and date not announced.","source":"Samurai Sword Tokyo","url":"https://samuraiswordtokyo.com/?p=82260"},
+ {"id":"h5","date":"Thu 5 Nov 2026","kind":"event","game":"One Piece","importance":"","title":"Regionals Porto and Sydney are this Saturday, 7 Nov","detail":"Still upcoming, no results yet. No Pokémon event finished since yesterday.","source":"Limitless One Piece","url":"https://onepiece.limitlesstcg.com/tournaments/upcoming"}
 ]
