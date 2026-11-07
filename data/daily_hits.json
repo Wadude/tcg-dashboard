@@ -1,6 +1,46 @@
 [
- {"id":"h1","date":"Fri 6 Nov 2026","kind":"news","game":"Pokémon","importance":"High","title":"Règne Delta / Delta Reign is out today (Fri 6 Nov)","detail":"Worldwide release is today, with Mega Rayquaza ex as the headliner; the online game got it yesterday and a Pocket tie-in set lands today. Only pre-release coverage found so far, no delay reported. Fan-site prices (ETB $49.99, booster $4.49) are unconfirmed.","source":"Delta Reign Quick Facts (TCGplayer seller blog)","url":"https://seller.tcgplayer.com/blog/delta-reign-quick-facts"},
- {"id":"h2","date":"Fri 6 Nov 2026","kind":"news","game":"Pokémon","importance":"Medium","title":"Miyata Kard Market (Réunion): single booster and displays now listed in stock","detail":"Today the page shows the single booster €7.99 (6 Nov pre-order), Bundle of 6 €44.99 and Display 36 €239.99 (the last two are 2nd wave, expected 17 Nov) as in stock. ETB (€79.99) and 3-pack (€19.99) are sold out. The page's stock labels are unclear, so confirm with the shop.","source":"Miyata Kard Market","url":"https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"},
- {"id":"h3","date":"Fri 6 Nov 2026","kind":"news","game":"One Piece","importance":"","title":"OP-18: still no new news; Japan date 22 Nov (unconfirmed)","detail":"A retailer report of Bandai's X post says Saturday 22 Nov in Japan. No English name or date announced, and no official Bandai page found.","source":"Samurai Sword Tokyo","url":"https://samuraiswordtokyo.com/?p=82260"},
- {"id":"h4","date":"Fri 6 Nov 2026","kind":"event","game":"One Piece","importance":"","title":"Regionals Porto and Sydney are tomorrow, Sat 7 Nov","detail":"First big events since the Mihawk ban. No results yet; no Pokémon event finished since yesterday. Price checks on collection cards were not run today.","source":"Limitless One Piece","url":"https://onepiece.limitlesstcg.com/tournaments/upcoming"}
+ {
+  "id": "h1",
+  "date": "Sat 7 Nov 2026",
+  "kind": "news",
+  "game": "Pokémon",
+  "importance": "High",
+  "title": "Delta Reign is out (released Fri 6 Nov); English prices still unconfirmed",
+  "detail": "The worldwide release date of 6 Nov is confirmed by the Pokémon Company. We found no post-release price data yet. The regular English Mega Rayquaza ex 084 (Double Rare) is listed around $13 as of 4 Nov by TCG Watchtower. Japanese Rayquaza prices (about $350–945) are for the Japanese set and the sources disagree, so don't use them for English.",
+  "source": "TCG Watchtower: Delta Reign",
+  "url": "https://tcgwatchtower.com/pokemon/sets/mega-evolution/delta-reign"
+ },
+ {
+  "id": "h2",
+  "date": "Sat 7 Nov 2026",
+  "kind": "news",
+  "game": "Pokémon",
+  "importance": "Medium",
+  "title": "Miyata Kard Market (Réunion): Delta Reign page still shows French 2nd-wave items",
+  "detail": "Today's page: Bundle of 6 €44.99 (on sale), ETB €79.99 and 3-pack €19.99 sold out, single booster €7.99 and Display 36 €239.99 have unclear stock labels (the page contradicts itself). Confirm with the shop before going.",
+  "source": "Miyata Kard Market",
+  "url": "https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"
+ },
+ {
+  "id": "h3",
+  "date": "Sat 7 Nov 2026",
+  "kind": "news",
+  "game": "One Piece",
+  "importance": "",
+  "title": "OP-18: Japan date still disputed (21/22 vs 28 Nov, unconfirmed)",
+  "detail": "Retail sources conflict: one says a Bandai X post gives Sat 22 Nov, others list Sat 28 Nov. Nothing official found; EN date in our calendar (20 Nov) is also still unconfirmed.",
+  "source": "Samurai Sword Tokyo",
+  "url": "https://samuraiswordtokyo.com/?p=82260"
+ },
+ {
+  "id": "h4",
+  "date": "Sat 7 Nov 2026",
+  "kind": "event",
+  "game": "One Piece",
+  "importance": "",
+  "title": "Regionals Porto and Sydney are today (Sat 7 Nov)",
+  "detail": "Results are not out yet; we'll report winners and leaders tomorrow. Limitless's tournament page showed no 7 Nov results when checked. Price checks were not run today (the collection file has no card ids for TCGdex).",
+  "source": "Limitless One Piece",
+  "url": "https://onepiece.limitlesstcg.com/tournaments/upcoming"
+ }
 ]
