@@ -1,46 +1,57 @@
 [
  {
   "id": "h1",
-  "date": "Sun 8 Nov 2026",
+  "date": "Mon 9 Nov 2026",
   "kind": "event",
   "game": "One Piece",
   "importance": "Medium",
-  "title": "Regionals Porto and Sydney (Sat 7 Nov): results not published yet",
-  "detail": "Limitless's tournament list had no entry for 7 Nov when checked (its newest listed event was dated 26 Jul, so the page may be lagging). We'll report winners and leaders once results appear. These were the first big events since the Mihawk ban.",
+  "title": "Porto and Sydney regionals: still no results online",
+  "detail": "Searched Limitless again: its newest listed tournament is still dated 26 Jul 2026, so nothing from 7 Nov is visible yet. Winners and decks unconfirmed; we'll report when they appear.",
   "source": "Limitless One Piece",
   "url": "https://onepiece.limitlesstcg.com/tournaments"
  },
  {
   "id": "h2",
-  "date": "Sun 8 Nov 2026",
+  "date": "Mon 9 Nov 2026",
   "kind": "news",
   "game": "One Piece",
   "importance": "Medium",
-  "title": "OP-18 English release now shown as 20 Nov on Bandai's page; Japan date still disputed",
-  "detail": "Bandai's English product page lists OP-18 The Dominance of God for 20 Nov 2026 (our calendar date). Japan is still unclear: retailers give 21, 22 or 28 Nov and no official Japanese page was found. We have not re-verified the official page ourselves today beyond the search listing.",
-  "source": "Bandai (One Piece Card Game EN)",
-  "url": "https://en.onepiece-cardgame.com/products/boosters/op18.html"
+  "title": "OP-18 date still unsettled; Bandai's English page link now 404s",
+  "detail": "Yesterday's Bandai page link returns 'not found' today, so the 20 Nov English date is unconfirmed. Retailers/Japanese sources still mix 20 and 22 Nov. Overseas shops (e.g. GameStop) already list OP-18 for pre-order, limited to one per account. Wait for Bandai before buying on a date.",
+  "source": "GameStop OP-18 listing",
+  "url": "https://www.gamestop.com/toys-games/trading-cards/products/one-piece-card-game-the-dominance-of-god-booster-pack-op-18/448930.html"
  },
  {
   "id": "h3",
-  "date": "Sun 8 Nov 2026",
+  "date": "Mon 9 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
-  "importance": "",
-  "title": "Miyata Kard Market (Réunion): only the Delta Reign 6-booster bundle is in stock",
-  "detail": "Today's page shows the Bundle of 6 (2nd wave) at €44.99 (was €49.99) as available. Elite Trainer Box €79.99, Display 36 €239.99, 3-pack €19.99 and single booster €7.99 are all marked sold out. The page's own stock counter disagrees (says 5 in stock), so check with the shop before going.",
+  "importance": "Medium",
+  "title": "Miyata Kard Market (Réunion): Delta Reign display and boosters back in stock",
+  "detail": "Today's page shows in stock: Display 36 €239.99, Bundle of 6 €44.99 (was €49.99), single booster €7.99. Sold out: Elite Trainer Box €79.99 (was €89.99) and 3-pack €19.99. Yesterday only the bundle was available, so stock moves fast. The shop's stock counter says 5 in stock; check before going.",
   "source": "Miyata Kard Market",
   "url": "https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"
  },
  {
   "id": "h4",
-  "date": "Sun 8 Nov 2026",
+  "date": "Mon 9 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
   "importance": "",
-  "title": "Delta Reign: still no solid English price data two days after release",
-  "detail": "Trackers disagree: TCG Watchtower shows Mega Rayquaza ex 084 around $13.28 (4 Nov), another listing a TCGplayer market of $8.92. Treat all as unconfirmed until a few days of sales settle. Price checks on your cards were not run today (the collection file has no TCGdex ids).",
-  "source": "TCG Watchtower: Delta Reign",
-  "url": "https://tcgwatchtower.com/pokemon/sets/mega-evolution/delta-reign/most-valuable"
+  "title": "Flowing Fists (English ME7) date of 5 Feb 2027 is still unofficial",
+  "detail": "Press coverage repeats 5 Feb 2027 for the English version of Aura Seeker, but at least one tracker says The Pokémon Company has not announced it. Treat as unconfirmed. No new official announcement found today.",
+  "source": "Wargamer: Flowing Fists",
+  "url": "https://www.wargamer.com/pokemon-trading-card-game/flowing-fists"
+ },
+ {
+  "id": "h5",
+  "date": "Mon 9 Nov 2026",
+  "kind": "collection",
+  "game": "Both",
+  "importance": "",
+  "title": "Price checks skipped again today",
+  "detail": "The collection file still has no TCGdex ids, so no 7-day vs 30-day comparison was run on your cards. Adding ids in a normal session would enable this.",
+  "source": "TCGdex API",
+  "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
  }
 ]
