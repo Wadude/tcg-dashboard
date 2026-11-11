@@ -1,56 +1,56 @@
 [
  {
   "id": "h1",
-  "date": "Tue 10 Nov 2026",
-  "kind": "event",
+  "date": "Wed 11 Nov 2026",
+  "kind": "news",
   "game": "One Piece",
   "importance": "Medium",
-  "title": "Porto and Sydney regionals (7 Nov): still no results online",
-  "detail": "Limitless's One Piece tournament list still ends at 26 Jul 2026, so winners and decks from 7 Nov are unconfirmed. Will report when they appear.",
+  "title": "French roundup lists 2027 One Piece dates: EB-06 on 29 Jan, OP-19 on 5 Mar, PEB-01 on 23 Apr",
+  "detail": "A French retailer news post gives EB-06 (29 Jan 2027), OP-19 'Egghead' (5 Mar 2027) and the first Premium Extra Booster PEB-01 (23 Apr 2027). Retailer blog, not Bandai: treat as unconfirmed until the official site shows them.",
+  "source": "Lorenzone (retailer blog)",
+  "url": "https://lorenzone.fr/blogs/news/actualites-tcg-7-novembre-2026-one-piece-pokemon-riftbound"
+ },
+ {
+  "id": "h2",
+  "date": "Wed 11 Nov 2026",
+  "kind": "event",
+  "game": "One Piece",
+  "importance": "",
+  "title": "Porto and Sydney regionals (7 Nov): results still not online",
+  "detail": "Limitless's One Piece list still ends at 26 Jul 2026, so winners and decks are unconfirmed. Nothing new since yesterday.",
   "source": "Limitless One Piece",
   "url": "https://onepiece.limitlesstcg.com/tournaments"
  },
  {
-  "id": "h2",
-  "date": "Tue 10 Nov 2026",
+  "id": "h3",
+  "date": "Wed 11 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
   "importance": "Medium",
-  "title": "Miyata Kard Market (Réunion): Delta Reign now mostly sold out, restock listed for 17 Nov",
-  "detail": "Today's page shows only the Bundle of 6 boosters (€44.99, was €49.99) on sale. Elite Trainer Box (€79.99), Display 36 (€239.99), single booster (€7.99) and 3-pack (€19.99) show 'Épuisé'. The shop marks the French items as pre-orders with expected arrival 17/11/2026. Yesterday's note of the display and boosters being in stock no longer holds.",
+  "title": "Miyata Kard Market (Réunion): Delta Reign second wave due 17 Nov, stock labels unclear",
+  "detail": "Page lists ETB (€79.99), Display 36 (€239.99), Bundle of 6 (€44.99), 3-pack (€19.99) and booster (€7.99) as pre-orders with arrival 17/11/2026. Only the bundle clearly shows 'En vente'; the other items show both 'Ajouter au panier' and 'Épuisé', so availability is unconfirmed. Also lists Korean m6 Storm Emeralda (booster €4.50, 30-box €119.90).",
   "source": "Miyata Kard Market",
   "url": "https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"
  },
  {
-  "id": "h3",
-  "date": "Tue 10 Nov 2026",
-  "kind": "news",
-  "game": "One Piece",
-  "importance": "Medium",
-  "title": "OP-18: English date of 20 Nov is reported but still unconfirmed",
-  "detail": "A retailer comparison article gives 20 Nov (English) and 21 Nov (Japan) and says these match the official pages, but I could not open Bandai's page myself (it returned 'not found' yesterday). Earlier sources mixed 20, 21, 22 and 28 Nov. Wait for Bandai before relying on a date.",
-  "source": "Samurai Sword Tokyo",
-  "url": "https://samuraiswordtokyo.com/blogs/news/op-18-english-release-date-vs-japan-november-2026"
- },
- {
   "id": "h4",
-  "date": "Tue 10 Nov 2026",
+  "date": "Wed 11 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
   "importance": "",
-  "title": "Flowing Fists (English ME7): 5 Feb 2027 still not official; Aura Seeker out in Japan 27 Nov",
-  "detail": "Reports still say prereleases from 23 Jan and release on 5 Feb 2027, but they come from news sites, not The Pokémon Company. Japanese Aura Seeker (Mega Lucario Z ex) is reported for 27 Nov 2026. No new official announcement today.",
-  "source": "Wargamer: Flowing Fists",
-  "url": "https://www.wargamer.com/pokemon-trading-card-game/flowing-fists"
+  "title": "Mega Greninja ex League Battle Deck reported for retail today (11 Nov)",
+  "detail": "A search summary of an ICv2 report gives 11 Nov 2026 for the retail release. I did not open the article, so the date and contents are unconfirmed; check a Réunion shop before counting on it.",
+  "source": "ICv2",
+  "url": "https://icv2.com/articles/news/view/63295/new-pokemon-tcg-league-battle-deck-incoming"
  },
  {
   "id": "h5",
-  "date": "Tue 10 Nov 2026",
+  "date": "Wed 11 Nov 2026",
   "kind": "mover",
   "game": "Pokémon",
   "importance": "",
   "title": "Price check: no 20% moves",
-  "detail": "TCGdex Cardmarket data: Mew ex 152 7-day avg €84.09 vs 30-day €90.08 (−7%); Pikachu ex 150 €51.38 vs €55.00 (−7%); Mega Darkrai ex 116 €172.30 vs €179.55 (−4%). All under the 20% threshold. Collection-wide checks still need TCGdex ids in the collection file.",
+  "detail": "TCGdex Cardmarket: Mew ex 152 7-day avg €84.09 vs 30-day €90.08 (−7%); Pikachu ex 150 €51.38 vs €55.00 (−7%). Both under the 20% threshold and unchanged from yesterday's feed.",
   "source": "TCGdex API",
   "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
  }
