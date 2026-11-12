@@ -142,6 +142,28 @@
   .cd-spend-track { position: relative; height: 14px; border-radius: 999px; background: color-mix(in srgb, var(--color-fg) 8%, transparent); overflow: hidden; }
   .cd-spend-fill { height: 100%; border-radius: 999px; background: var(--holo); background-size: 200% 100%; animation: cd-foil 9s linear infinite; }
 
+  /* My sets: checklists. */
+  .cd-set-bar { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); justify-content: space-between; align-items: center; }
+  .cd-set-prog { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: var(--cds-gap-md); }
+  .cd-prog { display: grid; gap: 4px; padding: var(--cds-pad-sm) var(--cds-pad-md); border: 1px solid var(--color-border-line); border-radius: 12px; }
+  .cd-prog-top { display: flex; justify-content: space-between; align-items: baseline; gap: var(--cds-gap-xs); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .cd-prog-n { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-heading); color: var(--color-fg); font-variant-numeric: tabular-nums; }
+  .cd-prog-track { height: 8px; border-radius: 999px; background: color-mix(in srgb, var(--color-fg) 8%, transparent); overflow: hidden; }
+  .cd-prog-fill { height: 100%; border-radius: 999px; background: var(--holo); background-size: 200% 100%; }
+  .cd-prog-cost { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+  .cd-set-list { display: grid; gap: var(--cds-gap-sm); }
+  .cd-set-group { display: grid; gap: var(--cds-gap-xs); }
+  .cd-set-group h3 { margin: var(--cds-pad-sm) 0 0; font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); }
+  .cd-set-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 11.5rem), 1fr)); gap: 6px; }
+  .cd-slotbox { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 2px 8px; align-items: start; padding: 8px 10px; border-radius: 10px; border: 1px dashed color-mix(in srgb, var(--color-fg) 22%, transparent); cursor: pointer; font-size: var(--cds-font-size-caption); min-width: 0; }
+  .cd-slotbox input { margin: 2px 0 0; grid-row: span 2; accent-color: var(--op); width: 1rem; height: 1rem; }
+  .cd-slotbox.is-owned { border: 2px solid transparent; padding: 7px 9px; background: linear-gradient(var(--color-panel), var(--color-panel)) padding-box, var(--holo) border-box; }
+  .cd-slot-line { display: flex; min-width: 0; }
+  .cd-slot-title { font-weight: var(--cds-font-weight-medium); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .cd-slot-sub { color: var(--color-fg-muted); display: flex; gap: 6px; justify-content: space-between; }
+  .cd-slot-sub b { font-weight: var(--cds-font-weight-medium); color: var(--color-fg); font-variant-numeric: tabular-nums; }
+  .cd-slotbox:has(input:disabled) { cursor: default; }
+
   @media (prefers-reduced-motion: reduce) {
     .cd-spend-fill { animation: none; }
     .cd-holo-frame, .cd-title em, .cd-tab[aria-selected="true"], .cd-card > .cd-h2::before { animation: none; }
@@ -151,7 +173,7 @@
 
 <div class="cd">
   <header class="cd-head cd-hero cd-holo-frame">
-    <p class="cd-hello" data-draw="hello">Hello, Warren</p>
+    <p class="cd-hello" data-draw="hello">—</p>
     <h1 class="cd-title">Warren's <em>Collector's Desk</em></h1>
     <p class="cd-sub">Your Pokémon and One Piece corner, from Réunion to Mauritius. Prices in euros, with rupees alongside. Updated <span data-draw="updated" data-source="daily_hits" data-field="date" data-row="0">—</span>.</p>
     <svg class="cd-stamp" viewBox="0 0 100 100" aria-hidden="true">
@@ -205,6 +227,7 @@
       <button class="cd-tab" role="tab" data-tab="calendar" aria-selected="false">Calendar</button>
       <button class="cd-tab" role="tab" data-tab="market" aria-selected="false">Market</button>
       <button class="cd-tab" role="tab" data-tab="collection" aria-selected="false">My collection</button>
+      <button class="cd-tab" role="tab" data-tab="sets" aria-selected="false">My sets</button>
       <button class="cd-tab" role="tab" data-tab="shops" aria-selected="false">Shops</button>
     </nav>
     <div class="cd-chips" role="group" aria-label="Game">
@@ -329,7 +352,7 @@
         <div class="cd-spend-fig"><b data-draw="worth" data-source="spending" data-field="worth">—</b><span>your cards are worth today</span></div>
         <div class="cd-spend-fig"><b data-draw="back" data-source="spending" data-field="back">—</b><span>of what you spent, back in card value</span></div>
       </div>
-      <div class="cd-spend-track" role="img" data-draw="spendbar" data-source="spending" aria-label="Card value as a share of money spent"><div class="cd-spend-fill"></div></div>
+      <div class="cd-spend-track" role="img" data-draw="spendbar" data-source="spending" aria-label="Card value as a share of money spent">—</div>
       <div class="cd-table-wrap">
         <table class="cd-table" data-source="purchases" data-row-key="id">
           <thead><tr>
@@ -368,6 +391,27 @@
           <tbody data-draw="collection"></tbody>
         </table>
       </div>
+    </div>
+  </section>
+
+  <section class="cd-page" id="sets" role="tabpanel" hidden>
+    <div class="cd-card" id="sets-card">
+      <h2 class="cd-h2">My sets</h2>
+      <p class="cd-note">Tick every card you own, from packs or singles, and keep every card from a pack you open: commons count too. Your ticks are saved to your account and only you see them. "To finish" is what the missing cards would cost as singles at this week's Cardmarket price.</p>
+      <div class="cd-set-bar">
+        <div class="cd-chips" role="group" aria-label="Set">
+          <button class="cd-chip cd-set-chip" data-set="30th Celebration" aria-pressed="true">Pokémon 30th Celebration</button>
+          <button class="cd-chip cd-set-chip" data-set="OP-17" aria-pressed="false">One Piece OP-17</button>
+        </div>
+        <div class="cd-chips" role="group" aria-label="Show">
+          <button class="cd-chip cd-show-chip" data-show="all" aria-pressed="true">All cards</button>
+          <button class="cd-chip cd-show-chip" data-show="missing" aria-pressed="false">Missing</button>
+          <button class="cd-chip cd-show-chip" data-show="owned" aria-pressed="false">Owned</button>
+        </div>
+      </div>
+      <p class="cd-note" data-draw="setsave">—</p>
+      <div class="cd-set-prog" data-draw="setprog" data-source="sets"></div>
+      <div class="cd-set-list" data-draw="setgrid" data-source="sets"></div>
     </div>
   </section>
 
@@ -775,7 +819,10 @@
   dash.draw('spendbar', (el) => {
     const r = cdRows('spending');
     const v = r && r.length ? Math.min(1, +r[0].back || 0) : 0;
-    el.firstElementChild.style.width = (v * 100) + '%';
+    const fill = document.createElement('div');
+    fill.className = 'cd-spend-fill';
+    fill.style.width = (v * 100) + '%';
+    el.replaceChildren(fill);
   });
   dash.draw('purchases', (el) => {
     const r = cdRows('purchases');
@@ -789,6 +836,123 @@
       tr.append(cdCell(x.when), cdCell(x.product, 'cd-item-title'), g, cdCell(x.language), cdCell(x.units),
         cdCell(x.unit_eur != null ? eur(x.unit_eur) : '?'), cdCell(x.total_eur != null ? eur(x.total_eur) : 'Not recorded'), cdCell(x.note, 'cd-wide'));
       return tr;
+    }));
+  });
+</script>
+
+<script>
+  // My sets: which cards you own, saved privately to your account.
+  const SETS = window.cdSets = { set: '30th Celebration', show: 'all', owned: {}, ref: null, state: 'loading', writing: false, queued: false };
+  const redraw = () => ['setsave', 'setprog', 'setgrid'].forEach((n) => dash.draw(n));
+  document.querySelectorAll('.cd-set-chip').forEach((c) => c.addEventListener('click', () => {
+    SETS.set = c.dataset.set;
+    document.querySelectorAll('.cd-set-chip').forEach((x) => x.setAttribute('aria-pressed', String(x === c)));
+    redraw();
+  }));
+  document.querySelectorAll('.cd-show-chip').forEach((c) => c.addEventListener('click', () => {
+    SETS.show = c.dataset.show;
+    document.querySelectorAll('.cd-show-chip').forEach((x) => x.setAttribute('aria-pressed', String(x === c)));
+    dash.draw('setgrid');
+  }));
+
+  // Saving: one write at a time; a tick made while saving goes in the next write.
+  const save = async () => {
+    if (!SETS.ref) return;
+    if (SETS.writing) { SETS.queued = true; return; }
+    SETS.writing = true; SETS.state = 'saving'; dash.draw('setsave');
+    try {
+      do { SETS.queued = false; await SETS.ref.set({ owned: { ...SETS.owned } }); } while (SETS.queued);
+      SETS.state = 'saved';
+    } catch (e) {
+      SETS.state = 'failed';
+    }
+    SETS.writing = false; dash.draw('setsave');
+  };
+  window.cdToggleOwned = (id, on) => {
+    if (on) SETS.owned[id] = true; else delete SETS.owned[id];
+    save();
+    dash.draw('setprog');
+  };
+
+  (async () => {
+    const timer = setTimeout(() => { if (SETS.state === 'loading') { SETS.state = 'slow'; redraw(); } }, 10000);
+    const [db, user] = await Promise.all([claude.use('db'), claude.use('user')]);
+    const id = user ? await user.id() : null;
+    if (!db || !id) { clearTimeout(timer); SETS.state = 'unavailable'; redraw(); return; }
+    SETS.ref = db.doc('data/users/' + id + '/sets');
+    SETS.ref.onSnapshot((snap) => {
+      if (!snap.metadata.fromCache) clearTimeout(timer);
+      if (!SETS.writing) SETS.owned = { ...((snap.exists && snap.data().owned) || {}) };
+      if (SETS.state === 'loading' || SETS.state === 'slow') SETS.state = 'ready';
+      redraw();
+    }, () => { clearTimeout(timer); SETS.state = 'unavailable'; redraw(); });
+  })();
+
+  const STATUS = {
+    loading: 'Loading your ticks…',
+    slow: 'Your ticks can’t be reached yet. Ticking still works and saves once the connection is back.',
+    ready: 'Tap a card to tick it.',
+    saving: 'Saving…',
+    saved: 'Saved.',
+    failed: 'That tick wasn’t saved. Try again in a moment.',
+    unavailable: 'Your ticks can’t be saved in this view. Open the dashboard on claude.ai while signed in.',
+  };
+  dash.draw('setsave', (el) => { el.textContent = STATUS[SETS.state] || '—'; });
+
+  const eurFmt = (v) => '€' + d3.format(',.2f')(v);
+  const rowsOfSet = () => (cdRows('sets') || []).filter((r) => r.set === SETS.set).sort((a, b) => a.order - b.order);
+
+  dash.draw('setprog', (el) => {
+    const rows = rowsOfSet();
+    if (!rows.length) { el.replaceChildren(); return; }
+    const box = (label, list) => {
+      const have = list.filter((r) => SETS.owned[r.id]).length;
+      const cost = list.filter((r) => !SETS.owned[r.id]).reduce((s, r) => s + (+r.price_eur || 0), 0);
+      const b = cdEl('div', 'cd-prog');
+      const top = cdEl('div', 'cd-prog-top');
+      top.append(cdEl('span', null, label), cdEl('span', 'cd-prog-n', have + ' / ' + list.length));
+      const track = cdEl('div', 'cd-prog-track');
+      const fill = cdEl('div', 'cd-prog-fill');
+      fill.style.width = (list.length ? have / list.length * 100 : 0) + '%';
+      track.append(fill);
+      b.append(top, track, cdEl('span', 'cd-prog-cost', have === list.length ? 'Complete!' : 'To finish: ' + eurFmt(cost)));
+      return b;
+    };
+    el.replaceChildren(...d3.groups(rows, (r) => r.group).map(([g, list]) => box(g, list)));
+  });
+
+  dash.draw('setgrid', (el) => {
+    const rows = rowsOfSet();
+    if (!rows.length) { el.replaceChildren(); return; }
+    const canTick = !!SETS.ref;
+    const show = (r) => SETS.show === 'all' || (SETS.show === 'owned') === !!SETS.owned[r.id];
+    el.replaceChildren(...d3.groups(rows, (r) => r.group).map(([g, list]) => {
+      const sec = cdEl('div', 'cd-set-group');
+      const visible = list.filter(show);
+      sec.hidden = visible.length === 0;
+      sec.append(cdEl('h3', null, g));
+      const grid = cdEl('div', 'cd-set-grid');
+      grid.append(...visible.map((r) => {
+        const lab = document.createElement('label');
+        lab.className = 'cd-slotbox' + (SETS.owned[r.id] ? ' is-owned' : '');
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.checked = !!SETS.owned[r.id];
+        cb.disabled = !canTick;
+        cb.addEventListener('change', () => {
+          lab.classList.toggle('is-owned', cb.checked);
+          cdToggleOwned(r.id, cb.checked);
+          if (SETS.show !== 'all') dash.draw('setgrid');
+        });
+        const line = cdEl('span', 'cd-slot-line');
+        line.append(cdEl('span', 'cd-slot-title', r.name));
+        const sub = cdEl('span', 'cd-slot-sub');
+        sub.append(cdEl('span', null, r.num + ' · ' + r.rarity), cdEl('b', null, r.price_eur != null ? eurFmt(r.price_eur) : ''));
+        lab.append(cb, line, sub);
+        return lab;
+      }));
+      sec.append(grid);
+      return sec;
     }));
   });
 </script>

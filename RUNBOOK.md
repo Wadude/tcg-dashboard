@@ -19,6 +19,7 @@ How the scheduled runs refresh the TCG Collector's Desk. Each run starts fresh: 
 | `meta` | `data/meta.json` | id, game, deck, share (0–1), key_cards |
 | `shops` | `data/shops.json` | id, name, island (Réunion / Mauritius / Online), town, games, notes, url, url_label |
 | `collection` | `data/collection.json` | built by `scripts/build_collection.py`; don't hand-edit prices |
+| `sets` | `data/sets.json` | built by `scripts/build_sets.py` (id, set, game, group, group_order, num, name, rarity, price_eur, order); don't hand-edit. The collector's ticks live in the dashboard under their own private data, never in this repo |
 | `purchases` | `data/purchases.json` | id, date (ISO), when, product, game, language, units, unit_eur, total_eur (null when unknown), note. Kept by hand in a normal session; scheduled runs don't change it |
 
 A file must never be an empty list (the dashboard can't read it). For a quiet day, `daily_hits` keeps one row: kind "news", title "Quiet day", detail saying nothing new since yesterday.
@@ -56,8 +57,9 @@ Goal: a 2-minute read of what is new since yesterday's `daily_hits`. Usually 3�
 Do the daily run's steps first if it hasn't run today, then:
 
 1. Archive last week's edition: copy `data/weekly.json` to `data/archive/weekly-<edition date>.json`.
-2. Refresh the collection: `python scripts/build_collection.py` (reads the card list in `data/catalogue.json`, writes `data/collection.json`; standard library only). When the collector adds or changes cards, update `data/catalogue.json` (same fields) in a normal session.
-3. Research the week (in parallel subagents if available): Pokémon (releases EN/FR/JP for the next 4 months, last week's results, upcoming events, meta shares from Limitless, price movers via TCGdex), One Piece (same, with Limitless and opboxindex), and the Réunion/Mauritius shops.
-4. Rewrite `releases`, `events` (drop events finished more than 6 weeks ago), `movers` (10–15 rows, the biggest moves), `meta`.
-5. Write the new `data/weekly.json`, edition "Week of <Monday's date>". Sections, in order: The week in short; one section per big story (2–5); Championships; Your collection (what moved among the collector's cards, what to hold or sell, using the demand signals); Language gaps; Réunion window (days left until 27 Dec; after that, buying from Mauritius); Coming up; About the numbers. Compare with last week's archive where useful.
-6. Publish every changed file and commit.
+2. Refresh the set checklists' prices: `python scripts/build_sets.py` (publish `sets` like any other file).
+3. Refresh the collection: `python scripts/build_collection.py` (reads the card list in `data/catalogue.json`, writes `data/collection.json`; standard library only). When the collector adds or changes cards, update `data/catalogue.json` (same fields) in a normal session.
+4. Research the week (in parallel subagents if available): Pokémon (releases EN/FR/JP for the next 4 months, last week's results, upcoming events, meta shares from Limitless, price movers via TCGdex), One Piece (same, with Limitless and opboxindex), and the Réunion/Mauritius shops.
+5. Rewrite `releases`, `events` (drop events finished more than 6 weeks ago), `movers` (10–15 rows, the biggest moves), `meta`.
+6. Write the new `data/weekly.json`, edition "Week of <Monday's date>". Sections, in order: The week in short; one section per big story (2–5); Championships; Your collection (what moved among the collector's cards, what to hold or sell, using the demand signals); Language gaps; Réunion window (days left until 27 Dec; after that, buying from Mauritius); Coming up; About the numbers. Compare with last week's archive where useful.
+7. Publish every changed file and commit.
