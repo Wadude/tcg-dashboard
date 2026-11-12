@@ -1,56 +1,56 @@
 [
  {
   "id": "h1",
-  "date": "Wed 11 Nov 2026",
-  "kind": "news",
-  "game": "One Piece",
-  "importance": "Medium",
-  "title": "French roundup lists 2027 One Piece dates: EB-06 on 29 Jan, OP-19 on 5 Mar, PEB-01 on 23 Apr",
-  "detail": "A French retailer news post gives EB-06 (29 Jan 2027), OP-19 'Egghead' (5 Mar 2027) and the first Premium Extra Booster PEB-01 (23 Apr 2027). Retailer blog, not Bandai: treat as unconfirmed until the official site shows them.",
-  "source": "Lorenzone (retailer blog)",
-  "url": "https://lorenzone.fr/blogs/news/actualites-tcg-7-novembre-2026-one-piece-pokemon-riftbound"
- },
- {
-  "id": "h2",
-  "date": "Wed 11 Nov 2026",
-  "kind": "event",
-  "game": "One Piece",
-  "importance": "",
-  "title": "Porto and Sydney regionals (7 Nov): results still not online",
-  "detail": "Limitless's One Piece list still ends at 26 Jul 2026, so winners and decks are unconfirmed. Nothing new since yesterday.",
-  "source": "Limitless One Piece",
-  "url": "https://onepiece.limitlesstcg.com/tournaments"
- },
- {
-  "id": "h3",
-  "date": "Wed 11 Nov 2026",
+  "date": "Thu 12 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
   "importance": "Medium",
-  "title": "Miyata Kard Market (Réunion): Delta Reign second wave due 17 Nov, stock labels unclear",
-  "detail": "Page lists ETB (€79.99), Display 36 (€239.99), Bundle of 6 (€44.99), 3-pack (€19.99) and booster (€7.99) as pre-orders with arrival 17/11/2026. Only the bundle clearly shows 'En vente'; the other items show both 'Ajouter au panier' and 'Épuisé', so availability is unconfirmed. Also lists Korean m6 Storm Emeralda (booster €4.50, 30-box €119.90).",
+  "title": "Miyata Kard Market: Delta Reign ETB now shows sold out, second wave due 17 Nov",
+  "detail": "Page marks the Elite Trainer Box (€79.99) 'Épuisé'; only the 6-booster bundle (€44.99) is clearly 'En vente'. Tripack, Display 36 and single booster are listed as 2nd-wave pre-orders arriving 17/11/2026, but their stock labels are inconsistent, so availability is unconfirmed.",
   "source": "Miyata Kard Market",
   "url": "https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"
  },
  {
-  "id": "h4",
-  "date": "Wed 11 Nov 2026",
+  "id": "h2",
+  "date": "Thu 12 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
   "importance": "",
-  "title": "Mega Greninja ex League Battle Deck reported for retail today (11 Nov)",
-  "detail": "A search summary of an ICv2 report gives 11 Nov 2026 for the retail release. I did not open the article, so the date and contents are unconfirmed; check a Réunion shop before counting on it.",
-  "source": "ICv2",
-  "url": "https://icv2.com/articles/news/view/63295/new-pokemon-tcg-league-battle-deck-incoming"
+  "title": "Mega Greninja ex League Battle Deck: date now disputed (11 or 13 Nov)",
+  "detail": "ICv2 reported 11 Nov, another listing (OTIA) says 13 Nov. Neither confirmed by Pokémon officially; ask a Réunion shop before counting on it.",
+  "source": "ICv2 / OTIA",
+  "url": "https://otia.com/news/pokemon-tcg-november-2026-releases-delta-reign-30th-celebration-mega-greninja-ex"
+ },
+ {
+  "id": "h3",
+  "date": "Thu 12 Nov 2026",
+  "kind": "event",
+  "game": "Both",
+  "importance": "",
+  "title": "This Saturday 14 Nov: Pokémon Special Event Buenos Aires and four One Piece regionals",
+  "detail": "One Piece regionals in Bristol, São Paulo, Niagara Falls and Knoxville. Porto/Sydney (7 Nov) results are still not on Limitless (its One Piece list still ends 26 Jul), so winners are unconfirmed.",
+  "source": "Limitless TCG",
+  "url": "https://onepiece.limitlesstcg.com/tournaments/upcoming"
+ },
+ {
+  "id": "h4",
+  "date": "Thu 12 Nov 2026",
+  "kind": "news",
+  "game": "One Piece",
+  "importance": "",
+  "title": "OP-18 is 8 days away: English 20 Nov, Japanese 21 Nov",
+  "detail": "Retailer calendar gives EN 20 Nov ($4.99/pack) and JP 21 Nov (¥240/pack), plus Gift Collection Heroines on 20 Nov. French release date still unconfirmed (pre-releases 21–28 Nov).",
+  "source": "Samurai Sword Tokyo (retailer)",
+  "url": "https://samuraiswordtokyo.com/blogs/news/one-piece-card-game-news-october-november-2026-calendar"
  },
  {
   "id": "h5",
-  "date": "Wed 11 Nov 2026",
+  "date": "Thu 12 Nov 2026",
   "kind": "mover",
   "game": "Pokémon",
   "importance": "",
-  "title": "Price check: no 20% moves",
-  "detail": "TCGdex Cardmarket: Mew ex 152 7-day avg €84.09 vs 30-day €90.08 (−7%); Pikachu ex 150 €51.38 vs €55.00 (−7%). Both under the 20% threshold and unchanged from yesterday's feed.",
+  "title": "Price check: still no 20% moves",
+  "detail": "TCGdex Cardmarket 7-day vs 30-day: Mew ex 152 €82.68 vs €88.71 (−7%); Pikachu ex 150 €50.74 vs €54.16 (−6%); Gengar ex 154 €63.94 vs €67.35 (−5%); Morpeko ex 117 €48.02 vs €51.90 (−7%); Jirachi €32.25 vs €33.41; Sylveon €33.09 vs €33.36. Slide is slowing.",
   "source": "TCGdex API",
   "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
  }
