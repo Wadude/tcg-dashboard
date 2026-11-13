@@ -1,57 +1,35 @@
 [
  {
   "id": "h1",
-  "date": "Thu 12 Nov 2026",
+  "date": "Fri 13 Nov 2026",
   "kind": "news",
-  "game": "Pokémon",
+  "game": "One Piece",
   "importance": "Medium",
-  "title": "Miyata Kard Market: Delta Reign ETB now shows sold out, second wave due 17 Nov",
-  "detail": "Page marks the Elite Trainer Box (€79.99) 'Épuisé'; only the 6-booster bundle (€44.99) is clearly 'En vente'. Tripack, Display 36 and single booster are listed as 2nd-wave pre-orders arriving 17/11/2026, but their stock labels are inconsistent, so availability is unconfirmed.",
-  "source": "Miyata Kard Market",
-  "url": "https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"
+  "title": "OP-18 store event: Bandai's 4th Anniversary event runs 20 Nov – 17 Dec",
+  "detail": "Official page lists the OP-18 Release Event (store tournaments tied to the 4th anniversary). It is the English-language page, so French shops may run it differently. OP-18 itself is expected 20 Nov (EN) and 21 Nov (JP) per retailer calendars; French date still unconfirmed. A tournament-legality note (OP-18 playable about a week after release) comes from a secondary source, unconfirmed.",
+  "source": "Bandai One Piece Card Game (official)",
+  "url": "https://en.onepiece-cardgame.com/events/store-tournament-op18.html"
  },
  {
   "id": "h2",
-  "date": "Thu 12 Nov 2026",
-  "kind": "news",
-  "game": "Pokémon",
-  "importance": "",
-  "title": "Mega Greninja ex League Battle Deck: date now disputed (11 or 13 Nov)",
-  "detail": "ICv2 reported 11 Nov, another listing (OTIA) says 13 Nov. Neither confirmed by Pokémon officially; ask a Réunion shop before counting on it.",
-  "source": "ICv2 / OTIA",
-  "url": "https://otia.com/news/pokemon-tcg-november-2026-releases-delta-reign-30th-celebration-mega-greninja-ex"
- },
- {
-  "id": "h3",
-  "date": "Thu 12 Nov 2026",
+  "date": "Fri 13 Nov 2026",
   "kind": "event",
   "game": "Both",
   "importance": "",
-  "title": "This Saturday 14 Nov: Pokémon Special Event Buenos Aires and four One Piece regionals",
-  "detail": "One Piece regionals in Bristol, São Paulo, Niagara Falls and Knoxville. Porto/Sydney (7 Nov) results are still not on Limitless (its One Piece list still ends 26 Jul), so winners are unconfirmed.",
+  "title": "Tomorrow: Pokémon Special Event Buenos Aires and four One Piece regionals; Porto/Sydney results still missing",
+  "detail": "Limitless's One Piece list still ends 26 Jul, so winners of the 7 Nov Porto and Sydney regionals remain unconfirmed.",
   "source": "Limitless TCG",
   "url": "https://onepiece.limitlesstcg.com/tournaments/upcoming"
  },
  {
-  "id": "h4",
-  "date": "Thu 12 Nov 2026",
-  "kind": "news",
-  "game": "One Piece",
-  "importance": "",
-  "title": "OP-18 is 8 days away: English 20 Nov, Japanese 21 Nov",
-  "detail": "Retailer calendar gives EN 20 Nov ($4.99/pack) and JP 21 Nov (¥240/pack), plus Gift Collection Heroines on 20 Nov. French release date still unconfirmed (pre-releases 21–28 Nov).",
-  "source": "Samurai Sword Tokyo (retailer)",
-  "url": "https://samuraiswordtokyo.com/blogs/news/one-piece-card-game-news-october-november-2026-calendar"
- },
- {
-  "id": "h5",
-  "date": "Thu 12 Nov 2026",
+  "id": "h3",
+  "date": "Fri 13 Nov 2026",
   "kind": "mover",
   "game": "Pokémon",
   "importance": "",
-  "title": "Price check: still no 20% moves",
-  "detail": "TCGdex Cardmarket 7-day vs 30-day: Mew ex 152 €82.68 vs €88.71 (−7%); Pikachu ex 150 €50.74 vs €54.16 (−6%); Gengar ex 154 €63.94 vs €67.35 (−5%); Morpeko ex 117 €48.02 vs €51.90 (−7%); Jirachi €32.25 vs €33.41; Sylveon €33.09 vs €33.36. Slide is slowing.",
-  "source": "TCGdex API",
-  "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
+  "title": "Price check: no 20% moves, Delta Reign shelves are mostly pre-orders",
+  "detail": "TCGdex Cardmarket 7-day vs 30-day: Mew ex 152 €83.35 vs €88.55 (−6%); Pikachu ex 150 €51.10 vs €53.76 (−5%); Gengar ex 154 €63.63 vs €66.95 (−5%); Jirachi ex €31.48 vs €33.07 (−5%); Morpeko ex 117 €48.68 vs €51.85 (−6%); Mega Darkrai ex 116 €172.61 vs €178.29 (−3%). Miyata Kard Market's Delta Reign page now shows 2 items 'En vente' and 38 'Précommande' (second wave 17 Nov, unconfirmed).",
+  "source": "TCGdex API / Miyata Kard Market",
+  "url": "https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"
  }
 ]
