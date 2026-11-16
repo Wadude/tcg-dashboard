@@ -1,45 +1,45 @@
 [
  {
   "id": "h1",
-  "date": "Sun 15 Nov 2026",
+  "date": "Mon 16 Nov 2026",
   "kind": "event",
   "game": "Both",
   "importance": "",
-  "title": "Results from Saturday's events are not online yet",
-  "detail": "Limitless still lists nothing for Pokémon Special Event Buenos Aires (14 Nov) or the One Piece regionals of 7 and 14 Nov; its One Piece list still ends 26 Jul. Winners stay unconfirmed. Next up: Pokémon Latin America Internationals, São Paulo, 20–22 Nov.",
+  "title": "Still no results for Buenos Aires or the 14 Nov One Piece regionals",
+  "detail": "Limitless Pokémon lists nothing newer than Gdańsk (31 Oct); its One Piece list still ends 26 Jul. Winners stay unconfirmed. Next: Pokémon Latin America Internationals, São Paulo, 20–22 Nov.",
   "source": "Limitless TCG",
   "url": "https://limitlesstcg.com/tournaments"
  },
  {
   "id": "h2",
-  "date": "Sun 15 Nov 2026",
+  "date": "Mon 16 Nov 2026",
   "kind": "news",
   "game": "One Piece",
-  "importance": "Medium",
-  "title": "OP-18 date: English 20 Nov, Japan 21 Nov (not 22 Nov)",
-  "detail": "Bandai's English event page runs the OP-18 release events from 20 Nov to 17 Dec. The 20 Nov English and 21 Nov Japanese dates come from secondary sites quoting the product pages, so this corrects yesterday's 22 Nov note but is still not read directly from Bandai. French date still unconfirmed.",
+  "importance": "",
+  "title": "OP-18 dates: sources still disagree",
+  "detail": "Bandai's English event page runs OP-18 release events from 20 Nov. A retailer blog (Samurai Sword Tokyo) still quotes 22 Nov (official X) vs 28 Nov (Japanese retailers). Treat 20 Nov EN / 21 Nov JP as likely, not confirmed. French date unconfirmed.",
   "source": "Bandai EN event page; Samurai Sword Tokyo (secondary)",
   "url": "https://en.onepiece-cardgame.com/events/store-tournament-op18.html"
  },
  {
   "id": "h3",
-  "date": "Sun 15 Nov 2026",
+  "date": "Mon 16 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
   "importance": "",
-  "title": "Réunion: Miyata Kard Market lists a Delta Reign second wave for 17 Nov",
-  "detail": "Page shows 'Arrivage prévu le 17/11/2026' on the Tripack (€19.99), Elite Trainer Box (€79.99), 6-booster Bundle (€44.99) and 36-booster display (€239.99); all but the Bundle read 'Épuisé'. Stock labels on the page conflict, so check before travelling.",
+  "title": "Réunion: Miyata Kard Market restock due tomorrow (17 Nov)",
+  "detail": "Delta Reign page still says 'Arrivage prévu le 17/11/2026': Tripack €19.99, Elite Trainer Box €79.99, 6-booster Bundle €44.99, display €239.99, single booster €7.99. Stock labels on the page conflict (add-to-cart and 'Épuisé' together), so check each product page.",
   "source": "Miyata Kard Market",
   "url": "https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"
  },
  {
   "id": "h4",
-  "date": "Sun 15 Nov 2026",
+  "date": "Mon 16 Nov 2026",
   "kind": "mover",
   "game": "Pokémon",
   "importance": "",
   "title": "Price check: still no 20% moves",
-  "detail": "TCGdex Cardmarket 7-day vs 30-day averages: Mew ex 152 €82.27 vs €87.75 (−6%); Gengar ex 154 €62.47 vs €66.64 (−6%); Pikachu ex 150 €50.23 vs €53.28 (−6%). Same as yesterday, nothing to act on.",
+  "detail": "TCGdex Cardmarket 7-day vs 30-day averages: Mew ex 152 €81.34 vs €86.68 (−6%); Gengar ex 154 €61.78 vs €65.38 (−6%); Pikachu ex 150 €50.22 vs €52.44 (−4%). Other cards not checked (API was unavailable at first). Nothing to act on.",
   "source": "TCGdex API",
   "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
  }
