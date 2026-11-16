@@ -1,5 +1,16 @@
 [
  {
+  "id": "op-op17",
+  "game": "One Piece",
+  "region": "EN · FR",
+  "name": "OP-17 The World's Strongest Warriors",
+  "date": "2026-08-28",
+  "when": "28 Aug 2026",
+  "details": "FR: Les Guerriers les plus puissants au monde. FR display €229.90 at Play-in. Chase: Manga Rocks D. Xebec.",
+  "status": "Released",
+  "url": "https://onepiece.limitlesstcg.com/cards/op17-the-worlds-strongest-warriors"
+ },
+ {
   "id": "pk-30th-en",
   "game": "Pokémon",
   "region": "EN",
@@ -33,50 +44,6 @@
   "url": "https://www.serebii.net/card/japanese.shtml"
  },
  {
-  "id": "pk-me06",
-  "game": "Pokémon",
-  "region": "EN · FR",
-  "name": "Règne Delta / Delta Reign (ME06)",
-  "date": "2026-11-06",
-  "when": "Fri 6 Nov 2026",
-  "details": "Out since 6 Nov. Chase: Mega Rayquaza ex in three versions (Double Rare 084, Special Illustration Rare 138, gold Mega Hyper Rare 141). Early English estimates for the SIR and gold card range from about $285 to $400 depending on the site; no official pull rates. Mega Golurk, Malamar, Golisopod ex; Legendary Stadiums.",
-  "status": "Released",
-  "url": "https://folio.fyi/blog/delta-reign-chase-cards"
- },
- {
-  "id": "pk-me7-jp",
-  "game": "Pokémon",
-  "region": "JP",
-  "name": "Aura Seeker (ME7)",
-  "date": "2026-11-27",
-  "when": "Fri 27 Nov 2026",
-  "details": "Mega Lucario Z ex, Mega Absol Z ex, Mega Garchomp Z ex. Becomes Flowing Fists in English. Date reported by PokeBeach.",
-  "status": "Upcoming",
-  "url": "https://www.serebii.net/card/auraseeker/"
- },
- {
-  "id": "pk-me7-en",
-  "game": "Pokémon",
-  "region": "EN",
-  "name": "Flowing Fists (ME7)",
-  "date": "2027-02-05",
-  "when": "Fri 5 Feb 2027",
-  "details": "English version of Aura Seeker. Prereleases 23–31 Jan. Unconfirmed: reported by PokeBeach, not yet official. French name not announced.",
-  "status": "Upcoming",
-  "url": "https://www.pokebeach.com/"
- },
- {
-  "id": "op-op17",
-  "game": "One Piece",
-  "region": "EN · FR",
-  "name": "OP-17 The World's Strongest Warriors",
-  "date": "2026-08-28",
-  "when": "28 Aug 2026",
-  "details": "FR: Les Guerriers les plus puissants au monde. FR display €229.90 at Play-in. Chase: Manga Rocks D. Xebec.",
-  "status": "Released",
-  "url": "https://onepiece.limitlesstcg.com/cards/op17-the-worlds-strongest-warriors"
- },
- {
   "id": "op-eb05-en",
   "game": "One Piece",
   "region": "EN · FR",
@@ -99,6 +66,17 @@
   "url": "https://www.onepiece-cardgame.com/products/"
  },
  {
+  "id": "pk-me06",
+  "game": "Pokémon",
+  "region": "EN · FR",
+  "name": "Règne Delta / Delta Reign (ME06)",
+  "date": "2026-11-06",
+  "when": "Fri 6 Nov 2026",
+  "details": "Out since 6 Nov. Chase: Mega Rayquaza ex in three versions (Double Rare 084, Special Illustration Rare 138, gold Mega Hyper Rare 141). Early English estimates for the SIR and gold card range from about $285 to $400 depending on the site; no official pull rates. Mega Golurk, Malamar, Golisopod ex; Legendary Stadiums.",
+  "status": "Released",
+  "url": "https://folio.fyi/blog/delta-reign-chase-cards"
+ },
+ {
   "id": "op-op18-en",
   "game": "One Piece",
   "region": "EN",
@@ -106,6 +84,17 @@
   "date": "2026-11-20",
   "when": "Fri 20 Nov 2026",
   "details": "Water Seven and God's Knights. Reported chase: two Amano-drawn Secret Rares (Loki and Saint Shamrock reported), God's Knights Super Parallel Gunko. English date confirmed on Bandai's page.",
+  "status": "Upcoming",
+  "url": "https://en.onepiece-cardgame.com/products/"
+ },
+ {
+  "id": "op-gc",
+  "game": "One Piece",
+  "region": "EN",
+  "name": "Gift Collection: Heroines",
+  "date": "2026-11-20",
+  "when": "Fri 20 Nov 2026",
+  "details": "$44.99. Released alongside Double Pack Set vol.13 (per Bandai's products page).",
   "status": "Upcoming",
   "url": "https://en.onepiece-cardgame.com/products/"
  },
@@ -132,15 +121,15 @@
   "url": "https://samuraiswordtokyo.com/blogs/news/op-18-english-release-date-vs-japan-november-2026"
  },
  {
-  "id": "op-gc",
-  "game": "One Piece",
-  "region": "EN",
-  "name": "Gift Collection: Heroines",
-  "date": "2026-11-20",
-  "when": "Fri 20 Nov 2026",
-  "details": "$44.99. Released alongside Double Pack Set vol.13 (per Bandai's products page).",
+  "id": "pk-me7-jp",
+  "game": "Pokémon",
+  "region": "JP",
+  "name": "Aura Seeker (ME7)",
+  "date": "2026-11-27",
+  "when": "Fri 27 Nov 2026",
+  "details": "Mega Lucario Z ex, Mega Absol Z ex, Mega Garchomp Z ex. Becomes Flowing Fists in English. Date reported by PokeBeach. Still described by Japanese shops as unofficial; check before pre-ordering.",
   "status": "Upcoming",
-  "url": "https://en.onepiece-cardgame.com/products/"
+  "url": "https://www.serebii.net/card/auraseeker/"
  },
  {
   "id": "op-st37",
@@ -163,5 +152,38 @@
   "details": "Starter deck.",
   "status": "Upcoming",
   "url": "https://en.onepiece-cardgame.com/products/"
+ },
+ {
+  "id": "pk-valentine",
+  "game": "Pokémon",
+  "region": "EN",
+  "name": "Valentine's Day box",
+  "date": "2027-01-27",
+  "when": "27 Jan 2027 (reported)",
+  "details": "Reported by a retailer blog; not confirmed by The Pokémon Company.",
+  "status": "Upcoming",
+  "url": "https://zatu.com/en-fr/blogs/news/pokemon-tcg-could-be-getting-its-first-valentine-s-day-set"
+ },
+ {
+  "id": "pk-me7-en",
+  "game": "Pokémon",
+  "region": "EN",
+  "name": "Flowing Fists (ME7)",
+  "date": "2027-02-05",
+  "when": "Fri 5 Feb 2027",
+  "details": "English version of Aura Seeker. Prereleases 23–31 Jan. Unconfirmed: reported by PokeBeach, not yet official. French name not announced.",
+  "status": "Upcoming",
+  "url": "https://www.pokebeach.com/"
+ },
+ {
+  "id": "pk-m7a-jp",
+  "game": "Pokémon",
+  "region": "JP",
+  "name": "MEGA x MEGA Parade (M7a), High Class Pack",
+  "date": "2027-02-19",
+  "when": "19 Feb 2027 (unconfirmed)",
+  "details": "One shop calendar lists it for 19 Feb 2027; another says the name is only a trademark and no date is announced. Unconfirmed.",
+  "status": "Upcoming",
+  "url": "https://samuraiswordtokyo.com/release-calendar"
  }
 ]

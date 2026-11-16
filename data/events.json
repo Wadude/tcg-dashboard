@@ -1,16 +1,5 @@
 [
  {
-  "id": "pk-recife",
-  "game": "Pokémon",
-  "name": "Regional Recife",
-  "date": "2026-10-03",
-  "when": "3 Oct 2026",
-  "location": "Brazil",
-  "status": "Done",
-  "result": "Victor Carreira Rodrigues, Ogerpon / Meganium (1,074 players)",
-  "url": "https://limitlesstcg.com/tournaments/580"
- },
- {
   "id": "pk-louisville",
   "game": "Pokémon",
   "name": "Regional Louisville",
@@ -62,7 +51,7 @@
   "when": "Sat 7 Nov 2026",
   "location": "Portugal · Australia",
   "status": "Done",
-  "result": "Played on 7 Nov, the first big events since the Mihawk ban. Results not found yet: Limitless's One Piece results page shows nothing after July. Unconfirmed.",
+  "result": "Played 7 Nov. Results still not found: Limitless's One Piece list ends 26 Jul 2026. Unconfirmed.",
   "url": "https://onepiece.limitlesstcg.com/tournaments"
  },
  {
@@ -72,19 +61,19 @@
   "date": "2026-11-14",
   "when": "Sat 14 Nov 2026",
   "location": "Argentina",
-  "status": "Upcoming",
-  "result": "",
-  "url": "https://limitlesstcg.com/tournaments/upcoming"
+  "status": "Done",
+  "result": "Special Championships Buenos Aires, 14–15 Nov. No winner found yet (Serebii lists the event; no results published). Unconfirmed.",
+  "url": "https://serebii.net/playpokemon/2027/buenosairesspecialevent.shtml"
  },
  {
   "id": "op-bristol",
   "game": "One Piece",
   "name": "Regionals Bristol, São Paulo, Niagara Falls and Knoxville",
   "date": "2026-11-14",
-  "when": "Sat 14 Nov 2026",
+  "when": "14 Nov or 21–22 Nov 2026 (dates conflict)",
   "location": "UK · Brazil · Canada · USA",
-  "result": "",
-  "url": "https://onepiece.limitlesstcg.com/tournaments/upcoming",
+  "result": "Limitless no longer lists Bristol, São Paulo, Niagara Falls or Knoxville as upcoming, but the Bristol organiser page says 21–22 Nov (Ashton Gate). Unconfirmed whether they were played on 14 Nov.",
+  "url": "https://tickets.organizedplay.events/Event/Index/178",
   "status": "Upcoming"
  },
  {
@@ -165,6 +154,17 @@
   "url": "https://en.onepiece-cardgame.com/events/treasure-cup-dec-2026.html"
  },
  {
+  "id": "op-peoria",
+  "game": "One Piece",
+  "name": "Regional Peoria, Santiago and Mexico City",
+  "date": "2026-12-05",
+  "when": "5–6 Dec 2026",
+  "location": "USA · Chile · Mexico",
+  "status": "Upcoming",
+  "result": "",
+  "url": "https://onepiece.limitlesstcg.com/tournaments/upcoming"
+ },
+ {
   "id": "op-paris",
   "game": "One Piece",
   "name": "Regional Paris and Treasure Cup Rungis",
@@ -174,6 +174,17 @@
   "status": "Upcoming",
   "result": "The French events to watch for French card prices",
   "url": "https://en.onepiece-cardgame.com/events/treasure-cup-dec-2026.html"
+ },
+ {
+  "id": "op-dec19",
+  "game": "One Piece",
+  "name": "Regionals Monroeville and Melbourne",
+  "date": "2026-12-19",
+  "when": "19 Dec 2026",
+  "location": "USA · Australia",
+  "status": "Upcoming",
+  "result": "",
+  "url": "https://onepiece.limitlesstcg.com/tournaments/upcoming"
  },
  {
   "id": "op-na-finals",
@@ -204,6 +215,17 @@
   "date": "2027-01-16",
   "when": "Sat 16 Jan 2027",
   "location": "Australia · USA",
+  "status": "Upcoming",
+  "result": "",
+  "url": "https://limitlesstcg.com/tournaments/upcoming"
+ },
+ {
+  "id": "pk-merida",
+  "game": "Pokémon",
+  "name": "Regional Mérida",
+  "date": "2027-01-23",
+  "when": "23 Jan 2027",
+  "location": "Mexico",
   "status": "Upcoming",
   "result": "",
   "url": "https://limitlesstcg.com/tournaments/upcoming"
