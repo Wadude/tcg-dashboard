@@ -1,45 +1,56 @@
 [
  {
   "id": "h1",
-  "date": "Mon 16 Nov 2026",
+  "date": "Tue 17 Nov 2026",
   "kind": "event",
-  "game": "Both",
-  "importance": "",
-  "title": "Still no results for Buenos Aires or the 14 Nov One Piece regionals",
-  "detail": "Limitless Pokémon lists nothing newer than Gdańsk (31 Oct); its One Piece list still ends 26 Jul. Winners stay unconfirmed. Next: Pokémon Latin America Internationals, São Paulo, 20–22 Nov.",
+  "game": "Pokémon",
+  "importance": "Medium",
+  "title": "Buenos Aires Special Event result: Calvin Connor (US) won",
+  "detail": "Limitless lists Calvin Connor (US) as winner of the 14 Nov Special Event Buenos Aires, 553 players. Deck not checked. Next: Latin America Internationals, São Paulo, 20–22 Nov.",
   "source": "Limitless TCG",
-  "url": "https://limitlesstcg.com/tournaments"
+  "url": "https://limitlesstcg.com/tournaments/585"
  },
  {
   "id": "h2",
-  "date": "Mon 16 Nov 2026",
-  "kind": "news",
-  "game": "One Piece",
-  "importance": "",
-  "title": "OP-18 dates: sources still disagree",
-  "detail": "Bandai's English event page runs OP-18 release events from 20 Nov. A retailer blog (Samurai Sword Tokyo) still quotes 22 Nov (official X) vs 28 Nov (Japanese retailers). Treat 20 Nov EN / 21 Nov JP as likely, not confirmed. French date unconfirmed.",
-  "source": "Bandai EN event page; Samurai Sword Tokyo (secondary)",
-  "url": "https://en.onepiece-cardgame.com/events/store-tournament-op18.html"
- },
- {
-  "id": "h3",
-  "date": "Mon 16 Nov 2026",
+  "date": "Tue 17 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
   "importance": "",
-  "title": "Réunion: Miyata Kard Market restock due tomorrow (17 Nov)",
-  "detail": "Delta Reign page still says 'Arrivage prévu le 17/11/2026': Tripack €19.99, Elite Trainer Box €79.99, 6-booster Bundle €44.99, display €239.99, single booster €7.99. Stock labels on the page conflict (add-to-cart and 'Épuisé' together), so check each product page.",
+  "title": "Réunion: Miyata Kard Market's 17 Nov Delta Reign arrival is a '2nd wave'",
+  "detail": "Product titles now read 'Précommande, arrivage prévu le 17/11/2026, 2e VAGUE': Tripack €19.99, ETB €79.99, 6-booster bundle €44.99, display €239.99, booster €7.99. The page shows 7 add-to-cart and 11 'Épuisé' labels, so check each product. Arrival is a plan, not confirmed stock.",
   "source": "Miyata Kard Market",
   "url": "https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"
  },
  {
+  "id": "h3",
+  "date": "Tue 17 Nov 2026",
+  "kind": "news",
+  "game": "One Piece",
+  "importance": "",
+  "title": "OP-18 dates still unsettled (no new word)",
+  "detail": "Nothing newer found. English 20 Nov per Bandai's page; Japan 21, 22 or 28 Nov depending on source; French release date unconfirmed (pre-release events 21–28 Nov).",
+  "source": "Bandai EN event page",
+  "url": "https://en.onepiece-cardgame.com/events/store-tournament-op18.html"
+ },
+ {
   "id": "h4",
-  "date": "Mon 16 Nov 2026",
+  "date": "Tue 17 Nov 2026",
+  "kind": "event",
+  "game": "One Piece",
+  "importance": "",
+  "title": "One Piece regional results still missing",
+  "detail": "Limitless's One Piece list still ends 26 Jul, so Porto/Sydney (7 Nov) and the 14 Nov regionals remain unconfirmed.",
+  "source": "Limitless One Piece",
+  "url": "https://onepiece.limitlesstcg.com/tournaments"
+ },
+ {
+  "id": "h5",
+  "date": "Tue 17 Nov 2026",
   "kind": "mover",
   "game": "Pokémon",
   "importance": "",
-  "title": "Price check: still no 20% moves",
-  "detail": "TCGdex Cardmarket 7-day vs 30-day averages: Mew ex 152 €81.34 vs €86.68 (−6%); Gengar ex 154 €61.78 vs €65.38 (−6%); Pikachu ex 150 €50.22 vs €52.44 (−4%). Other cards not checked (API was unavailable at first). Nothing to act on.",
+  "title": "Price check: no 20% moves",
+  "detail": "TCGdex Cardmarket 7-day vs 30-day: Mew ex 152 €81.55 vs €86.07 (−5%); Gengar ex 154 €61.79 vs €64.93 (−5%); Pikachu ex 150 €49.18 vs €51.86 (−5%); Jirachi ex 155 €29.56 vs €31.79 (−7%); Mewtwo ex 151 €44.49 vs €46.93 (−5%); Mega Darkrai ex 116 €181.66 vs €176.35 (+3%). Nothing to act on.",
   "source": "TCGdex API",
   "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
  }
