@@ -1,57 +1,68 @@
 [
  {
   "id": "h1",
-  "date": "Tue 17 Nov 2026",
-  "kind": "event",
-  "game": "Pokémon",
+  "date": "Wed 18 Nov 2026",
+  "kind": "news",
+  "game": "One Piece",
   "importance": "Medium",
-  "title": "Buenos Aires Special Event result: Calvin Connor (US) won",
-  "detail": "Limitless lists Calvin Connor (US) as winner of the 14 Nov Special Event Buenos Aires, 553 players. Deck not checked. Next: Latin America Internationals, São Paulo, 20–22 Nov.",
-  "source": "Limitless TCG",
-  "url": "https://limitlesstcg.com/tournaments/585"
+  "title": "OP-18 lands in two days: English 20 Nov, Japan 21 Nov (reported)",
+  "detail": "English release 20 Nov per Bandai's English page. A Japan date of Sat 21 Nov is reported from Bandai's Japanese page by a Tokyo shop's guide (second-hand, not checked on Bandai). French date still unconfirmed; French pre-releases run 21–28 Nov.",
+  "source": "Samurai Sword Tokyo",
+  "url": "https://samuraiswordtokyo.com/blogs/news/op-18-english-release-date-vs-japan-november-2026"
  },
  {
   "id": "h2",
-  "date": "Tue 17 Nov 2026",
+  "date": "Wed 18 Nov 2026",
+  "kind": "event",
+  "game": "Pokémon",
+  "importance": "Medium",
+  "title": "Latin America Internationals starts Fri 20 Nov (São Paulo)",
+  "detail": "Runs 20–22 Nov per Limitless. Champions League Chiba follows on 22 Nov, Regional Stuttgart on 28 Nov. Results will be in tomorrow's or the weekend's hits.",
+  "source": "Limitless TCG",
+  "url": "https://limitlesstcg.com/tournaments/upcoming"
+ },
+ {
+  "id": "h3",
+  "date": "Wed 18 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
   "importance": "",
-  "title": "Réunion: Miyata Kard Market's 17 Nov Delta Reign arrival is a '2nd wave'",
-  "detail": "Product titles now read 'Précommande, arrivage prévu le 17/11/2026, 2e VAGUE': Tripack €19.99, ETB €79.99, 6-booster bundle €44.99, display €239.99, booster €7.99. The page shows 7 add-to-cart and 11 'Épuisé' labels, so check each product. Arrival is a plan, not confirmed stock.",
+  "title": "Réunion: Miyata's Delta Reign '2nd wave' – ETB shows sold out",
+  "detail": "Same 17/11 arrival wave as yesterday. Today the Elite Trainer Box (€79.99) is labelled 'Épuisé'. Bundle of 6 boosters (€44.99) shows on sale; tripack (€19.99) and display (€239.99) status unclear on the page. Check each product before travelling.",
   "source": "Miyata Kard Market",
   "url": "https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"
  },
  {
-  "id": "h3",
-  "date": "Tue 17 Nov 2026",
+  "id": "h4",
+  "date": "Wed 18 Nov 2026",
   "kind": "news",
-  "game": "One Piece",
+  "game": "Pokémon",
   "importance": "",
-  "title": "OP-18 dates still unsettled (no new word)",
-  "detail": "Nothing newer found. English 20 Nov per Bandai's page; Japan 21, 22 or 28 Nov depending on source; French release date unconfirmed (pre-release events 21–28 Nov).",
-  "source": "Bandai EN event page",
-  "url": "https://en.onepiece-cardgame.com/events/store-tournament-op18.html"
+  "title": "Aura Seeker (Japan) is 9 days away: 27 Nov",
+  "detail": "English Flowing Fists is still only reported for 5 Feb 2027 (prereleases 23–31 Jan); The Pokémon Company has not confirmed. Mega Lucario Z ex is the headline card.",
+  "source": "Wargamer",
+  "url": "https://www.wargamer.com/pokemon-trading-card-game/flowing-fists"
  },
  {
-  "id": "h4",
-  "date": "Tue 17 Nov 2026",
+  "id": "h5",
+  "date": "Wed 18 Nov 2026",
+  "kind": "mover",
+  "game": "Pokémon",
+  "importance": "",
+  "title": "Price check: still no 20% moves",
+  "detail": "TCGdex Cardmarket 7-day vs 30-day: Mewtwo ex 151 €44.14 vs €46.50 (−5%); Greninja ex 148 €15.80 vs €17.00 (−7%); Mega Darkrai ex 116 €179.77 vs €175.37 (+3%); Morpeko ex 117 €49.45 vs €49.44 (0%). Other cards could not be fetched this morning.",
+  "source": "TCGdex API",
+  "url": "https://api.tcgdex.net/v2/en/cards/me05-116"
+ },
+ {
+  "id": "h6",
+  "date": "Wed 18 Nov 2026",
   "kind": "event",
   "game": "One Piece",
   "importance": "",
   "title": "One Piece regional results still missing",
-  "detail": "Limitless's One Piece list still ends 26 Jul, so Porto/Sydney (7 Nov) and the 14 Nov regionals remain unconfirmed.",
+  "detail": "Limitless's One Piece list still ends 26 Jul 2026, so the 7 and 14 Nov regionals remain unconfirmed. Next: Oklahoma City, 21 Nov.",
   "source": "Limitless One Piece",
   "url": "https://onepiece.limitlesstcg.com/tournaments"
- },
- {
-  "id": "h5",
-  "date": "Tue 17 Nov 2026",
-  "kind": "mover",
-  "game": "Pokémon",
-  "importance": "",
-  "title": "Price check: no 20% moves",
-  "detail": "TCGdex Cardmarket 7-day vs 30-day: Mew ex 152 €81.55 vs €86.07 (−5%); Gengar ex 154 €61.79 vs €64.93 (−5%); Pikachu ex 150 €49.18 vs €51.86 (−5%); Jirachi ex 155 €29.56 vs €31.79 (−7%); Mewtwo ex 151 €44.49 vs €46.93 (−5%); Mega Darkrai ex 116 €181.66 vs €176.35 (+3%). Nothing to act on.",
-  "source": "TCGdex API",
-  "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
  }
 ]
