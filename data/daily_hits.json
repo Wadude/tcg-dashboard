@@ -1,46 +1,46 @@
 [
  {
   "id": "h1",
-  "date": "Thu 19 Nov 2026",
+  "date": "Fri 20 Nov 2026",
   "kind": "news",
   "game": "One Piece",
-  "importance": "Medium",
-  "title": "OP-18 English release is tomorrow, Fri 20 Nov",
-  "detail": "Bandai's English page gives 20 Nov. Japan: still reported as 21 Nov (second-hand); other sources I found still list 22 or 28 Nov, so treat the Japan date as unconfirmed. French date unconfirmed; French pre-releases run 21–28 Nov. Nothing new announced overnight.",
+  "importance": "High",
+  "title": "OP-18 The Dominance of God is out today in English",
+  "detail": "English release is today, 20 Nov, at $4.99 a pack. Water Seven and God's Knights; Amano-drawn Secret Rares. GameStop (US) caps it at one unit per account. Japan date still disagrees between sources (21, 22 or 28 Nov), so unconfirmed. French date unconfirmed.",
   "source": "Bandai (EN products)",
   "url": "https://en.onepiece-cardgame.com/products/"
  },
  {
   "id": "h2",
-  "date": "Thu 19 Nov 2026",
+  "date": "Fri 20 Nov 2026",
+  "kind": "event",
+  "game": "Pokémon",
+  "importance": "Medium",
+  "title": "Latin America Internationals starts today (São Paulo)",
+  "detail": "20–22 Nov. Day 1 stream scheduled 12:00 UTC (16:00 in Mauritius/Réunion) per Victory Road. No results found yet. Champions League Chiba is Sun 22 Nov, Regional Stuttgart Sat 28 Nov.",
+  "source": "Victory Road",
+  "url": "https://victoryroad.pro/2027-laic/"
+ },
+ {
+  "id": "h3",
+  "date": "Fri 20 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
   "importance": "",
-  "title": "Réunion: Miyata's Delta Reign – only the 6-booster bundle left",
-  "detail": "Page checked today: bundle of 6 boosters (€44.99) is 'En stock'. Tripack (€19.99), Elite Trainer Box (€79.99), single booster (€7.99) and display (€239.99) all show 'Épuisé'. The page's own stock filter disagrees with the product cards, so check before travelling.",
+  "title": "Réunion: Miyata's Delta Reign stock reads differently from yesterday",
+  "detail": "Today the page shows Tripack €19.99, 6-booster bundle €44.99, display €239.99 and single booster €7.99 as in stock; only the Elite Trainer Box (€79.99) is sold out. Yesterday only the bundle was listed in stock. The page's labels are unclear (unconfirmed), so check before travelling.",
   "source": "Miyata Kard Market",
   "url": "https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"
  },
  {
-  "id": "h3",
-  "date": "Thu 19 Nov 2026",
-  "kind": "event",
-  "game": "Pokémon",
-  "importance": "Medium",
-  "title": "Latin America Internationals starts tomorrow (São Paulo)",
-  "detail": "20–22 Nov per Limitless. Champions League Chiba is 22 Nov, Regional Stuttgart 28 Nov. Results in the weekend hits.",
-  "source": "Limitless TCG",
-  "url": "https://limitlesstcg.com/tournaments/upcoming"
- },
- {
   "id": "h4",
-  "date": "Thu 19 Nov 2026",
+  "date": "Fri 20 Nov 2026",
   "kind": "mover",
   "game": "Pokémon",
   "importance": "",
   "title": "Price check: still no 20% moves",
-  "detail": "TCGdex Cardmarket 7-day vs 30-day: Mew ex 152 €81.27 vs €85.71 (−5%); Gengar ex 154 €61.39 vs €64.61 (−5%); Mega Darkrai ex 116 €179.77 vs €175.37 (+3%). Mega Rayquaza ex (ME06 138/141) both read €3.91 vs €4.05 on TCGdex, which looks like placeholder data, so ignore it.",
+  "detail": "Mew ex 152 (30th Celebration) on TCGdex/Cardmarket: 7-day €79.11 vs 30-day €84.81 (−7%), trend €77.72. Nothing near the 20% line.",
   "source": "TCGdex API",
-  "url": "https://api.tcgdex.net/v2/en/cards/me05-116"
+  "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
  }
 ]
