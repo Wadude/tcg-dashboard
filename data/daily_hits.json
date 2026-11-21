@@ -1,46 +1,57 @@
 [
  {
   "id": "h1",
-  "date": "Fri 20 Nov 2026",
+  "date": "Sat 21 Nov 2026",
   "kind": "news",
   "game": "One Piece",
-  "importance": "High",
-  "title": "OP-18 The Dominance of God is out today in English",
-  "detail": "English release is today, 20 Nov, at $4.99 a pack. Water Seven and God's Knights; Amano-drawn Secret Rares. GameStop (US) caps it at one unit per account. Japan date still disagrees between sources (21, 22 or 28 Nov), so unconfirmed. French date unconfirmed.",
-  "source": "Bandai (EN products)",
-  "url": "https://en.onepiece-cardgame.com/products/"
+  "importance": "Medium",
+  "title": "OP-18 reaches Japan today (21 Nov, unconfirmed)",
+  "detail": "English launched yesterday. A French retailer blog gives Japan as Saturday 21 Nov, but sources disagreed earlier this week (21, 22 or 28 Nov), so treat it as unconfirmed. No official French release date found yet; French pre-release events run from 21 Nov.",
+  "source": "Samurai Sword Tokyo",
+  "url": "https://samuraiswordtokyo.com/fr/blogs/news/op-18-english-release-date-vs-japan-november-2026"
  },
  {
   "id": "h2",
-  "date": "Fri 20 Nov 2026",
+  "date": "Sat 21 Nov 2026",
   "kind": "event",
   "game": "Pokémon",
   "importance": "Medium",
-  "title": "Latin America Internationals starts today (São Paulo)",
-  "detail": "20–22 Nov. Day 1 stream scheduled 12:00 UTC (16:00 in Mauritius/Réunion) per Victory Road. No results found yet. Champions League Chiba is Sun 22 Nov, Regional Stuttgart Sat 28 Nov.",
+  "title": "Latin America Internationals continues in São Paulo (Day 2 today)",
+  "detail": "Event runs 20–22 Nov. I could not find confirmed Day 1 results or standings, so no winners to report. Champions League Chiba is tomorrow (22 Nov), Regional Stuttgart Sat 28 Nov.",
   "source": "Victory Road",
   "url": "https://victoryroad.pro/2027-laic/"
  },
  {
   "id": "h3",
-  "date": "Fri 20 Nov 2026",
+  "date": "Sat 21 Nov 2026",
+  "kind": "event",
+  "game": "One Piece",
+  "importance": "",
+  "title": "Regional Oklahoma City is today",
+  "detail": "Sat 21 Nov, USA. Bristol (UK) is listed by its organiser for 21–22 Nov; other regionals' dates still conflict (unconfirmed). Results not yet available.",
+  "source": "Limitless TCG",
+  "url": "https://onepiece.limitlesstcg.com/tournaments/upcoming"
+ },
+ {
+  "id": "h4",
+  "date": "Sat 21 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
   "importance": "",
-  "title": "Réunion: Miyata's Delta Reign stock reads differently from yesterday",
-  "detail": "Today the page shows Tripack €19.99, 6-booster bundle €44.99, display €239.99 and single booster €7.99 as in stock; only the Elite Trainer Box (€79.99) is sold out. Yesterday only the bundle was listed in stock. The page's labels are unclear (unconfirmed), so check before travelling.",
+  "title": "Réunion: Miyata Delta Reign stock unchanged since yesterday",
+  "detail": "Tripack €19.99, 6-booster bundle €44.99, display €239.99 and single booster €7.99 show as available; Elite Trainer Box (€79.99) sold out. Only the ETB is clearly labelled sold out, so confirm before travelling.",
   "source": "Miyata Kard Market",
   "url": "https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"
  },
  {
-  "id": "h4",
-  "date": "Fri 20 Nov 2026",
+  "id": "h5",
+  "date": "Sat 21 Nov 2026",
   "kind": "mover",
   "game": "Pokémon",
   "importance": "",
-  "title": "Price check: still no 20% moves",
-  "detail": "Mew ex 152 (30th Celebration) on TCGdex/Cardmarket: 7-day €79.11 vs 30-day €84.81 (−7%), trend €77.72. Nothing near the 20% line.",
+  "title": "Price check: Mega Darkrai ex 116 is the only notable riser (+14%)",
+  "detail": "TCGdex/Cardmarket: 7-day €203.92 vs 30-day €179.46 (+14%), trend €192.07. Below the 20% line. Mew ex 152 7-day €78.83 vs 30-day €84.22 (−6%); Gengar and Mewtwo ex also −4% to −7%.",
   "source": "TCGdex API",
-  "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
+  "url": "https://api.tcgdex.net/v2/en/cards/me05-116"
  }
 ]
