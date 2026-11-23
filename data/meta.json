@@ -3,70 +3,70 @@
   "id": "pk-dragapult",
   "game": "Pokémon",
   "deck": "Dragapult ex",
-  "share": 0.365,
+  "share": 0.3565,
   "key_cards": "Dragapult ex, Drakloak, Dreepy"
  },
  {
   "id": "pk-basicbox",
   "game": "Pokémon",
   "deck": "Basic Box (Ogerpon / Clefairy)",
-  "share": 0.0886,
+  "share": 0.1164,
   "key_cards": "Teal Mask Ogerpon ex, Lillie's Clefairy ex"
  },
  {
   "id": "pk-slowking",
   "game": "Pokémon",
   "deck": "Slowking Seek Inspiration",
-  "share": 0.0762,
+  "share": 0.0835,
   "key_cards": "Slowking. Won Gdańsk on 31 Oct."
  },
  {
   "id": "pk-zoroark",
   "game": "Pokémon",
   "deck": "N's Zoroark ex",
-  "share": 0.0729,
+  "share": 0.0889,
   "key_cards": "N's Zoroark ex"
  },
  {
   "id": "pk-alakazam",
   "game": "Pokémon",
   "deck": "Alakazam Powerful Hand",
-  "share": 0.0639,
+  "share": 0.0309,
   "key_cards": "Alakazam"
  },
  {
   "id": "pk-festival",
   "game": "Pokémon",
   "deck": "Festival Lead",
-  "share": 0.057,
+  "share": 0.0342,
   "key_cards": "Dipplin, Thwackey"
  },
  {
   "id": "pk-hydrapple",
   "game": "Pokémon",
   "deck": "Hydrapple ex",
-  "share": 0.0423,
+  "share": 0.0406,
   "key_cards": "Hydrapple ex"
  },
  {
   "id": "pk-dhelmise",
   "game": "Pokémon",
   "deck": "Dhelmise Hide n' Sneak",
-  "share": 0.0401,
+  "share": 0.0205,
   "key_cards": "Dhelmise, Banette"
  },
  {
-  "id": "pk-lopunny",
+  "id": "pk-excadrill",
   "game": "Pokémon",
-  "deck": "Mega Lopunny ex",
-  "share": 0.0276,
-  "key_cards": "Mega Lopunny ex"
+  "deck": "Mega Excadrill ex",
+  "share": 0.0453,
+  "key_cards": "Mega Excadrill ex"
  },
  {
   "id": "pk-crustle",
   "game": "Pokémon",
   "deck": "Crustle Mysterious Rock Inn",
-  "share": 0.0272,
+  "share": 0.0587,
   "key_cards": "Crustle"
  },
  {

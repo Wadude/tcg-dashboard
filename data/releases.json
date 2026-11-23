@@ -83,9 +83,9 @@
   "name": "OP-18 The Dominance of God",
   "date": "2026-11-20",
   "when": "Fri 20 Nov 2026",
-  "details": "Water Seven and God's Knights. Reported chase: two Amano-drawn Secret Rares (Loki and Saint Shamrock reported), God's Knights Super Parallel Gunko. English date confirmed on Bandai's page.",
+  "details": "Water Seven and God's Knights. 12 cards per pack, 24 packs per box, $4.99 per pack. Top chase per Samurai Sword Tokyo: Nico Robin Super Alt Art OP18-031; Saint Gunko alt art OP18-065 about $19.90. Tournament legal 27 Nov (that site's own count, not printed by Bandai).",
   "status": "Released",
-  "url": "https://en.onepiece-cardgame.com/products/"
+  "url": "https://samuraiswordtokyo.com/blogs/news/op-18-english-release-date-vs-japan-november-2026"
  },
  {
   "id": "op-gc",
@@ -95,7 +95,7 @@
   "date": "2026-11-20",
   "when": "Fri 20 Nov 2026",
   "details": "$44.99. Released alongside Double Pack Set vol.13 (per Bandai's products page).",
-  "status": "Upcoming",
+  "status": "Released",
   "url": "https://en.onepiece-cardgame.com/products/"
  },
  {
@@ -105,9 +105,9 @@
   "name": "OP-18 (French pre-releases)",
   "date": "2026-11-21",
   "when": "21–28 Nov 2026",
-  "details": "Pre-release events at €35 for 6 French boosters. The official French release date isn't confirmed yet.",
+  "details": "French retailers (Lorenzone) say 20 Nov, with a 24-booster display; Bandai has not given a French date, so unconfirmed. Play-in lists pre-release events from 21 Nov at €35 for 6 boosters.",
   "status": "Upcoming",
-  "url": "https://www.play-in.com/fr/evenement/15445/avant-premiere-op-18-francais"
+  "url": "https://lorenzone.fr/blogs/news/one-piece-op18-la-domination-de-dieu-date-sortie-cartes"
  },
  {
   "id": "op-op18-jp",
@@ -115,8 +115,8 @@
   "region": "JP",
   "name": "OP-18 神の支配",
   "date": "2026-11-21",
-  "when": "Sat 21 Nov 2026 (shipping unconfirmed)",
-  "details": "Japanese box retail ¥5,760–5,782 (lottery pre-orders). Date was disputed (21, 22 or 28 Nov); a Tokyo shop now reports Sat 21 Nov from Bandai's Japanese page, not checked directly. Earlier: Bandai's page reportedly says Sat 21 Nov, a Bandai X post says 22 Nov, and Japanese retail listings show 28 Nov.",
+  "when": "Sat 21 Nov 2026",
+  "details": "Japanese official page gives 21 Nov (per Samurai Sword Tokyo). Box retail about ¥5,760–5,782.",
   "status": "Released",
   "url": "https://www.onepiece-cardgame.com/products/"
  },
@@ -127,9 +127,9 @@
   "name": "Aura Seeker (ME7)",
   "date": "2026-11-27",
   "when": "Fri 27 Nov 2026",
-  "details": "Mega Lucario Z ex, Mega Absol Z ex, Mega Garchomp Z ex. Becomes Flowing Fists in English. Date reported by PokeBeach. Still described by Japanese shops as unofficial; check before pre-ordering.",
+  "details": "Mega Lucario Z ex, Mega Absol Z ex, Mega Garchomp Z ex. Becomes Flowing Fists in English. Date from Samurai Sword Tokyo / Wargamer; unconfirmed by an official page.",
   "status": "Upcoming",
-  "url": "https://www.serebii.net/card/auraseeker/"
+  "url": "https://www.wargamer.com/pokemon-trading-card-game/aura-seeker-release-date-japan"
  },
  {
   "id": "op-st37",
@@ -169,11 +169,11 @@
   "game": "Pokémon",
   "region": "EN",
   "name": "Flowing Fists (ME7)",
-  "date": "2027-02-05",
-  "when": "Fri 5 Feb 2027",
-  "details": "English version of Aura Seeker. Prereleases 23–31 Jan. Unconfirmed: reported by PokeBeach, not yet official. French name not announced.",
+  "date": "2027-02-06",
+  "when": "5–6 Feb 2027 (sources conflict)",
+  "details": "English version of Aura Seeker, headlined by Mega Lucario Z ex. Serebii lists 6 Feb 2027; other sites say 5 Feb. Prereleases reported 23–31 Jan. Not officially confirmed.",
   "status": "Upcoming",
-  "url": "https://www.pokebeach.com/"
+  "url": "https://www.serebii.net/card/english.shtml"
  },
  {
   "id": "pk-m7a-jp",

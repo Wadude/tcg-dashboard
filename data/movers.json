@@ -1,12 +1,42 @@
 [
  {
+  "id": "m-mew152",
+  "game": "Pokémon",
+  "item": "Mew ex 152 SIR (30th Celebration)",
+  "language": "All",
+  "change": "−7%",
+  "price": "€76.60 (≈ Rs 3,930)",
+  "why": "7-day €77.05 vs 30-day €82.61 (trend €76.60). Slide continues, slowly.",
+  "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
+ },
+ {
+  "id": "m-mewtwo",
+  "game": "Pokémon",
+  "item": "Mewtwo ex 151 SIR (30th Celebration)",
+  "language": "All",
+  "change": "−8%",
+  "price": "€41.40 (≈ Rs 2,124)",
+  "why": "7-day €41.56 vs 30-day €45.11.",
+  "url": "https://api.tcgdex.net/v2/en/cards/30th-151"
+ },
+ {
+  "id": "m-greninja",
+  "game": "Pokémon",
+  "item": "Greninja ex 148 (30th Celebration)",
+  "language": "All",
+  "change": "−9%",
+  "price": "€14.81 (≈ Rs 760)",
+  "why": "7-day €14.92 vs 30-day €16.36.",
+  "url": "https://api.tcgdex.net/v2/en/cards/30th-148"
+ },
+ {
   "id": "m-meowth",
   "game": "Pokémon",
   "item": "Meowth 144 (30th Celebration)",
   "language": "All",
-  "change": "−17%",
-  "price": "€4.74 (≈ Rs 249)",
-  "why": "7-day €4.89 vs 30-day €5.88. Cheap card; the percentage is large but the euros are small.",
+  "change": "−18%",
+  "price": "€4.11 (≈ Rs 211)",
+  "why": "7-day €4.27 vs 30-day €5.23. Cheap card; the euros are small.",
   "url": "https://api.tcgdex.net/v2/en/cards/30th-144"
  },
  {
@@ -14,69 +44,39 @@
   "game": "Pokémon",
   "item": "Maushold 146 (30th Celebration)",
   "language": "All",
-  "change": "−17%",
-  "price": "€4.44 (≈ Rs 233)",
-  "why": "7-day €4.49 vs 30-day €5.42.",
+  "change": "−20%",
+  "price": "€3.75 (≈ Rs 192)",
+  "why": "7-day €3.85 vs 30-day €4.83. Small euros.",
   "url": "https://api.tcgdex.net/v2/en/cards/30th-146"
  },
  {
-  "id": "m-morpeko",
+  "id": "m-sylveon",
   "game": "Pokémon",
-  "item": "Morpeko ex 117 SIR (Pitch Black)",
+  "item": "Sylveon ex 153 (30th Celebration)",
   "language": "All",
   "change": "−8%",
-  "price": "€46.94 (≈ Rs 2,466)",
-  "why": "7-day €49.24 vs 30-day €51.16. Last week it was −14%.",
-  "url": "https://api.tcgdex.net/v2/en/cards/me05-117"
- },
- {
-  "id": "m-mew152",
-  "game": "Pokémon",
-  "item": "Mew ex 152 SIR (30th Celebration)",
-  "language": "All",
-  "change": "−6%",
-  "price": "€79.66 (≈ Rs 4,185)",
-  "why": "7-day €81.34 vs 30-day €86.68. The slide is slowing.",
-  "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
+  "price": "€29.07 (≈ Rs 1,491)",
+  "why": "7-day €28.68 vs 30-day €31.30.",
+  "url": "https://api.tcgdex.net/v2/en/cards/30th-153"
  },
  {
   "id": "m-jirachi",
   "game": "Pokémon",
   "item": "Jirachi ex 155 SIR (30th Celebration)",
   "language": "All",
-  "change": "−8%",
-  "price": "€30.36 (≈ Rs 1,595)",
-  "why": "7-day €29.49 vs 30-day €31.98.",
+  "change": "−4%",
+  "price": "€29.52 (≈ Rs 1,514)",
+  "why": "7-day €29.68 vs 30-day €30.92: flattening.",
   "url": "https://api.tcgdex.net/v2/en/cards/30th-155"
- },
- {
-  "id": "m-greninja",
-  "game": "Pokémon",
-  "item": "Greninja ex 148 (30th Celebration)",
-  "language": "All",
-  "change": "−7%",
-  "price": "€15.77 (≈ Rs 828)",
-  "why": "7-day €16.08 vs 30-day €17.20.",
-  "url": "https://api.tcgdex.net/v2/en/cards/30th-148"
- },
- {
-  "id": "m-mewtwo",
-  "game": "Pokémon",
-  "item": "Mewtwo ex 151 SIR (30th Celebration)",
-  "language": "All",
-  "change": "−7%",
-  "price": "€43.96 (≈ Rs 2,309)",
-  "why": "7-day €44.55 vs 30-day €47.30.",
-  "url": "https://api.tcgdex.net/v2/en/cards/30th-151"
  },
  {
   "id": "m-gengar",
   "game": "Pokémon",
   "item": "Gengar ex 154 SIR (30th Celebration)",
   "language": "All",
-  "change": "−6%",
-  "price": "€61.80 (≈ Rs 3,246)",
-  "why": "7-day €61.78 vs 30-day €65.38.",
+  "change": "−3%",
+  "price": "€60.72 (≈ Rs 3,115)",
+  "why": "7-day €61.79 vs 30-day €63.93: nearly flat.",
   "url": "https://api.tcgdex.net/v2/en/cards/30th-154"
  },
  {
@@ -84,69 +84,59 @@
   "game": "Pokémon",
   "item": "Mega Darkrai ex 116 SIR (Pitch Black)",
   "language": "All",
-  "change": "−1%",
-  "price": "€176.27 (≈ Rs 9,259)",
-  "why": "7-day €177.73 vs 30-day €179.29. Steady, and up from €169.56 last week.",
+  "change": "+6%",
+  "price": "€183.58 (≈ Rs 9,418)",
+  "why": "7-day €188.96 vs 30-day €178.59: the one chase card going up. Trend €183.58.",
   "url": "https://api.tcgdex.net/v2/en/cards/me05-116"
  },
  {
   "id": "m-op05",
   "game": "One Piece",
-  "item": "OP-05 booster box",
+  "item": "OP-05 booster box (Japanese)",
   "language": "JP",
-  "change": "+22%",
-  "price": "$213 (eBay median)",
-  "why": "4-week change, price dated 8 Nov. Same rise as last week: sealed stock keeps shrinking.",
+  "change": "−8%",
+  "price": "$194",
+  "why": "eBay sold median to 20 Nov, down from +22% last week to −7.6% over four weeks: the spike is fading. Don't chase.",
   "url": "https://opboxindex.com/"
  },
  {
   "id": "m-op10",
   "game": "One Piece",
-  "item": "OP-10 booster box",
+  "item": "OP-10 booster box (Japanese)",
   "language": "JP",
   "change": "+15%",
-  "price": "$100 (eBay median)",
-  "why": "4-week change, dated 13 Nov. New on the rise list.",
-  "url": "https://opboxindex.com/"
- },
- {
-  "id": "m-eb02",
-  "game": "One Piece",
-  "item": "EB-02 booster box",
-  "language": "JP",
-  "change": "+18%",
-  "price": "$159 (eBay median)",
-  "why": "Last week we listed EB-02 at $100 and −26%. This week opboxindex shows $159 and +18%. The data swung hard in a week; treat as unreliable until confirmed.",
-  "url": "https://opboxindex.com/"
- },
- {
-  "id": "m-op09",
-  "game": "One Piece",
-  "item": "OP-09 booster box",
-  "language": "JP",
-  "change": "−23%",
-  "price": "$109 (eBay median)",
-  "why": "Unchanged from last week; the last sale is dated 8 Nov.",
-  "url": "https://opboxindex.com/"
- },
- {
-  "id": "m-op02",
-  "game": "One Piece",
-  "item": "OP-02 booster box",
-  "language": "JP",
-  "change": "−19%",
-  "price": "$131 (eBay median)",
-  "why": "Last sale dated 24 Oct, so the price may be stale.",
+  "price": "$100",
+  "why": "Median dated 13 Nov, so a bit old.",
   "url": "https://opboxindex.com/"
  },
  {
   "id": "m-op17",
   "game": "One Piece",
-  "item": "OP-17 booster box",
+  "item": "OP-17 booster box (Japanese)",
   "language": "JP",
-  "change": "−13%",
-  "price": "$109 (eBay median)",
-  "why": "4-week change dated 14 Nov; last week −7%, so the fall is speeding up before OP-18.",
+  "change": "−15%",
+  "price": "$100",
+  "why": "Median dated 22 Nov, last week −13%. Still falling now OP-18 is out.",
+  "url": "https://opboxindex.com/"
+ },
+ {
+  "id": "m-op09",
+  "game": "One Piece",
+  "item": "OP-09 booster box (Japanese)",
+  "language": "JP",
+  "change": "−14%",
+  "price": "$109",
+  "why": "Median dated 21 Nov; last week −23%.",
+  "url": "https://opboxindex.com/"
+ },
+ {
+  "id": "m-eb02",
+  "game": "One Piece",
+  "item": "EB-02 booster box (language not labelled)",
+  "language": "JP",
+  "change": "+18%",
+  "price": "$159",
+  "why": "Median dated 10 Nov. Same site showed $100 and −26% two weeks ago, so thin sales. Don't trade on it.",
   "url": "https://opboxindex.com/"
  }
 ]

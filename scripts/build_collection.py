@@ -9,7 +9,7 @@ FIELDS = ["Record ID", "Brand", "Language", "Set code", "Card name", "Card numbe
           "Finish / variant", "Quantity (minimum)", "Quantity basis", "Condition", "Low estimate EUR",
           "High estimate EUR", "Value status", "Estimate date", "ID status", "Period", "Chat reference",
           "Photo reference", "Notes"]
-RATE = 52.53
+RATE = 51.30
 UA = {"User-Agent": "Mozilla/5.0 (collector dashboard)"}
 
 def get(url, as_json=True):

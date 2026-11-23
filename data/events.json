@@ -1,16 +1,5 @@
 [
  {
-  "id": "pk-louisville",
-  "game": "Pokémon",
-  "name": "Regional Louisville",
-  "date": "2026-10-10",
-  "when": "10 Oct 2026",
-  "location": "USA",
-  "status": "Done",
-  "result": "Riley McKay, Dragapult ex (2,927 players)",
-  "url": "https://limitlesstcg.com/tournaments/581"
- },
- {
   "id": "pk-nice",
   "game": "Pokémon",
   "name": "Regional Nice",
@@ -72,9 +61,9 @@
   "date": "2026-11-14",
   "when": "14 Nov or 21–22 Nov 2026 (dates conflict)",
   "location": "UK · Brazil · Canada · USA",
-  "result": "Limitless no longer lists Bristol, São Paulo, Niagara Falls or Knoxville as upcoming, but the Bristol organiser page says 21–22 Nov (Ashton Gate). Unconfirmed whether they were played on 14 Nov.",
+  "result": "Bristol organiser page says 21–22 Nov (Ashton Gate); Limitless does not list it. No results found, so unconfirmed whether these ran.",
   "url": "https://tickets.organizedplay.events/Event/Index/178",
-  "status": "Upcoming"
+  "status": "Done"
  },
  {
   "id": "pk-laic",
@@ -84,7 +73,7 @@
   "when": "20–22 Nov 2026",
   "location": "São Paulo, Brazil",
   "status": "Done",
-  "result": "Vinícius Fernandez (BR) won, 2,646 players (per Limitless). Deck not checked.",
+  "result": "Limitless lists Vinícius Fernandez (BR) as winner, 2,646 players. Deck not checked. Note: Pokémon's own press release naming Pedro Pertusi is from the 2025 event, so ignore it.",
   "url": "https://limitlesstcg.com/tournaments"
  },
  {
@@ -94,7 +83,7 @@
   "date": "2026-11-21",
   "when": "Sat 21 Nov 2026",
   "location": "USA",
-  "result": "Played Sat 21 Nov. No results found yet (unconfirmed).",
+  "result": "Played Sat 21 Nov. Still no results on Limitless (its One Piece list ends 26 Jul). Unconfirmed.",
   "url": "https://onepiece.limitlesstcg.com/tournaments/upcoming",
   "status": "Done"
  },
@@ -105,8 +94,8 @@
   "date": "2026-11-22",
   "when": "Sun 22 Nov 2026",
   "location": "Japan",
-  "status": "Upcoming",
-  "result": "",
+  "status": "Done",
+  "result": "Played 22 Nov. No result found yet (unconfirmed): not on Limitless as of 23 Nov.",
   "url": "https://limitlesstcg.com/tournaments/upcoming"
  },
  {
