@@ -1,46 +1,46 @@
 [
  {
   "id": "h1",
-  "date": "Sun 22 Nov 2026",
+  "date": "Mon 23 Nov 2026",
   "kind": "news",
-  "game": "One Piece",
-  "importance": "Medium",
-  "title": "OP-18 Japan: official pages now list 21 Nov, ¥240 a pack",
-  "detail": "A retailer summary of Bandai's pages says the Japanese OP-18 went on sale Sat 21 Nov (24 packs per box). I did not open Bandai's pages myself and could not confirm shops actually shipped on the day. Retailer lists later Japanese sets as EB-06 on 30 Jan 2027 and OP-19 on 27 Feb 2027 (unconfirmed).",
-  "source": "Samurai Sword Tokyo",
-  "url": "https://samuraiswordtokyo.com/blogs/news/op-18-english-release-date-vs-japan-november-2026"
- },
- {
-  "id": "h2",
-  "date": "Sun 22 Nov 2026",
-  "kind": "event",
   "game": "Pokémon",
   "importance": "Medium",
-  "title": "Latin America Internationals ends today; Champions League Chiba is also today",
-  "detail": "Final day in São Paulo (20–22 Nov) and Champions League Chiba (Japan) both fall on 22 Nov. No results found yet. Limitless's list shows nothing after Buenos Aires (14 Nov, Calvin Connor), so check tomorrow. Regional Stuttgart is Sat 28 Nov.",
+  "title": "Latin America Internationals (São Paulo): Vinícius Fernandez (BR) wins",
+  "detail": "Limitless lists Vinícius Fernandez (Brazil) as winner of the 2026–27 São Paulo International, 2,646 players. I did not check the deck, and web searches turned up conflicting names from the 2025 edition, so treat the winner as per Limitless only.",
   "source": "Limitless TCG",
   "url": "https://limitlesstcg.com/tournaments"
  },
  {
-  "id": "h3",
-  "date": "Sun 22 Nov 2026",
+  "id": "h2",
+  "date": "Mon 23 Nov 2026",
   "kind": "event",
-  "game": "One Piece",
+  "game": "Pokémon",
   "importance": "",
-  "title": "Limitless no longer lists Oklahoma City; next regional is Alicante, Sat 28 Nov",
-  "detail": "Oklahoma City (21 Nov) has dropped off the upcoming list but no results are posted yet (unconfirmed). Bristol also isn't listed. Next listed: Alicante 28 Nov, then 5 Dec (Santiago, Mexico City, Munich, Utrecht), 6 Dec Peoria, 12 Dec Paris, Montréal and Kissimmee.",
-  "source": "Limitless TCG (One Piece)",
-  "url": "https://onepiece.limitlesstcg.com/tournaments/upcoming"
+  "title": "Champions League Chiba (22 Nov): still no result posted",
+  "detail": "Limitless's list shows nothing for Chiba yet. Next up: Regional Stuttgart, Sat 28 Nov, then Las Vegas 5 Dec.",
+  "source": "Limitless TCG",
+  "url": "https://limitlesstcg.com/tournaments/upcoming"
  },
  {
-  "id": "h4",
-  "date": "Sun 22 Nov 2026",
+  "id": "h3",
+  "date": "Mon 23 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
   "importance": "",
-  "title": "Réunion: Miyata Delta Reign unchanged; Korean m6 boxes also listed",
-  "detail": "French Delta Reign: tripack €19.99, 6-booster bundle €44.99, display €239.99, booster €7.99 available; Elite Trainer Box (€79.99) sold out. Also listed: Korean m6 Storm Emeralda booster €4.50 and 30-booster box €119.90. Stock as of this morning; confirm before travelling.",
-  "source": "Miyata Kard Market",
-  "url": "https://miyatakardmarket.re/collections/pokemon-me06-regne-delta"
+  "title": "Japan's Aura Seeker (ME7) is due Fri 27 Nov, four days away",
+  "detail": "Mega Lucario Z ex, Mega Absol Z ex and Mega Garchomp Z ex. The date comes from PokeBeach and Japanese shops still call it unofficial, so confirm before pre-ordering. It becomes Flowing Fists in English.",
+  "source": "Serebii",
+  "url": "https://www.serebii.net/card/auraseeker/"
+ },
+ {
+  "id": "h4",
+  "date": "Mon 23 Nov 2026",
+  "kind": "event",
+  "game": "One Piece",
+  "importance": "",
+  "title": "OP-18 English is out; French pre-releases run to 28 Nov",
+  "detail": "English OP-18 launched Fri 20 Nov. French pre-release events (€35 for 6 French boosters) run 21–28 Nov; the official French release date is still unconfirmed. Next One Piece regional: Alicante, Sat 28 Nov. Oklahoma City (21 Nov) results are still not posted.",
+  "source": "Play-in",
+  "url": "https://www.play-in.com/fr/evenement/15445/avant-premiere-op-18-francais"
  }
 ]
