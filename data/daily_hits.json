@@ -1,46 +1,35 @@
 [
  {
   "id": "h1",
-  "date": "Mon 23 Nov 2026",
+  "date": "Tue 24 Nov 2026",
   "kind": "news",
   "game": "Pokémon",
   "importance": "Medium",
-  "title": "Latin America Internationals (São Paulo): Vinícius Fernandez (BR) wins",
-  "detail": "Limitless lists Vinícius Fernandez (Brazil) as winner of the 2026–27 São Paulo International, 2,646 players. I did not check the deck, and web searches turned up conflicting names from the 2025 edition, so treat the winner as per Limitless only.",
-  "source": "Limitless TCG",
-  "url": "https://limitlesstcg.com/tournaments"
- },
- {
-  "id": "h2",
-  "date": "Mon 23 Nov 2026",
-  "kind": "event",
-  "game": "Pokémon",
-  "importance": "",
-  "title": "Champions League Chiba (22 Nov): still no result posted",
-  "detail": "Limitless's list shows nothing for Chiba yet. Next up: Regional Stuttgart, Sat 28 Nov, then Las Vegas 5 Dec.",
-  "source": "Limitless TCG",
-  "url": "https://limitlesstcg.com/tournaments/upcoming"
- },
- {
-  "id": "h3",
-  "date": "Mon 23 Nov 2026",
-  "kind": "news",
-  "game": "Pokémon",
-  "importance": "",
-  "title": "Japan's Aura Seeker (ME7) is due Fri 27 Nov, four days away",
-  "detail": "Mega Lucario Z ex, Mega Absol Z ex and Mega Garchomp Z ex. The date comes from PokeBeach and Japanese shops still call it unofficial, so confirm before pre-ordering. It becomes Flowing Fists in English.",
+  "title": "Japan's Aura Seeker (ME7) lands Fri 27 Nov, three days away",
+  "detail": "Serebii lists Japanese release on 27 Nov with 78 base cards: Mega Lucario Z ex (57, alt 110), Mega Absol Z ex (30), Mega Garchomp Z ex (67), Mega Glimmora ex (54), plus Single/Rapid Strike Urshifu. No English date given yet. Prices will only appear after release.",
   "source": "Serebii",
   "url": "https://www.serebii.net/card/auraseeker/"
  },
  {
-  "id": "h4",
-  "date": "Mon 23 Nov 2026",
+  "id": "h2",
+  "date": "Tue 24 Nov 2026",
+  "kind": "event",
+  "game": "Pokémon",
+  "importance": "",
+  "title": "Champions League Chiba (22 Nov): still no result on Limitless",
+  "detail": "Limitless's list still ends at São Paulo (20 Nov, winner Vinícius Fernandez). Chiba is unconfirmed. Next: Regional Stuttgart, Sat 28 Nov (per yesterday's check; not re-verified today).",
+  "source": "Limitless TCG",
+  "url": "https://limitlesstcg.com/tournaments"
+ },
+ {
+  "id": "h3",
+  "date": "Tue 24 Nov 2026",
   "kind": "event",
   "game": "One Piece",
   "importance": "",
-  "title": "OP-18 English is out; French pre-releases run to 28 Nov",
-  "detail": "English OP-18 launched Fri 20 Nov. French pre-release events (€35 for 6 French boosters) run 21–28 Nov; the official French release date is still unconfirmed. Next One Piece regional: Alicante, Sat 28 Nov. Oklahoma City (21 Nov) results are still not posted.",
+  "title": "OP-18 French events continue; official French release date still not found",
+  "detail": "Play-in lists French OP-18 events (€35) on 21, 23 and 28 Nov, and English-language events on 20 and 27 Nov. English OP-18 came out 20 Nov. No official French release date found, so treat it as unconfirmed. Sortilèges' site was down (503) when checked, so no Réunion stock news today.",
   "source": "Play-in",
-  "url": "https://www.play-in.com/fr/evenement/15445/avant-premiere-op-18-francais"
+  "url": "https://www.play-in.com/en/evenement/15480/one-piece-card-game-ap-op18-fr"
  }
 ]
