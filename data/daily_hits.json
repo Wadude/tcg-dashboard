@@ -1,35 +1,46 @@
 [
  {
   "id": "h1",
-  "date": "Tue 24 Nov 2026",
-  "kind": "news",
-  "game": "Pokémon",
-  "importance": "Medium",
-  "title": "Japan's Aura Seeker (ME7) lands Fri 27 Nov, three days away",
-  "detail": "Serebii lists Japanese release on 27 Nov with 78 base cards: Mega Lucario Z ex (57, alt 110), Mega Absol Z ex (30), Mega Garchomp Z ex (67), Mega Glimmora ex (54), plus Single/Rapid Strike Urshifu. No English date given yet. Prices will only appear after release.",
-  "source": "Serebii",
-  "url": "https://www.serebii.net/card/auraseeker/"
- },
- {
-  "id": "h2",
-  "date": "Tue 24 Nov 2026",
+  "date": "Wed 25 Nov 2026",
   "kind": "event",
   "game": "Pokémon",
-  "importance": "",
-  "title": "Champions League Chiba (22 Nov): still no result on Limitless",
-  "detail": "Limitless's list still ends at São Paulo (20 Nov, winner Vinícius Fernandez). Chiba is unconfirmed. Next: Regional Stuttgart, Sat 28 Nov (per yesterday's check; not re-verified today).",
+  "importance": "Medium",
+  "title": "Champions League Chiba result is in: Hiromu Sasaki won (Japan, 22 Nov)",
+  "detail": "Limitless now lists Chiba with 8,000 players and Hiromu Sasaki as winner. Deck not checked yet. Japan's Aura Seeker set (ME7) is not legal there yet, so it will not show in these results.",
   "source": "Limitless TCG",
   "url": "https://limitlesstcg.com/tournaments"
  },
  {
+  "id": "h2",
+  "date": "Wed 25 Nov 2026",
+  "kind": "mover",
+  "game": "Pokémon",
+  "importance": "",
+  "title": "Price check: no big moves (20%+) on the chase and collection cards",
+  "detail": "Checked Mew ex 152 (7-day €74.19 vs 30-day €81.47, −9%), Mewtwo ex 151 (−10%), Gengar ex 154 (−2%) and Mega Darkrai ex 116 (+3%, €184.06 vs €178.18). All under the 20% line; slow slide on the 30th Celebration cards continues.",
+  "source": "TCGdex (Cardmarket data)",
+  "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
+ },
+ {
   "id": "h3",
-  "date": "Tue 24 Nov 2026",
-  "kind": "event",
+  "date": "Wed 25 Nov 2026",
+  "kind": "news",
   "game": "One Piece",
   "importance": "",
-  "title": "OP-18 French events continue; official French release date still not found",
-  "detail": "Play-in lists French OP-18 events (€35) on 21, 23 and 28 Nov, and English-language events on 20 and 27 Nov. English OP-18 came out 20 Nov. No official French release date found, so treat it as unconfirmed. Sortilèges' site was down (503) when checked, so no Réunion stock news today.",
-  "source": "Play-in",
-  "url": "https://www.play-in.com/en/evenement/15480/one-piece-card-game-ap-op18-fr"
+  "title": "Réunion: Miyata Kard Market shows no OP-18 yet; 30th Anniversary ETB sold out",
+  "detail": "Miyata's homepage lists no OP-18 products or pre-orders. Its Pokémon 30e Anniversaire Elite Trainer Box shows 'Épuisé' (sold out); Règne Delta (ME06) is listed with its 6 Nov date, stock not shown. Sortilèges was not re-checked today.",
+  "source": "Miyata Kard Market",
+  "url": "https://miyatakardmarket.re"
+ },
+ {
+  "id": "h4",
+  "date": "Wed 25 Nov 2026",
+  "kind": "event",
+  "game": "Pokémon",
+  "importance": "",
+  "title": "This weekend: Regional Stuttgart, Sat 28 Nov",
+  "detail": "Next big Pokémon event in the calendar. Results are usually on Limitless by the evening in Europe, which is the night in Mauritius.",
+  "source": "Limitless TCG",
+  "url": "https://limitlesstcg.com/tournaments/upcoming"
  }
 ]
