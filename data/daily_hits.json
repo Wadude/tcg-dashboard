@@ -1,46 +1,6 @@
 [
- {
-  "id": "h1",
-  "date": "Wed 25 Nov 2026",
-  "kind": "event",
-  "game": "Pokémon",
-  "importance": "Medium",
-  "title": "Champions League Chiba result is in: Hiromu Sasaki won (Japan, 22 Nov)",
-  "detail": "Limitless now lists Chiba with 8,000 players and Hiromu Sasaki as winner. Deck not checked yet. Japan's Aura Seeker set (ME7) is not legal there yet, so it will not show in these results.",
-  "source": "Limitless TCG",
-  "url": "https://limitlesstcg.com/tournaments"
- },
- {
-  "id": "h2",
-  "date": "Wed 25 Nov 2026",
-  "kind": "mover",
-  "game": "Pokémon",
-  "importance": "",
-  "title": "Price check: no big moves (20%+) on the chase and collection cards",
-  "detail": "Checked Mew ex 152 (7-day €74.19 vs 30-day €81.47, −9%), Mewtwo ex 151 (−10%), Gengar ex 154 (−2%) and Mega Darkrai ex 116 (+3%, €184.06 vs €178.18). All under the 20% line; slow slide on the 30th Celebration cards continues.",
-  "source": "TCGdex (Cardmarket data)",
-  "url": "https://api.tcgdex.net/v2/en/cards/30th-152"
- },
- {
-  "id": "h3",
-  "date": "Wed 25 Nov 2026",
-  "kind": "news",
-  "game": "One Piece",
-  "importance": "",
-  "title": "Réunion: Miyata Kard Market shows no OP-18 yet; 30th Anniversary ETB sold out",
-  "detail": "Miyata's homepage lists no OP-18 products or pre-orders. Its Pokémon 30e Anniversaire Elite Trainer Box shows 'Épuisé' (sold out); Règne Delta (ME06) is listed with its 6 Nov date, stock not shown. Sortilèges was not re-checked today.",
-  "source": "Miyata Kard Market",
-  "url": "https://miyatakardmarket.re"
- },
- {
-  "id": "h4",
-  "date": "Wed 25 Nov 2026",
-  "kind": "event",
-  "game": "Pokémon",
-  "importance": "",
-  "title": "This weekend: Regional Stuttgart, Sat 28 Nov",
-  "detail": "Next big Pokémon event in the calendar. Results are usually on Limitless by the evening in Europe, which is the night in Mauritius.",
-  "source": "Limitless TCG",
-  "url": "https://limitlesstcg.com/tournaments/upcoming"
- }
+ {"id":"h1","date":"Thu 26 Nov 2026","kind":"news","game":"One Piece","importance":"High","title":"New banned/restricted card notice from Bandai (posted 17 Nov)","detail":"The official site lists a 'Banned/Restricted Card Addition Notice' dated 17 Nov, but the card list is not readable in the news index. A fan site (onepiece.gg) says it takes effect 27 Nov, tomorrow. Unconfirmed: check the official notice before buying or selling any One Piece staples.","source":"Bandai One Piece Card Game (official news)","url":"https://en.onepiece-cardgame.com/news/"},
+ {"id":"h2","date":"Thu 26 Nov 2026","kind":"news","game":"Pokémon","importance":"Medium","title":"Aura Seeker (ME7) goes on sale in Japan tomorrow, 27 Nov","detail":"Headliner is Mega Lucario Z ex, the first Mega Z card. English version (Flowing Fists) is reported for 5 or 6 Feb 2027; sources disagree and The Pokémon Company has not confirmed. Expect Japanese pull and price news over the weekend.","source":"Wargamer (fan/collector site)","url":"https://www.wargamer.com/pokemon-trading-card-game/aura-seeker-release-date-japan"},
+ {"id":"h3","date":"Thu 26 Nov 2026","kind":"event","game":"Pokémon","importance":"","title":"This weekend: Regionals in Stuttgart and Alicante, Sat 28 Nov","detail":"Both are on the calendar for Saturday. Results usually appear on Limitless that evening in Europe, which is the night in Mauritius.","source":"Limitless TCG","url":"https://limitlesstcg.com/tournaments/upcoming"},
+ {"id":"h4","date":"Thu 26 Nov 2026","kind":"news","game":"One Piece","importance":"","title":"Still no results for the One Piece regionals of 7, 14 and 21 Nov","detail":"Limitless has no new Pokémon results since Chiba (22 Nov) and nothing for the One Piece regionals, so those stay unconfirmed. No big price moves checked today: Mew ex 152 is unchanged from yesterday (7-day €74.19 vs 30-day €81.47).","source":"Limitless TCG","url":"https://limitlesstcg.com/tournaments"}
 ]
