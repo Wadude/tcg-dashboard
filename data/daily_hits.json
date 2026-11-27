@@ -1,6 +1,46 @@
 [
- {"id":"h1","date":"Thu 26 Nov 2026","kind":"news","game":"One Piece","importance":"High","title":"New banned/restricted card notice from Bandai (posted 17 Nov)","detail":"The official site lists a 'Banned/Restricted Card Addition Notice' dated 17 Nov, but the card list is not readable in the news index. A fan site (onepiece.gg) says it takes effect 27 Nov, tomorrow. Unconfirmed: check the official notice before buying or selling any One Piece staples.","source":"Bandai One Piece Card Game (official news)","url":"https://en.onepiece-cardgame.com/news/"},
- {"id":"h2","date":"Thu 26 Nov 2026","kind":"news","game":"Pokémon","importance":"Medium","title":"Aura Seeker (ME7) goes on sale in Japan tomorrow, 27 Nov","detail":"Headliner is Mega Lucario Z ex, the first Mega Z card. English version (Flowing Fists) is reported for 5 or 6 Feb 2027; sources disagree and The Pokémon Company has not confirmed. Expect Japanese pull and price news over the weekend.","source":"Wargamer (fan/collector site)","url":"https://www.wargamer.com/pokemon-trading-card-game/aura-seeker-release-date-japan"},
- {"id":"h3","date":"Thu 26 Nov 2026","kind":"event","game":"Pokémon","importance":"","title":"This weekend: Regionals in Stuttgart and Alicante, Sat 28 Nov","detail":"Both are on the calendar for Saturday. Results usually appear on Limitless that evening in Europe, which is the night in Mauritius.","source":"Limitless TCG","url":"https://limitlesstcg.com/tournaments/upcoming"},
- {"id":"h4","date":"Thu 26 Nov 2026","kind":"news","game":"One Piece","importance":"","title":"Still no results for the One Piece regionals of 7, 14 and 21 Nov","detail":"Limitless has no new Pokémon results since Chiba (22 Nov) and nothing for the One Piece regionals, so those stay unconfirmed. No big price moves checked today: Mew ex 152 is unchanged from yesterday (7-day €74.19 vs 30-day €81.47).","source":"Limitless TCG","url":"https://limitlesstcg.com/tournaments"}
+ {
+  "id": "h1",
+  "date": "Fri 27 Nov 2026",
+  "kind": "news",
+  "game": "One Piece",
+  "importance": "High",
+  "title": "Bandai ban list change is live today: new Banned Pair",
+  "detail": "Official notice (effective 27 Nov): Jewelry Bonney (EB05-001) can no longer share a deck with Luffy (OP13-001) or Trafalgar Law (OP01-002); alt arts included. The page names no individually banned or restricted cards and does not name any cards removed from the list. Watch Bonney and Law prices.",
+  "source": "Bandai One Piece Card Game (official)",
+  "url": "https://en.onepiece-cardgame.com/news/restriction-2611.html"
+ },
+ {
+  "id": "h2",
+  "date": "Fri 27 Nov 2026",
+  "kind": "news",
+  "game": "Pokémon",
+  "importance": "Medium",
+  "title": "Aura Seeker (ME7) is out in Japan today, but not yet confirmed by an official page",
+  "detail": "Mega Lucario Z ex is the headliner; the set is listed at 78 cards. The 27 Nov date still rests on a May Pokébeach report, and no post-release pull rates or prices were found yet. Pull rates are unconfirmed; expect launch prices to overshoot and then settle within weeks.",
+  "source": "Samurai Sword Tokyo (collector shop blog)",
+  "url": "https://samuraiswordtokyo.com/de/blogs/news/aura-seeker-pull-rates-guide"
+ },
+ {
+  "id": "h3",
+  "date": "Fri 27 Nov 2026",
+  "kind": "event",
+  "game": "Pokémon",
+  "importance": "",
+  "title": "Tomorrow, Sat 28 Nov: Regionals in Stuttgart and Alicante",
+  "detail": "Still upcoming. Limitless has no new Pokémon results since Chiba (22 Nov), so nothing new to report on finished events.",
+  "source": "Limitless TCG",
+  "url": "https://limitlesstcg.com/tournaments"
+ },
+ {
+  "id": "h4",
+  "date": "Fri 27 Nov 2026",
+  "kind": "news",
+  "game": "Both",
+  "importance": "",
+  "title": "Réunion shops: nothing new",
+  "detail": "Miyata Kard Market shows no OP-18 or Aura Seeker listing (only an OP18 guide article dated 20 Nov); Coffret Dresseur d'Élite 30e Anniversaire is sold out there. Sortilèges' site returned an error, so it was not checked. No price-mover check was possible today (collection file has no TCGdex ids), so none reported.",
+  "source": "Miyata Kard Market",
+  "url": "https://www.miyatakardmarket.re"
+ }
 ]
