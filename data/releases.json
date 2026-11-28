@@ -165,6 +165,17 @@
   "url": "https://zatu.com/en-fr/blogs/news/pokemon-tcg-could-be-getting-its-first-valentine-s-day-set"
  },
  {
+  "id": "op-eb06",
+  "game": "One Piece",
+  "region": "EN · JP",
+  "name": "EB-06 East Blue",
+  "date": "2027-01-29",
+  "when": "29 Jan 2027 (JP 30 Jan)",
+  "details": "Extra booster, $4.99 a pack (EN). JP date from a Samurai Sword Tokyo article citing Bandai.",
+  "status": "Upcoming",
+  "url": "https://en.onepiece-cardgame.com/products/"
+ },
+ {
   "id": "pk-me7-en",
   "game": "Pokémon",
   "region": "EN",
@@ -185,5 +196,27 @@
   "details": "One shop calendar lists it for 19 Feb 2027; another says the name is only a trademark and no date is announced. Unconfirmed.",
   "status": "Upcoming",
   "url": "https://samuraiswordtokyo.com/release-calendar"
+ },
+ {
+  "id": "op-op19",
+  "game": "One Piece",
+  "region": "EN · JP",
+  "name": "OP-19 Come In, World",
+  "date": "2027-03-05",
+  "when": "5 Mar 2027 (JP 27 Feb)",
+  "details": "Pre-release 26 Feb (EN). $4.99 a pack. JP date from a Samurai Sword Tokyo article citing Bandai.",
+  "status": "Upcoming",
+  "url": "https://en.onepiece-cardgame.com/products/"
+ },
+ {
+  "id": "op-peb01",
+  "game": "One Piece",
+  "region": "EN",
+  "name": "PEB-01 Premium Extra Booster",
+  "date": "2027-04-23",
+  "when": "23 Apr 2027",
+  "details": "The Drawing of Your Dreams. $7.99 a pack.",
+  "status": "Upcoming",
+  "url": "https://en.onepiece-cardgame.com/products/"
  }
 ]

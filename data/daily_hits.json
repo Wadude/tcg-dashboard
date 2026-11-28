@@ -1,45 +1,45 @@
 [
  {
   "id": "h1",
-  "date": "Fri 27 Nov 2026",
+  "date": "Sat 28 Nov 2026",
   "kind": "news",
   "game": "One Piece",
   "importance": "High",
-  "title": "Bandai ban list change is live today: new Banned Pair",
-  "detail": "Official notice (effective 27 Nov): Jewelry Bonney (EB05-001) can no longer share a deck with Luffy (OP13-001) or Trafalgar Law (OP01-002); alt arts included. The page names no individually banned or restricted cards and does not name any cards removed from the list. Watch Bonney and Law prices.",
-  "source": "Bandai One Piece Card Game (official)",
-  "url": "https://en.onepiece-cardgame.com/news/restriction-2611.html"
+  "title": "Next One Piece sets are on Bandai's English page: EB-06 on 29 Jan, OP-19 on 5 Mar 2027",
+  "detail": "Official English products page lists EB-06 East Blue (29 Jan 2027) and OP-19 Come In, World (5 Mar 2027, pre-release 26 Feb), both $4.99 a pack; also PEB-01 Premium Extra Booster on 23 Apr 2027 ($7.99 a pack). Japan is a day earlier for EB-06 (30 Jan) and OP-19 (27 Feb) per a Samurai Sword Tokyo article citing Bandai's Japanese page, not checked directly. No French dates yet.",
+  "source": "Bandai One Piece Card Game (official, EN)",
+  "url": "https://en.onepiece-cardgame.com/products/"
  },
  {
   "id": "h2",
-  "date": "Fri 27 Nov 2026",
-  "kind": "news",
-  "game": "Pokémon",
-  "importance": "Medium",
-  "title": "Aura Seeker (ME7) is out in Japan today, but not yet confirmed by an official page",
-  "detail": "Mega Lucario Z ex is the headliner; the set is listed at 78 cards. The 27 Nov date still rests on a May Pokébeach report, and no post-release pull rates or prices were found yet. Pull rates are unconfirmed; expect launch prices to overshoot and then settle within weeks.",
-  "source": "Samurai Sword Tokyo (collector shop blog)",
-  "url": "https://samuraiswordtokyo.com/de/blogs/news/aura-seeker-pull-rates-guide"
- },
- {
-  "id": "h3",
-  "date": "Fri 27 Nov 2026",
+  "date": "Sat 28 Nov 2026",
   "kind": "event",
-  "game": "Pokémon",
+  "game": "Both",
   "importance": "",
-  "title": "Tomorrow, Sat 28 Nov: Regionals in Stuttgart and Alicante",
-  "detail": "Still upcoming. Limitless has no new Pokémon results since Chiba (22 Nov), so nothing new to report on finished events.",
+  "title": "Today: Pokémon Regional Stuttgart and One Piece Regional Alicante",
+  "detail": "Both are listed for today. Results are not out yet; Limitless's latest Pokémon result is still Chiba (22 Nov). Next weekend: Las Vegas (Pokémon) and Munich, Utrecht, Peoria, Santiago and Mexico City (One Piece).",
   "source": "Limitless TCG",
   "url": "https://limitlesstcg.com/tournaments"
  },
  {
+  "id": "h3",
+  "date": "Sat 28 Nov 2026",
+  "kind": "news",
+  "game": "Pokémon",
+  "importance": "",
+  "title": "Aura Seeker (ME7): still no official page found",
+  "detail": "One source (Nerdsnack) says it was out in Japan on 27 Nov and The Pokémon Company has not announced an English release; others (Wargamer, Zatu) say the Mega Lucario Z set is not official yet. English name Flowing Fists and early 2027 are fan-site reports. Treat date and name as unconfirmed. No prices found yet.",
+  "source": "Nerdsnack",
+  "url": "https://nerdsnack.com/?p=11530"
+ },
+ {
   "id": "h4",
-  "date": "Fri 27 Nov 2026",
+  "date": "Sat 28 Nov 2026",
   "kind": "news",
   "game": "Both",
   "importance": "",
   "title": "Réunion shops: nothing new",
-  "detail": "Miyata Kard Market shows no OP-18 or Aura Seeker listing (only an OP18 guide article dated 20 Nov); Coffret Dresseur d'Élite 30e Anniversaire is sold out there. Sortilèges' site returned an error, so it was not checked. No price-mover check was possible today (collection file has no TCGdex ids), so none reported.",
+  "detail": "Miyata Kard Market: no OP-18 or Aura Seeker product listed; 30e Anniversaire Elite Trainer Box and EV03 boosters sold out, no restock date. Sortilèges' home page shows a generic pre-order section with no products named. No price-mover check today (collection file has no TCGdex ids).",
   "source": "Miyata Kard Market",
   "url": "https://www.miyatakardmarket.re"
  }
